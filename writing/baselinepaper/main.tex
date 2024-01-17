@@ -1,0 +1,589 @@
+% For styling
+\documentclass{article}
+\setlength\parindent{0pt}
+\setlength{\parskip}{\baselineskip}
+\usepackage[hidelinks]{hyperref}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\usepackage{textgreek}
+
+% For pandas dataframe
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% For referencing
+%\let\cite\shortcite
+%\bibliographystyle{apacite}
+\bibliographystyle{plain}
+%\bibliographystyle{ksfh_nat}
+%%\usepackage[super]{natbib}
+%%\usepackage{hyperref}
+%%\bibliographystyle{unsrtnat}
+
+%\usepackage[backend=bibtex,
+%  style=nature,
+%  sorting=none,
+%  giveninits=true,
+%  isbn=false,doi=false,url=false,
+%  natbib=true
+%]{biblatex}
+%\addbibresource{library.bib}
+%\usepackage{hyperref}
+
+% For glossaries
+\usepackage[nonumberlist]{glossaries}
+\makeglossaries
+\newacronym{SHAP}{SHAP}{SHapley Additive exPlanations}
+\newacronym{MAM}{MAM}{Moderate Acute Malnutrition}
+\newacronym{EC}{EC}{Expressive Communication}
+\newacronym{EEG}{EEG}{Electroencephalography}
+\newacronym{AUCROC}{AUCROC}{Area Under the Curve}
+\newacronym{LMIC}{LMIC}{Low- and Middle- Income Countries}
+\newacronym{MWU}{MWU}{Mann-Whitney U test}
+\newacronym{WLZ/WHZ}{WLZ/WHZ}{weight-for-length/height}
+\newacronym{PSD}{PSD}{power spectral density}
+\newacronym{BBB}{BBB}{Blood Brain Barrier}
+\newacronym{MUAC}{MUAC}{Mid-upper arm circumference}
+\newacronym{PCoA}{PCoA}{Principal Coordinates Analysis}
+\newacronym{PERMANOVA}{PERMANOVA}{PERmutational Multivariate ANalysis Of VAriance}
+\newacronym{FDR}{FDR}{False Discovery Rate}
+\newacronym{HC}{HC}{Head Circumference}
+\newacronym{SCFA}{SCFA}{Short Chain Fatty Acid}
+\newacronym{P/B}{P/B}{\textit{Prevotella}-to-\textit{Bacteroides}}
+\newacronym{OCFA}{OCFA}{Odd Chain Fatty Acid}
+
+% For drafts
+\usepackage{setspace}
+\doublespacing
+\usepackage{lineno}
+\linenumbers
+
+% For captions at end of document
+%\usepackage{figcaps}
+
+\title{Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants}
+\author[1,*]{Theo Portlock}
+\author[2,*]{Talat Sharma}
+\author[2,*]{Shahria Hafiz Kakon}
+\author[3,*]{Berit Hartjen}
+\author[1,*]{Chris Pook}
+\author[1,*]{Brooke Wilson}
+\author[3]{Ayisha Bhuttor}
+\author[1]{Daniel Ho}
+\author[1]{Inoli Shennon Wadumesthrige Don}
+\author[3]{Anne-Michelle Engelstad}
+\author[3]{Renata Di Lorenzo}
+\author[3]{Garrett Greaves}
+\author[3]{Caroline Kelsey}
+\author[1]{Peter Gluckman}
+\author[1,4,5,6]{Justin O'Sullivan}
+\author[7]{Terrence Forrester}
+\author[3]{Charles Nelson}
+
+\affil[1]{The Liggins Institute, University of Auckland, NZ}
+\affil[2]{Infectious Diseases Division, International Centre for Diarrheal Disease Research, Bangladesh}
+\affil[3]{Department of Pediatrics, Boston Children’s Hospital and Harvard Medical School; Harvard Graduate School of Education, Boston, USA}
+\affil[4]{The Maurice Wilkins Centre, The University of Auckland, New Zealand}
+\affil[5]{MRC Lifecourse Epidemiology Unit, University of Southampton, University Road, Southampton, UK}
+\affil[6]{Singapore Institute for Clinical Sciences, Agency for Science Technology and Research, Singapore}
+\affil[7]{Faculty of Medical Sciences, UWI Solutions for Developing Countries, The University of the West Indies (UWI), Jamaica}
+\affil[*]{These authors contributed equally}
+\date{\vspace{-5ex}}
+
+\begin{document}
+
+\maketitle
+\newpage
+\printglossaries
+
+\section*{Key points:}
+\begin{itemize}
+	\item The gut microbiome of malnourished infants is compositionally distinct from well-nourished infants, characterised by a lower shannon diversity, higher \textit{Prevotella}-to-\textit{Bacteroides} ratio, and lower potential anaerobic pathways involved in the fermentation of pyruvate.
+	\item Depletion of plasma lipids critical for brain development were negatively correlated with gut microbiome pathways, EEG power spectral density, and cognitive outcomes.
+	\item There was a high level of commonality in the shared features between malnutrition and low expressive communication.
+\end{itemize}
+
+\section*{Abstract}
+Malnutrition, affecting approximately 30 million infants annually, has profound immediate and enduring repercussions, with nearly half of child deaths under five linked to malnutrition.
+Survivors face lasting consequences, including impaired neurocognitive development, leading to cognitive and behavioural deficits, impacting academic performance and socioeconomic outcomes.
+Despite extensive literature on malnutrition's mechanisms spanning nutrition, infection, metabolism, microbiome, and genomics, knowledge gaps persist.
+This study employs an interpreted random forest network approach to identify non-overlapping connections between the gut microbiome, plasma lipids, and EEG data, from infants with Moderate Acute Malnutrition (MAM) and well-nourished controls.
+\textit{Bacteroides fragilis} abundance, linked to fermentation pathways, emerges as a predictive factor for well-nourished infants.
+In conclusion, network analysis highlights the potential significance of targeted interventions in addressing both the short and long-term impacts of malnutrition.
+
+\section*{Key words}
+Malnutrition, Gut microbiome, Neurocognitive development, Plasma lipidome, Random Forest classification models
+
+\section*{Main}
+Malnutrition is a significant global health issue responsible for an estimated 45\% of all child deaths worldwide, making it the leading cause of mortality among children under the age of five \cite{de1997global}.
+Malnutrition is characterised by delayed growth, proportionate reductions in mass of most organs and tissues, and alterations in tissue architecture \cite{martorell1984malnutrition}.
+Children who survive malnutrition are likely to suffer long-term consequences including impaired neurocognitive development, leading to long-term deficits in cognition and behaviour \cite{nyaradi2013role}.
+This consequently leads to poor school performance and economic prospects as an adult \cite{jamison1986child}.
+While much is known about the health, social, and economic ramifications of malnutrition, significant gaps in our knowledge remain.
+One crucial gap is the contribution of the gut microbiome to the pathology of malnutrition in addition to its impact on brain and cognitive development.
+
+The human gut microbiome is a complex ecosystem comprised of the microorganisms lining the intestinal tract, including bacteria, viruses, fungi, and archaea.
+Infancy represents a sensitive period in gut microbiome formation as the gut microbiome changes drastically over this time \cite{vaher2022microbiome, koenig2011succession}.
+Importantly, many aspects of malnutrition including host nutritional status, dietary intake, antibiotic administration, and infections impact the diversity, composition, and functionality of the microbiome \cite{morreale2023effects, enav2022developing}.
+To this end, several studies in low- and middle- income countries \gls{LMIC} have shown differences in gut microbiome profiles between malnourished and well-nourished infants \cite{robertson2023gut, fontaine2023intersection}.
+For example, a study in Bangladesh found that malnourished infants, compared to well-nourished infants, had higher abundances of \textit{Bifidobacterium} and \textit{Escherichia} species \cite{chen2021microbiota}.
+Beyond the correlational and descriptive evidence presented, work using mouse models point to a possible causal role of the gut microbiome in growth and weight gain, as mice colonized using fecal microbial transplantation with samples from malnourished children, but not well-nourished controls, showed impairments in weight gain and growth \cite{blanton2016gut}.
+Critically, perturbations of the gut microbiome associated with malnutrition may have downstream consequences for brain and cognitive development \cite{kelsey2019primer,kelsey2021gut}.
+
+Malnutrition, like the gut microbiome, is associated with neurocognitive impairments thought to result from structural and functional changes to the brain \cite{acuna2021infant, carlson2018infant, kar2008cognitive, kort2021model, roger2022impact, udani1992protein}.
+More specifically, several studies conducted in healthy infants living in upper-middle-income countries have shown that the gut microbiome is associated with cognitive and brain development; although the directionality remains unclear with both increased and decreased gut microbiota alpha diversity being linked to positive cognitive outcomes and neural development \cite{kelsey2021gut, carlson2018infant,gao2019gut,vaher2022microbiome}.
+Previous research has suggested that malnutrition may be associated with alterations in the gut microbiome, including changes in the composition and diversity of the microbial community \cite{kane2015childhood}.
+Moreover, alterations in the gut microbiome may contribute to negative neurological outcomes observed in malnourished infants, potentially through the disruption of nutrient absorption or the generation of toxic metabolites \cite{goyal2015feeding}.
+Very few studies have examined the link between the gut microbiome and cognition in malnourished children.
+One notable exception is a randomized control trial of nutrition, stimulation, and hygiene education in a group of rural Ugandan mothers and their infants who were moderately stunted (height-for-age Z-score between -2 and -3 SD).
+Across a series of studies conducted from 2 years to 3 years of age there were mixed findings with some species such as \textit{Bifidobacterium longum} found to associate with language impairment assessed using the Bayley Scales of Infant and Toddler Development and other developmental assessments but at other time points no associations were found \cite{kort2021model, atukunda2019child, iversen2020no}.
+Therefore, more work is needed to understand how the gut microbiome mediates that association between malnourishment and cognitive development.
+
+Another mechanism by which brain and behavioural development may be impacted by malnutrition is through the circulating plasma lipidome \cite{das1984plasma, veiga2010dyslipidaemia}.
+Several circulating plasma lipids including cholesterol, phosphatidylcholines, phosphatidylethanolamine, and sphingolipids compromise 50\% of the dry weight of the brain and have unique roles in neurological structure and function \cite{hornemann2021mini}.
+The brain relies upon nutrients circulating in the blood for its supply of resources.
+Moreover, the blood brain barrier which plays a crucial role in regulating which circulating lipids enter and exit the brain area is impaired by malnutrition \cite{de2019effect}.
+Circulating plasma lipids represent a means of communication between the gut microbiome and the brain \cite{lamichhane2021linking} and therefore represent a potential mechanism of influence.
+
+Given the importance of the composition and functions of the gut microbiome in maintaining overall health, there has been increasing interest in understanding how its alterations may contribute to malnutrition and its associated impacts on infant neurocognitive development.
+The present study examines the impact of malnutrition on the composition of the infant gut microbiome, plasma lipidome, neural activity, and cognitive outcomes in a cross-sectional cohort of well-nourished and malnourished 12-month-old Bangladeshi infants.
+Random forest models were used to integrate deeply phenotyped multi-modal data and identify correlations that provide putative mechanistic insights into developmental delays the result from malnutrition.
+Overall, this study provides important information about gut-blood-brain-behaviour links in infants impacted by malnutrition.
+
+% Just check this before removing as there is some good stuff in here with refs
+%Malnutrition is the leading cause of mortality among children under the age of five, accounting for an estimated 45\% of all child-related deaths worldwide \cite{de1997global}.
+%Malnutrition in both animals and humans is characterised by slower growth underpinned by proportionate reductions in mass of virtually all organs and tissues, accompanied by alterations in tissue architecture.
+%These usually subtend both reduced equilibrium functions as well as reduced amplitudes or response to stressors \cite{saunders2010malnutrition}.
+%Best practice in rehabilitation takes these known functional and anatomic deficits into consideration and WHO has promulgated best practices for the treatment of acute malnutrition.
+%The feeds that have been carefully designed against a mass of evidence are structured to restore weight for height and body composition with less emphasis on restoring the brain microstructure.
+%Hence, best practice is still associated with long term impairments of brain function including cognition and behaviour.
+%The fact that malnutrition typically occurs in children between 6 and 18 months of age places this insult within a developmental window that defines both the susceptibilities to the insult and the amplitude of the response towards restoration of normal phenotypic developmental trajectories \cite{vickers2022early, subramanian2014persistent}.
+%
+%The mass, architecture and function of the gut microbiome is modulated by multiple inputs including host nutritional status, dietary intake, and ingestion of specialised products such as antibiotics as well as gut infestations and infections.
+%The microbiome has recognized roles in nutrient absorption, immune system development, and visceral metabolism \cite{schroeder2016signals, spor2011unravelling}
+%When nutrients are scarce, as in malnutrition, the overall diversity and changes to the community of the gut microbiome have been observed REF.
+%
+%Malnutrition associated neurocognitive impairments derived manifest in learning, memory, and behaviour are thought to result from structural and functional changes to the brain \cite{acuna2021infant, carlson2018infant, kar2008cognitive, kort2021model, roger2022impact, udani1992protein}.
+%For example, changes in functional connectivity across the brain have been observed via EEG in malnourished infants \cite{roger2022impact}.
+%Therefore, the potential to use therapeutic foods and management strategies to combat the recognized long-term complications of malnutrition by manipulating mechanistic links across the gut-microbiome-brain axis is appealing \cite{choudhury2018ready, hashimoto2012ace2}.
+%
+%The circulating plasma lipidome has been linked to growth faltering associated with malnutrition. Notably, the flux between circulating lipid levels and the brain is regulated by the blood brain barrier. Cholesterol, phosphatidylcholines, phosphatidylethanolamine, and sphingolipids compromise 50\% of the dry weight of the brain and have unique roles in neurological structure and function \cite{hornemann2021mini}.
+%The brain relies upon nutrients circulating in the blood for its supply of resources.
+%The \gls{BBB} is impaired by malnutrition which may result in the infiltration of circulating lipids \cite{de2019effect}.
+%Communication across the gut-brain axis can occur by 1) microbially derived metabolites (MDM) that are taken up from the gut and transported to the brain; 2) gut microbes directly or indirectly interacting with the enteric nervous system; 3) immune system interactions. 
+%
+%The gut microbiome can also affect host metabolism and nutrition by catabolizing metabolically inaccessible dietary components to forms we can uptake and access, or by directly excreting nutrients in a mutualist manner, as with short chain fatty acids \cite{lamichhane2021linking}.
+%In malnourished children, development of the gut microbiome becomes perturbed and, as with neurological function, is not completely remediated by nutritional supplementation alone \cite{chen2021microbiota}.
+%
+%Given the importance of the composition and functions of the gut microbiome in maintaining overall health, there has been increasing interest in understanding how its alterations may contribute to malnutrition and its associated impacts on infant neurocognitive development.
+%Refeeding is a necessary, but not sufficient, treatment strategy to reverse the short- and long-term effects of malnutrition in most cases and psychosocial stimulation is a vital and indispensable accompaniment.
+%While much is known about the impacts of malnutrition in terms of its effects on the gut microbiome composition, circulating lipids, and cognitive outcomes, there remains a crucial need to understand the mechanism by which neurocognitive development is compromised, particularly around a) how malnutrition impacts the developing brain, which serves as a mediator to behavioural outcomes and b) how the connections between the microbiome and the brain are affected. 
+%
+%Here, anthropometric, nutritional, behavioural, and neurological measures were collected in a cross-sectional cohort of well-nourished and malnourished 1-year-old Bangladeshi infants. Random forest models were then used to integrate deeply phenotyped multi-modal data and identify correlations that provide putative mechanistic insights into damage caused by malnutrition.
+
+\section*{Results}
+\subsection*{Study population characteristics}
+As a city with the second highest density of population and in a country with childhood malnutrition rate is one of the highest globally, the Mirpur region in Dhaka, Bangladesh was chosen to assess the impact of early-life malnutrition \cite{ahmed2012nutrition}.
+156 infants with \gls{MAM} and 74 well-nourished controls at 12 months of age with no history of chronic medical conditions, and no antibiotic use within the past month were recruited from this region (\autoref{Figure1}a).
+\gls{MAM} was defined according to WHO guidelines, using a threshold between two and three standard deviations below the mean z-score for \gls{WLZ/WHZ} \cite{lenters2016management}.
+Confounding variables to measures of \gls{MAM} (\gls{WLZ/WHZ}, \gls{MUAC}, Weight, and \gls{HC}) were measured using Fisher’s exact test for categorical variables and \gls{MWU} for continuous variables (\autoref{TableS1}).
+Confounding variables included the principal toilet used (Septic-tank/toilet), water treatment method (Boil), toilet facility (shared with other households), length of time lived in current household, mother’s income, years of father education, father’s education level, monthly total expenditure, and mother’s occupation (housewife). 
+
+\subsection*{Malnutrition is associated with an elevated gut microbial \gls{P/B} ratio and reduced pyruvate fermentation potential}
+Nutrition is one of the leading confounding factors that explain the variance of the gut microbiome composition \cite{wastyk2021gut}.
+Consequently, the impact that malnutrition imparts on the infant gut microbiome was measured in this cohort.
+It was hypothesised that malnutrition impacts the diversity and composition of the infant gut microbiome in this cohort.
+Stool metagenomes were extracted, analysed (shotgun metagenomic sequencing, 40.53 \textpm{} 8.5 million reads with no significant difference between \gls{MAM} and well-nourished (\textit{p} = 0.71)) and profiled according to their species and functional compositions.
+Across all samples, 3 kingdoms, 17 phyla, 31 classes, 51 orders, 100 families, 226 genera, 749 species, 611 functional pathways, and 2,828,874 gene families were detected.
+
+There was a mean species richness of 50.3 ± 16.4 per sample and mean shannon diversity of 2.96 ± 0.72, commensurate with other infants at that age group \cite{niu2020evolution}.
+Malnutrition was associated with a lower Shannon diversity (\textit{p} = 0.025) and Pielou's evenness (\textit{p} = 0.009) than their well-nourished counterparts (\autoref{Figure1}, \autoref{TableS2}); a result that has been oberved previously in other cohorts of malnourished infants \cite{roger2022impact}.
+These differences in alpha diveristy were underscored by a significant difference in the Bray-Curtis dissimilarity between the nutritional groups (\gls{PERMANOVA}, R\textsuperscript{2} = 2.22, \textit{p} = 0.008), as a consequence of the differential abundance of 6/350 species (1.7\%) (\autoref{Figure1}b, \autoref{TableS3}).
+Malnourished infant gut microbiomes had a greater prevalence and abundance of five species including \textit{Prevotella copri} (Log\textsubscript{2}(\gls{MAM}/well-nourished) = 0.64, \textit{p} = 0.020, \textit{q} = 0.490) and \textit{Streptococcus salivarius} (Log\textsubscript{2}(\gls{MAM}/well-nourished) = 2.39, \textit{p} = 0.0005, \textit{q} = 0.032) in microbiomes from \gls{MAM} infants, compared to well-nourished controls (\autoref{Figure1}c).
+Enrichment in these species was associated with the depletion and reduction in the prevalence of the sphingolipid-producing species \textit{Bacteroides fragilis} (Log\textsubscript{2}(\gls{MAM}/well-nourished) = -0.62, \textit{p} = 0.021, \textit{q} = 0.49).
+This reciprocal relationship was described as an increase to the \gls{P/B} ratio of the \gls{MAM} infants (Log\textsubscript{2}(\gls{MAM}/well-nourished) = 2.80, \textit{p} = 0.05) (\autoref{Figure1}f).
+
+Functional pathway analyses revealed no significant differences  in the composition of the overall functionome between \gls{MAM} and well-nourished controls (PERMANOVA, R\textsuperscript{2} = 8.76, \textit{p} = 0.365).
+After false discovery rate adjustment there were no significant differences in the pathway relative abundances (\autoref{TableS4}).
+However, 28/352 (27 and 1 elevated/depleted in \gls{MAM} respectively) pathways were differentially abundant using \gls{MWU} without FDR adjustment between the conditions, and a total of 94/352 were approaching significance (\textit{p} \textless{} 0.1) (44 and 6 elevated/depleted in \gls{MAM} respectively)(\autoref{Figure1}g).
+Specifically, \gls{MAM} gut microbiomes had an enrichment of multiple pathways involved in branch chain amino acid biosynthesis (eg. BCAA biosynthesis superpathway Log\textsubscript{2}(\gls{MAM}/well-nourished) = 0.12, \textit{p} = 7e-4) including L-valine and L-isoleucine (I, III)) and sucrose/glucose degradation (anaglycolysis III (Log\textsubscript{2}(\gls{MAM}/well-nourished) = 0.11, \textit{p} = 0.003)).
+Conversely, there was a decrease in the relative abundance of threonine metabolism pathways (Log\textsubscript{2}(\gls{MAM}/well-nourished) = -0.27, \textit{p} = 0.05) and pyruvate fermentation pathways to the \gls{SCFA} propionate (Log\textsubscript{2}(\gls{MAM}/well-nourished) = -0.18, \textit{p} = 0.08) within the \gls{MAM} infant's gut microbiome.
+Interestingly, fermentation pathways on the whole were increased in the \gls{MAM} gut microbiome (\textit{p} = 0.09).
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.9]{../../figures/Figure1-microbiome.pdf}
+\caption[Malnutrition impacts the 12-month-old infant gut microbiome]{
+	Malnutrition impacts the 12-month-old infant gut microbiome.
+	a) Schematic of study design.
+	b) Summary of data collected.
+	c) Change in diversity of the gut microbiome associated with malnutrition.
+	d) PCoA Scatterplot of Bray-Curtis beta diversities of samples (each marker is a single infant sample).
+	e) Barplot of significant taxonomic differences in relative abundance and prevailance between 12-month-old well-nourished and \gls{MAM} samples (\textit{p} \textless{} 0.05).
+	f) Boxplot of \gls{P/B} ratio change between study conditions.
+	g) Volcano plot of pathways that associate with malnutrition (red and orange horizontal line signifies \textit{q} \textless{} 0.05 and 0.01 respectively. left and right vertical lines represent Log\textsubscript{2}(\gls{MAM}/well-nourished) of -0.1 and 0.1 respectively).}
+\label{Figure1}
+\end{figure}
+
+\subsection*{Malnutrition impacts brain activity and expressive communication}
+Malnourished children often present with long-term impairments in neural and cognitive development \cite{martins2011long}.
+The Bayley Scales of Infant and Toddler Development Fourth Edition (BSID-IV; \cite{Bayley2019}) was used to assess development in the cohort.
+When compared to well-nourished infants, there was a significant reduction in the Expressive Communication, Fine Motor, and Gross Motor scores in the \gls{MAM} infants (mean difference(\gls{MAM} - well-nourished) = -2.02, -1.68, -2.69, \textit{p} = 0.0036, 0.0005, 0.0082) (\autoref{Figure2}b, \autoref{TableS5}).
+Expressive communication is a measure of how well a child communicates with others ().
+There was a reduction in all other Bayley metrics including the receptive language, cognitive, motor abilities, but without significance.
+To complement this method of assessing development, wolkes scoring was performed for the cohort (\autoref{Figure2}c, \autoref{TableS6}).
+As with the Bayley scoring, vocalisation scores were lower in \gls{MAM} infants (mean difference(\gls{MAM} - well-nourished) = -1.47, \textit{p} = 2.05e-10) amongst Activity and Approach scores.
+
+Resting state electroencephalography \gls{EEG} assessments of participants were performed to enable investigation of the impacts of malnutrition on brain activity.
+After exploratory comparisons of \gls{EEG} \gls{PSD} between infants with \gls{MAM} and the well-nourished controls, focus on the high-alpha (9-12 Hz), beta (12-30 Hz) and gamma (30-45 Hz) frequency bands distributed across occipital, temporal and frontal regions of interest will be made.
+These bands are generally associated with concentration, alertness, and higher mental activity and were observed to have higher amplitudes in the well-nourished infants compared to infants with \gls{MAM} (\autoref{TableS7}).
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=1.4]{../../figures/Figure2-brain.pdf}
+\caption[Differences in cognitive development of 12-month-old infants associate with malnutrition]{
+	Differences in cognitive development of 12-month-old infants associate with malnutrition.
+	a) Schematic of approach to study neurocognitive function.
+	b) Boxplot of significant difference in Expressive Communication Score of the children with malnutrition compared to well-nourished controls.
+	c) Heatmap of lobe and frequency specific changes in EEG resting state power spectral density (PSD) in \gls{MAM} versus well-nourished infants. * = \textit{q} \textless{} 0.05.}
+\label{Figure2}
+\end{figure}
+
+\subsection*{Malnutrition is associated with a reduction in circulating odd-chain fatty acids and ceramides}
+Adequate nutrition in infants is characterised by healthy circulating concentrations of metabolites, including lipids, involved in growth and development \cite{badaloo2006lipid}.
+Delivery of lipids from the gut to the rest of the body is a crucial process during the developmental window.
+Therefore, discovery LC-MS/MS was used to assign and quantify the levels of 825 plasma lipids in the infants of the cohort (\autoref{Figure3}).
+
+Malnutrition was associated with major changes (286/825 - 35\%) to the plasma lipidome.
+Of these changes, 124 (15\%) plasma lipidome compounds increased and 162 (20\%) decreased in concentration (\autoref{Figure3}, \autoref{TableS8}).
+Enrichment in the abundance of three lipid classes with diverse functions was observed, including two that are known to be specific to neurological development and function (ie. the long chain ceramide Cer 31:5;O2 (Log\textsubscript{2}(\gls{MAM}/well-nourished) = 0.36, \textit{q} = 2.12e-7) and the lactosylceramide hex2cer 34:1 (Log\textsubscript{2}(\gls{MAM}/well-nourished) = 0.018, \textit{q} = 0.004)).
+By contrast, long chain sphingomyelins (SM 44:3;O2, Log\textsubscript{2}(\gls{MAM}/well-nourished) = FIND, \textit{q} = 5.81e-5)) and others were observed to increase in relative concentration in malnourished infants.
+Several lysophospholipids from the lysophosphatidylcholine (LPC), and lysophosphatidylethanolamine (LPE) classes were enriched in well-nourished infant plasma.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.9]{../../figures/Figure3-lipids.pdf}
+\caption[Malnutrition results in major compositional differences in plasma lipids in 12-month-olds]{
+	Malnutrition results in major, compositional differences in plasma lipids in 12-month-olds.
+	Volcano plot changes to plasma lipids between well-nourished and \gls{MAM} 12-month-olds.
+	(Upper left and upper right quadrants signify significant changes where the red horizontal line signifies \textit{q} \textless{} 0.05 and vertical lines represent Log\textsubscript{2}(\gls{MAM}/well-nourished) of -0.1 and 0.1 respectively).
+	Boxplot of differences in Lysolipid (b) and Ceramide (c) concentrations associated with malnutrition.}
+\label{Figure3}
+\end{figure}
+
+\subsection*{Multimodal Random Forest classification of malnutrition reveal cross mode influences}
+Having established the existence of changes associated with malnutrition across the gut microbiome, brain, and plasma lipids, the relative importance of changes in each of these domains for the prediction of malnutrition was measured.
+Individual and multimodal Random Forest classifiers were trained, using gut microbiome taxonomic and functional neuroimaging (EEG), lipidome and behavioural data (Bayley scale scores), to predict malnutrition in the cohort (\autoref{Figure4}).
+
+Within the predictors trained on individual feature sets, plasma lipids (AUCROC=1.00, oob=1.00) were the best predictor of malnutrition in 1-year-old infants, followed by brain/behavioural metrics (i.e., EEG, and Bayley AUCROC=0.83, oob=0.64), and the gut microbiome taxonomic and functional profiles (AUCROC=0.59, oob=0.59).
+
+Ensemble models were trained on individually scaled and combined data from the gut microbiome taxonomic and functional profiles, neuroimaging (EEG), plasma lipidome, and Bayley scale and Wolkes scores and evaluated using AUCROC and 10-fold cross validation.
+The ensemble models had an AUCROC of 0.82.
+
+\gls{SHAP} scoring interpretation was performed to understand the workings of these models and importance of the features without the assumption of linearity of relationship (\autoref{Figure4}d, \autoref{TableS9}).
+Those features that changed significantly were more likely to have high importance for the model prediction as evident with a spearman correlation between SHAP score and \gls{MWU} -log\textsubscript{2}(\textit{p}) of 0.74.
+Comparison with the individual models indicated that inclusion of the other datasets into the ensemble models lead to the identification of non-linear features that contributed to the predictive power of the microbial species within the classification model.
+For example, these included \gls{MAM} depleted \textit{Faecalibacerium prausnitzii} (SHAP = 0.0076), and \textit{Odoribacter splanchnicus} (SHAP = 0.0063) or \gls{MAM} enriched \textit{Bifidobacterium breve} (SHAP = 0.0074), and \textit{Haemophilus parainfluenzae} (SHAP = 0.0065).
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.9]{../../figures/Figure4-ai.pdf}
+\caption[Integration of multimodal datasets boosts the predictive power and affects the relative feature importance of random forest models predicting nutritional status]{
+	Integration of multimodal datasets boosts the predictive power and affects the relative feature importance of random forest models predicting nutritional status.
+	a) Schematic describing interpreted multimodal approach to predict malnutrition.
+	b) AUCROC curves showing relative predictive power of each modal dataset on predicting nutritional status.
+	c) Multimodal model predicts malnutrition accurately.
+	d) The multimodal model captures non-linear interactions between the features as demonstrated by the SHAP score distribution.}
+\label{Figure4}
+\end{figure}
+
+\subsection*{A Multimodal Predictive Network Analysis reveals the importance of \textit{Bacteroides fragilis} in infant neurocognitive development}
+Network analysis is a useful tool to understand complex systems that emerge from interactions between multiple components.
+To better understand the complexities of the important features and correlations between EEG PSDs, behavior, gut microbial species and functions, and plasma lipids, their architecture was mapped out using co-abundant network analysis (\autoref{Figure5}).
+Spearman correlation of the features that were important in predicting malnutrition was calculated, and filtered by significance (\textit{q} = \textless{}0.05) (1052/3906 correlations,  \autoref{TableS10}).
+Finally, only edges with an absolute spearman rho of \textgreater{} 0.2 were used to construct the network.
+
+Important features (ie. mean absolute \gls{SHAP} score \textgreater{} 0.002) were more likely to be significantly correlated (q \textless{} 0.05) with one another and had greater measures of Betweenness Centrality (\autoref{Figure5}, Supplementary Table X) than unimportant features (mean absolute \gls{SHAP} \textless{} 0.002).
+Plasma lipids that were enriched/depleted in the \gls{MAM} condition (Supplementary Table X) were positively correlated with the anthropometric measures \gls{WLZ/WHZ}, \gls{MUAC}, and weight.
+Unsurprisingly, cluster analyses revealed that those features which were different between \gls{MAM} and well-nourished were positively correlated with each other (i.e., change in the same direction, supp table).
+A subcluster of \textit{B. fragilis}, pyruvate fermentation pathways, plasma ceramides, EEG PSD and Expressive Communication was identified that was highly correlated with the well-nourished state (\autoref{Figure5}).
+Those plasma lipids that were depleted (\textit{q} \textless{} 0.05, Log2(\gls{MAM}/well-nourished) \textless{} 0) from the \gls{MAM} infant samples were also positively correlated with EEG PSD amplitudes.
+Notably, EEG metrics were also correlated with bacterial pyruvate fermentation pathways and \textit{B. fragilis} relative abundance.
+Conversely, a correlated subcluster of \textit{P. copri}, glycolysis, peptidoglycan biosynthesis, BCAA pathways, and plasma sphingomyelins that were associated with the \gls{MAM} condition was identified. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.9]{../../figures/Figure5-network.pdf}
+\caption[\textit{Bacteroides fragilis} forms a network with propanoate synthesis, EEG and expressive communication that is anti-correlated with a \textit{P. copri} focused cluster of features in healthy and malnourished individuals]{
+	\textit{Bacteroides fragilis} forms a network with propanoate synthesis, EEG and expressive communication that is anti-correlated with a \textit{Prevotela copri} focused cluster of features in healthy and malnourished individuals.
+	a) Network illustrating inter-relationships of feature associations that predict malnutrition.
+	Inclusion in the network requires both a SHAP score for the node (\textgreater{} 0.6) and a significant Spearman rho score for the correlation of \textit{q} \textless{} 0.05.
+	Nodes are features coloured by their enrichment in \gls{MAM} (orange and green are enriched and depleted in \gls{MAM} respectively).
+	Edges are spearman correlations coloured red and blue being positively and negatively correlated respectively.
+	b) Evidence for relative abundance of \textit{B. fragilis} (\#1), pyruvate fermentation to propanoate I pathway relative abundance (\#2), correlation between pyruvate fermentation to propanoate I pathway and Expressive communication (\#3), Expressive communication score distributions (\#4).}
+\label{Figure5}
+\end{figure}
+
+\section*{Discussion}
+A central goal of this study was to obtain a better understanding of how disturbances in host-microbiome interactions impact neurocognitive development in malnutrition.
+It was observed that malnutrition was characterised by a higher \gls{P/B} ratio and reduced pyruvate fermentation potential in the gut.
+\textit{Prevotella} rich microbiomes (previously referred to as the Prevotella enterotype) have been typically understudied due to their underrepresentation in non \gls{LMIC} \cite{tett2019prevotella}.
+This ratio has previously been implicated in diet and lifestyle, particularly in adults \cite{hjorth2019prevotella} and \textit{Bacteroides} have been observed previously to be depleted in Bangladesh infants \cite{roger2022impact}.
+Other studies of malnutrition have shown similar reductions in alpha diversity \cite{roger2022impact}.
+Accelerated ageing of the gut microbiome, as indicated by the presence of specific markers such as \textit{P. copri} and \textit{Bifidobacterium adolescentis}, is one possible hypothesis for the differential \textit{Prevotella} abundance.
+This could indicate that the development of the microbiome-gut-brain axis is pathologically accelerated during infant malnutrition.
+Alternatively, selective microbiome community driven interactions might explain the inverse correlations that were observed between \textit{P. copri}  and \textit{Bifidobacterium longum} and \textit{B. breve}. \textit{B. longum} and other anaerobic species have been previously linked to moderate and severe acute malnutrition in Bangladesh \cite{barratt2022bifidobacterium,  million2016increased}.
+
+Comparisons of the \gls{MAM} and control infants identified deficits both in neural activity and expressive communication that were associated with the malnourished condition.
+When investigating differences in neural activity, disruptions were evident for higher frequency power bands (alpha, beta, and gamma) but not lower frequency bands (delta and theta) in frontal, temporal and occipital areas.
+%This pattern of results is notable given the role of alpha, beta, and gamma in language development (REF). - need to check this
+Therefore, changes in expressive language are early and readily assessed indicators of long-term developmental consequences associated with \gls{MAM}.
+
+The plasma lipidomes of malnourished children were substantially different from those of controls, with significant differences in the levels of ceramides and lysolipids (i.e. lipid derivatives in which one or both acyl derivatives have been removed by hydrolyisis).
+Numerous specific changes stand out as being potentially important for neural development.
+Firstly, lactosylceramide (hex2cer 34:1) is an essential precursor for synthesis of all complex glycosphingolipids \cite{d2013glycosphingolipids} that was depleted by around 50\% in malnourished infants.
+Secondly, lysophosphatidylcholine (LPC) and lysophosphatidlylethanolaine (LPE) are essential for brain development and growth as they carry fatty acid across the blood-brain barrier, via the major facilitator superfamily domain-containing protein 2A (Mfsd2a) \cite{tan2020emerging}.  
+
+Phosphatidylcholine (PC) is a precursor to acetylcholine, an essential neurotransmitter for memory and cognitive function.
+Supplementing neuron differentiation medium with phosphatidylcholine reduces the impact of inflammatory stress and neuronal damage, increasing the numbers of healthy neurons and modulating neuronal plasticity \cite{magaquian2021phosphatidylcholine}. 
+
+Propranoate is a short chaing fatty acid that has been demonstrated to be neuroprotective and induce neuroregeneration in the peripheral nervous system during inflammation induced neuropathy.
+It is also an \gls{OCFA}; a class which was observed to be reduced in malnutrition.
+\glspl{OCFA} are unable to be synthesised by mammals and instead their presence in the circulation can be attributed to either change in diet or gut microbiome \cite{zhang2020microbial}.
+Conversely, higher serum levels of propanoate have been associated with increased odds of cognitive decline in a cohort of French individuals above 65 years of age \cite{neuffer2022exploration, gruter2023propionate}.
+Propanoate is a key precursor in lipid biosynthesis and can be metabolised to propionyl-CoA, which can subsequently be incorporated into sphingolipid biosynthesis pathways \cite{kondo2014identification}. 
+It remains possible that this is due to extensive metabolic and microbial programming during this period \cite{mahmud2019decoding}. 
+The other class of lipids that was depleted from the \gls{MAM} infants was ceramides.
+Sphingomyelinases (SMases) hydrolyse sphingomyelin, releasing ceramide and creating a cascade of bioactive lipids. 
+These ceramides and their conversion to gangliosides have been shown previously to be important for myelin sheath development and so a depletion in this area may impact brain maturation.
+
+Random Forest classification models trained on the gut microbiome, neuroimaging data, and the plasma lipidome accurately predicted the malnutrition condition.
+Integrating the important features of these models and spearman correlation using network analysis provided a holistic view of the malnutrition mechanism and highlighs the potential importance of \textit{B. fragilis} as a keystone species for infant neurocognitive and microbiome-gut-brain axis development.
+
+
+Recent studies have emphasised the significant role of the gut microbiome in mediating dietary effects on host physiology, in addition to its influence on the development and function of the nervous system \cite{heiss2019role, ceppa2019current, marques2014gut, fung2017interactions}.
+Multiomics analysis examined associations between infant malnutrition, altered brain function, and the infant microbiome and revealed a mechanism that links the fermentation of pyruvate to butanoate and ceramide biosynthesis to brain function and language development.
+However, in the absence of causal animal studies, it remains unclear if the gut microbiome changes are a result of, or contribute causally to the wider malnutrition phenotype. 
+
+\section*{Conclusion}
+Collectively, integrative multi-omic study highlights associations between the gut microbiome, plasma lipids, brain connectivity, and cognitive function.
+This evidence may inform the development of meaningful, targeted and effective interventions for infants experiencing malnutrition.
+
+\section*{Methods}
+\subsection*{Ethics}
+The M4EFaD intervention was registered NCT05629624 on clinicaltrials.gov.
+The study was approved by icddr,b Ethical Review Committee PR-21084 and the Bangladesh Directorate General of Drug Administration.
+Ethical review for the analytical component was obtained from Auckland Health Research Ethics Committee approval AH23922 (metabolomics, metagenomics, machine learning).
+
+\subsection*{Study Design and Participants}
+The study was performed on the baseline data from three cohorts of infants who were enrolled (between Jan – December 2022) as part of the M4EFaD intervention within the Mirpur slum, Dhaka, Bangladesh.
+The cohort consisted of: a control group of 73 well-nourished children at 12 ± 1 months (WLZ z-score \textgreater{} -1 SD); an intervention group of 156 children with WLZ \textless{} -2 and \textgreater{} -3 z-score, and/or MUAC \textless{} 12.5 and \textgreater{} 11.5 cm having \gls{MAM} at 12 ± 1 months; and an outcome reference group of 73 children with WHZ \textless{} -2 and \textgreater{} -3 z-score, and/or \gls{MUAC} \textless{} 12.5 and \textgreater{} 11.5 cm having stable \gls{MAM} at 3 years ± 2m.
+Inclusion criteria included a diagnosis of malnutrition, no history of chronic medical conditions, and no antibiotic use within the past month.
+The study protocol has been submitted for publication and is available on MedRxiv \cite{shama2023multidimensional}.
+
+\subsection*{Recruitment and anthropometric data collection}
+Enrolment was initiated on February 7, 2022, and will continue until February 2024.
+Study surveillance workers (SWs) conducted a door-to-door census (approximately 100,000 households) in Mirpur DNCC wards ward 2, 3 and 5 between January and December 2022.
+Verbal consent was obtained to participate in the census.
+The census identified 5736 children aged between 11 to 13 months and 2,314 children aged between 34 to 38 months.
+During the census, if the guardian verbally consented to the study procedure, and the babies met the inclusion and exclusion criteria of the study (Table 1), the SWs proceeded to measure the \gls{MUAC} of the child.
+Mothers of babies who were within the \gls{MUAC} range were invited to visit the icddr,b study clinic for further assessment and enrolment.
+
+Final screening for eligibility and study consent occurred at the icddr,b Mirpur study clinic.
+The consenting process was tailored to each mother's literacy level and involved reviewing the inclusion and exclusion criteria.
+Comprehension of the study was assessed using scripted points and open-ended questions.
+
+Following consent, the clinical screening team completed a screening form, capturing the date of enrolment, sex, date of birth (DOB), weight (in kg), length/ height (in cm), head circumference (in cm), and Mid-Upper Arm Circumference \gls{MUAC} measurements of the child.
+The \gls{WLZ/WHZ} Z-score for each child was calculated using the WHO anthropometric calculator.
+The child's age was validated using the EPI vaccination card.
+Neurological measures, Bailey scores, EEG data were collected upon enrolment to evaluate neurological development.
+
+\subsection*{EEG data collection and analysis}
+Continuous scalp EEG was recorded using NetStation 4.5.4. and 128-channel Hydrocel Geodesic Sensor Nets modified to remove eye electrodes (Electrical Geodesics, Inc. (EGI), Eugene, OR, USA).
+Data was sampled at 500 Hz.
+Impedances were kept under 100 k \textomega{} when possible and measured once at the beginning of the session, and again halfway through.
+Sessions were conducted in a dimly lit room with the participants sitting on the parent’s lap.
+The participants were separated from the research staff conducting the session by a curtain, but the testing area was not acoustically or electrically shielded.
+A second research staff member was present in the testing area to help keep the participant engaged.
+EEG sessions consisted of 6 paradigms, i.e., resting state, visual working memory, flanker, disengagement, visual evoked potential, and auditory stimuli.
+The subsequent (pre-)processing steps were applied to the resting state data where participants watched a 3-minute video that featured toys.
+
+EEG data were preprocessed offline with MatLab (R2021B) using the Harvard Automated Processing Pipeline for Electroencephalography (HAPPE) Version 3 (Gabard-Durnam et al., 2018).
+A specified subset of 30 channels was excluded (‘E1’, ’E8’, ’E14’, ’E17’, ’E21’, ‘E25’, ’E32’, ‘E38’, ‘E43’, ’E44’,’ E48’, ’E49’, ’E56’, ’E63’, ’E68’, ’E73’, ’E81’, ’E88’, ’E94’, ’E99’, ’E107’, ’E113’, ’E114’, ’E119’, ’E120’, ’E121’, ‘E125', 'E126', 'E127', 'E128').
+Data were downsampled to 250Hz, bandpass filtered (1-100Hz), and filtered using a 50Hz cleanline filter for line noise removal.
+Bad channels were then automatically identified and rejected, and wavelet-enhanced Independent Component Analysis (ICA) and the Multiple Artifact Rejection Algorithm (MARA) were performed to detect and impute artifacts.
+Resting state data were segmented into 2s epochs; epochs with an amplitude >±150mV were rejected.
+Segments were also rejected using segment similarity criteria.
+Data were then re-referenced to the average of all channels.
+
+EEG outputs from HAPPE were then reformatted and processed using the Batch Electroencephalography Automated Processing Platform (BEAPP) (Levin et al., 2018) to extract power spectra for each participant across the following frequency bands: delta (2-4Hz), theta (4-6Hz), low alpha (6-9Hz), high alpha (9-12Hz), beta (12-30Hz), and gamma (30-45Hz) and the following regions of interest (see Supp Figure 2): occipital (‘E70’, ’E71’, ’E75’, ‘E76’, ‘E83’), temporal (‘E36’,‘E40’, ‘E41’, ‘E45’, ‘E46’, ‘E102’, ‘E103’, ‘E104’, ‘E108’, ‘E109’), parietal (‘E52’, ‘E53’, ‘E59’, ‘E60’, ‘E85’, ‘E86’, ‘E91’, ‘E92’), and frontal (‘E5’, ‘E6’, ‘E12’, ‘E13’, ‘E24’, ‘E27’, ‘E28’, ‘E33’, ‘E34’, ‘E112’, ‘E116’, ‘E117’, ‘E122’, ‘E123’, ‘E124’).
+Further, PSD values were normalized by a Log\textsubscript{10} transform.
+
+\subsection*{Developmental Outcomes (Bayley)}
+The Bayley Scales of Infant and Toddler Development, Fourth Edition (BSID-IV) cognitive, language, and motor subscales were administered to all participants.
+Research assistants were trained to research reliability in the administration and scoring of the Bayley-4.
+Due to cultural differences between the Bangladesh and the United States where the assessment was developed, Bangladeshi researchers modified some assessment stimuli to improve cultural responsiveness and relevancy.
+For example, pictures for the item naming series and action naming series of the expressive language and receptive language subscales were adapted to include items that Bangladeshi children are more likely to be familiar with and bedtime clothing that would signify the child in the picture was going to sleep instead of the one-piece pajamas worn in the original picture, which the Bangladeshi children would not be familiar with. 
+SECTION ON WOLKES.
+
+\subsection*{Biological sample collection}
+Stool samples were collected from each infant at their home at the baseline visit.
+Samples were collected in DNA/RNA Shield Fecal Collection Tubes (Zymo Research, \#R1101).
+Peripheral venous blood samples were collected in EDTA Vacutainers, separated into plasma and RBCs and immediately frozen at -80 C.
+Batches of blood and stool samples were air-freighted on dry ice from Bangladesh to the Liggins Institute, New Zealand for processing and analysis. 
+
+\subsection*{Microbiome DNA extraction and sequencing}
+DNA was extracted from stool samples using the ZymoBIOMICS MagBead DNA/RNA extraction kit (Zymo Research, \#R2136) following the standard protocol.
+Samples (1 mL) were mechanically lysed in bead bashing tubes using the MiniG tissue homogenizer prior to extraction of DNA.
+200 µL of the sample was used post-bead bashing for extraction of DNA following the protocol.
+A volume of 50 \textmu{} L of elute was collected in DNAse/RNAse Free Water.
+Samples with a DNA concentration \textless{} 14.5 ng/\textmu{}L were re-extracted following the ZymoBIOMICS DNA extraction protocol.
+Samples were sequenced (Illumina NovaSeq 150PE reads) to an average sequencing depth of 20M read-pairs/sample.
+Raw sequences were processed using BioBakery3 tools \cite{beghini2021integrating}, specifically read quality filtering and human decontamination with KneadData (Version 1), taxonomic profiling with MetaPhlAn3 (Version 3.1, using the mpa\_v31\_CHOCOPhlAn\_201901 database) and functional profiling using presence/absence and abundance of microbial pathways (MetaCyc) with HUMAnN3 (Version 3.6).
+A minimum threshold of \textgreater{} 0.1\% relative abundance and \textgreater{} 5\% prevalence for all detected species was applied. 
+
+\subsection*{Plasma lipidomics}
+Plasma samples for lipidomics were thawed on ice and extracted according to a method modified from \citet{liu2016plasma}.
+Briefly, 10 \textmu{}L volume was placed in an amber glass autosampler vial and 300 \textmu{}L of a mixture of Type 1 water, butanol, methanol, chloroform and SPLASH Lipidomix in a ratio of 4:15:15:20:1 was added.
+The mixture was vortexed and sonicated at room temperature before the protein precipitate was removed by centrifugation and an aliquot of supernatant transferred to an amber glass autosampler for negative ionisation LC-MS/MS.
+A second aliquot of supernatant was diluted 5 times with 75\% IPA for positive ionisation LC-MS/MS.
+A 5 µL volume of each sample was injected onto a Phenomenex Kinetex F5 column (100 mm × 2.1 mm × 2.6 \textmu{}m) and lipids were separated using a ternary gradient of Type 1 water, methanol and isopropanol containing ammonium acetate.
+Lipids were quantified and identified with a Q-Exactive mass spectrometer (Thermo Fisher Scientific, Germany) equipped with a heated electrospray ionisation HESI source.
+Data was processed using MS-DIAL v4.92 92 \cite{tsugawa2015ms}.
+For full methodological details see the supplementary information.
+
+\subsection*{Statistical Analyses}
+Python version 3.9.2 was used to perform all analysis \cite{van1995python}.
+Due to the unequal sample sizes and non-normally distributed data; non-parametric statistical approaches were used for differential abundance analysis.
+Relative abundances were adjusted by Centred Log Ratio to account for the compositional nature of the dataset \cite{gloor2016s}.
+Log adjusted fold change significance was measured using (\gls{MWU}) test using the ‘mannwhitneyu’ function from ‘scipy.stats’ and adjusted for multiple testing using the ‘fdrcorrection’ function from statsmodels.stats.multitest.
+\gls{PCoA} ordinations (plotted using 'skbio.stats.ordination.pcoa' module) were used to visualise the clustering of the Bray-Curtis dissimilarities (calculated using skbio.distance.pdist) between samples from their species and functional composition.
+To quantify the variance of the gut microbiome explained covariates, \gls{PERMANOVA} p-values were calculated from those Bray-Curtis Dissimilarities using the ’permanova’ function from the 'skbio.stats.distance' module.
+Bray-Curtis were also used to capture the temporal dynamics of the microbiome from baseline.
+Numerical Associations between species and metadata were measured with Spearman correlation (calculated using 'spearmanr' function from 'scipy.stats' module), where significance was defined as \gls{FDR} adjusted p-values of \textless{} 0.05 as per \citet{2020SciPyNMeth}.
+Associations between categorical data were measured with Fisher's Exact test (calculated using 'fisher\_exact' from 'scipy.stats' module), where significance was defined as p-values of \textless{} 0.05.
+
+\subsection*{Machine learning}
+Machine learning models were used to classify malnourished from well-nourished infants.
+Extra-trees Random Forest models were trained on functional and microbial taxa relative abundances.
+Model hyperparameters including the number of trees in the forest, maximum tree depth, and minimum sample numbers needed to split internal nodes were tuned using grid searching.
+A 5-fold cross-validation was used to measure the performance of each hyperparameter combination and to identify overfitting.
+Model performance was measured with AUCROC and out-of-bag error analysis (oob).
+SHAP Value (SHapley Additive exPlanations) interpretation was used to interpret the contributions each feature had on the model's performance using the ‘shap’ python package \cite{lundberg2017unified}.
+
+\subsection*{Network analysis}
+Absolute spearman rho of above 0.3 were used as edges and gut bacterial species and functional profiles, EEG, and plasma lipids were used as nodes coloured by their mean SHAP scores for classifier models that distinguish \gls{MAM} from well-nourished conditions.
+
+\section*{Code availability}
+All analysis code is available on the GitHub repository.
+The codebase is organised into scripts, providing a comprehensive framework for replicating the experiments.
+Detailed documentation and instructions on how to use the code are provided in the repository's README file.
+
+\section*{Ethics approval and consent to participate}
+Ethical approvals were obtained from the Research Review Committee (RRC; August 21, 2021) and Ethical Review Committee (ERC) of icddr,b (protocol no: PR-21084; September 21, 2021), Institutional Review Board of Boston Children’s Hospital, USA (for analyses of neuropsychological assessments), University of Auckland, New Zealand (approval AH23922; for analyses of collected biological samples) and University of West Indies (CREC-MN.51, 21/22).
+
+\section*{Data availability}
+Metagenome data is available at PRJNAXXX on the SRA. 
+EEG and metadata are available from the authors, upon reasonable request that meets the ethics of the study.
+
+\section*{Competing interests}
+The authors declare that they have no competing interests.
+
+\section*{Funding}
+Work on this clinical trial is supported by Wellcome Leap (9942 Culver Blvd Unit 1277 Culver City, CA 90232-4167, United States; www.wellcomeleap.org) to PDG, JMO, TF and CAN as part of the 1kD Program.
+We acknowledge our core donors, Governments of Bangladesh, Canada for providing unrestricted support and commitment to icddr,b's research effort.
+
+\section*{Author Contributions}
+TP, KG and JOS drafted and co-wrote the manuscript.
+TS, SHK, BCW, BH, CP, AB, DH, IS, AME, RD, GG, CK, PDG, RH, TF, CAN commented on the manuscript.
+JMO, RH, TF, PDG, CAN designed the study and analyses.
+TS, SHK performed assessments and obtained samples in Dhaka.
+RH oversaw the Dhaka group.
+TP performed multiomic analyses, BCW and IS performed metagenomics, CP performed metabolomics, JOS oversaw the Auckland group.
+BH performed EEG analyses, CAN oversaw the Boston group.
+
+\section*{Acknowledgements}
+The authors would like to acknowledge the participants in Mirpur, Dhaka, Bangladesh for their contributions to this study.
+The authors would also like to thank the study team within the Infectious Diseases Division, International Centre for Diarrheal Disease Research, Bangladesh for their work in participant recruitment, sample collection and assessments.
+
+\bibliography{library}
+%\printbibliography
+
+\section*{Supplementary material}
+
+\begin{table}[!htb]
+\centering
+\caption[Baseline infant characteristics]{
+	Baseline infant characteristics.
+	Plus minus values are means \textpm{} SD from continous variables and their pvalues are calculated using \gls{MWU}.
+	All other variables are categorical (True vs False) with their pvalues calculated using Fishers Exact test.}
+%\input{../../figures/texsupptables/TableS1_patientinfo}
+\label{TableS1}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Changes to gut microbial taxa associated with malnutrition]{
+	Changes to gut microbial taxa associated with malnutrition.}
+%\input{../../figures/texsupptables/TableS3_specieschange.tex}
+\label{TableS3}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Changes to gut microbial functional pathways associated with malnutrition]{
+	Changes to gut microbial functional pathways associated with malnutrition.}
+%\input{../../figures/texsupptables/TableS4_pathwayschange.tex}
+\label{TableS4}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Changes to Bayleys score associated with malnutrition]{
+	Changes to Bayleys score associated with malnutrition.}
+%\input{../../figures/texsupptables/TableS5_bayleyschange.tex}
+\label{TableS5}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Changes to Wolkes score associated with malnutrition]{
+	Changes to Wolkes score associated with malnutrition.}
+%\input{../../figures/texsupptables/TableS6_wolkeschange.tex}
+\label{TableS6}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Changes to EEG PSD associated with malnutrition]{
+	Changes to EEG PSD associated with malnutrition.}
+%\input{../../figures/texsupptables/TableS7_eegchange.tex}
+\label{TableS7}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Changes to Wolkes score associated with malnutrition]{
+	Changes to Wolkes score associated with malnutrition.}
+%\input{../../figures/texsupptables/TableS8_metabchange.tex}
+\label{TableS8}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[SHAP score measure of important features by Random Forest classification]{
+	SHAP score measure of important features by Random Forest classification.}
+%\input{../../figures/texsupptables/TableS9_shaps.tex}
+\label{TableS9}
+\end{table}
+
+\begin{table}[!htb]
+\centering
+\caption[Spearman correlation between features]{
+	Spearman correlation between features.}
+%\input{../../figures/texsupptables/TableS10_correlations.tex}
+\label{TableS10}
+\end{table}
+
+\end{document}

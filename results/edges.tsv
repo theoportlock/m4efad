@@ -1,0 +1,272 @@
+source	target	weight	sign
+PWY-5899: superpathway of menaquinol-13 biosynthesis	Dorea_formicigenerans	-0.009405898415134022	-1.0
+Dorea_formicigenerans	Sterols [ST01]	-0.008695550895519434	-1.0
+Enterococcus_gallinarum	Dorea_formicigenerans	-0.006277244571555377	-1.0
+Sterols [ST01]	Dorea_formicigenerans	-0.005976819685953705	-1.0
+Clostridium_perfringens	Fatty esters [FA07]	-0.0059606250182059565	-1.0
+Streptococcus_peroris	Triradylglycerols [GL03]	-0.005844115192987895	-1.0
+Dorea_formicigenerans	Glycerophosphoethanolamines [GP02]	-0.005765351032060684	-1.0
+wolke_activity	Megasphaera_micronuciformis	-0.005692105300673086	-1.0
+ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	Lactobacillus_mucosae	-0.005471331634896346	-1.0
+Lactobacillus_mucosae	PWY-7992: superpathway of menaquinol-8 biosynthesis III	-0.0050891392247798045	-1.0
+Streptococcus_mitis	ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	-0.005025370126483144	-1.0
+PWY-7992: superpathway of menaquinol-8 biosynthesis III	wolke_vocalisation	-0.005001937721395764	-1.0
+MUAC	Sterols [ST01]	0.005011887970561377	1.0
+Lactobacillus_mucosae	Fatty amides [FA08]	0.005061244841511066	1.0
+HC	Fatty Acids and Conjugates [FA01]	0.0050772406453957085	1.0
+Glycerophosphoglycerols [GP04]	Clostridium_perfringens	0.005192534131908628	1.0
+Glycerophosphoethanolamines [GP02]	wolke_vocalisation	0.005221999687739922	1.0
+ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	Glycerophosphoglycerols [GP04]	0.005269934450689068	1.0
+wolke_vocalisation	Glycerophosphoethanolamines [GP02]	0.005283642400082224	1.0
+PWY-7992: superpathway of menaquinol-8 biosynthesis III	ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	0.0053083175195530186	1.0
+Ceramides [SP02]	Megasphaera_micronuciformis	0.005338321837286333	1.0
+Neutral glycosphingolipids [SP05]	wolke_vocalisation	0.0053729747148645035	1.0
+MUAC	Fatty amides [FA08]	0.005380883691364841	1.0
+HC	Bifidobacterium_bifidum	0.005426735015363277	1.0
+Glycerophosphoglycerols [GP04]	wolke_vocalisation	0.0054291193081689	1.0
+Expressive Communication Score	Triradylglycerols [GL03]	0.0054403279903196735	1.0
+Weight	Glycerophosphocholines [GP01]	0.005505125325963193	1.0
+Bifidobacterium_bifidum	Phosphosphingolipids [SP03]	0.005529537751411599	1.0
+Neutral glycosphingolipids [SP05]	Bifidobacterium_bifidum	0.005529650995040912	1.0
+Glycerophosphoethanolamines [GP02]	HC	0.0056066251868376864	1.0
+Steroid conjugates [ST05]	Bifidobacterium_bifidum	0.005625982627366853	1.0
+wolke_vocalisation	Ceramides [SP02]	0.005864765076713777	1.0
+Weight	Glycerophosphoethanolamines [GP02]	0.006045774826588357	1.0
+Expressive Communication Score	Glycerophosphoglycerols [GP04]	0.006093697947614862	1.0
+Lactobacillus_mucosae	Enterococcus_gallinarum	0.006147407811822203	1.0
+Fatty Acids and Conjugates [FA01]	Glycerophosphocholines [GP01]	0.006228891437301815	1.0
+Lactobacillus_mucosae	PWY-7328: superpathway of UDP-glucose-derived O-antigen building blocks biosynthesis	0.006358835725552622	1.0
+wolke_vocalisation	Fatty amides [FA08]	0.006407893752817628	1.0
+Fatty amides [FA08]	Glycerophosphocholines [GP01]	0.006500229121728725	1.0
+Sterols [ST01]	Fatty amides [FA08]	0.0065138265304104884	1.0
+Weight	wolke_vocalisation	0.006526480162639482	1.0
+HC	Neutral glycosphingolipids [SP05]	0.006587561039759181	1.0
+Lactobacillus_fermentum	wolke_vocalisation	0.006597249836899727	1.0
+Lactobacillus_fermentum	Fatty esters [FA07]	0.006621157172866185	1.0
+ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	Dorea_longicatena	0.0066952301696682585	1.0
+Fatty amides [FA08]	Sterols [ST01]	0.006821142039452015	1.0
+ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	PWY-7992: superpathway of menaquinol-8 biosynthesis III	0.006904570579162365	1.0
+Triradylglycerols [GL03]	Fatty esters [FA07]	0.0069190471365336605	1.0
+Dorea_longicatena	PWY-7992: superpathway of menaquinol-8 biosynthesis III	0.006962981425360106	1.0
+Streptococcus_peroris	Lactobacillus_mucosae	0.0070993982198045485	1.0
+Streptococcus_mitis	Occipital Gamma	0.007141636414925664	1.0
+Bifidobacterium_bifidum	Fatty amides [FA08]	0.007315948920784309	1.0
+Glycerophosphocholines [GP01]	HC	0.007321413196051031	1.0
+Lactobacillus_mucosae	Steroid conjugates [ST05]	0.00739111133002796	1.0
+Weight	Neutral glycosphingolipids [SP05]	0.007429386915448558	1.0
+ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	Dorea_formicigenerans	0.00746721066684565	1.0
+Fatty amides [FA08]	Neutral glycosphingolipids [SP05]	0.007585884794338358	1.0
+MUAC	Glycerophosphoinositols [GP06]	0.007606907002405916	1.0
+Weight	Fatty Acids and Conjugates [FA01]	0.007637440856171287	1.0
+Phosphosphingolipids [SP03]	Glycerophosphoinositols [GP06]	0.007651683374770402	1.0
+Phosphosphingolipids [SP03]	Glycerophosphoglycerols [GP04]	0.007657318637661577	1.0
+Sterols [ST01]	Neutral glycosphingolipids [SP05]	0.007667064957302401	1.0
+Fatty Acids and Conjugates [FA01]	Glycerophosphoinositols [GP06]	0.008035847135051538	1.0
+Glycerophosphoglycerols [GP04]	Sterols [ST01]	0.008056647918784644	1.0
+Fatty esters [FA07]	Bifidobacterium_bifidum	0.008075606137913163	1.0
+wolke_vocalisation	Triradylglycerols [GL03]	0.008134076857666123	1.0
+Triradylglycerols [GL03]	Weight	0.0081582616930752	1.0
+Fatty Acids and Conjugates [FA01]	wolke_vocalisation	0.008448553190473548	1.0
+Steroid conjugates [ST05]	Fatty amides [FA08]	0.008462161096203694	1.0
+Fatty amides [FA08]	Glycerophosphoinositols [GP06]	0.008475550687918915	1.0
+MUAC	Ceramides [SP02]	0.008535275308577507	1.0
+Steroid conjugates [ST05]	Fatty Acids and Conjugates [FA01]	0.008680171218234898	1.0
+Ceramides [SP02]	MUAC	0.008687761849832243	1.0
+Steroid conjugates [ST05]	Glycerophosphoinositols [GP06]	0.008837326588451029	1.0
+Glycerophosphoethanolamines [GP02]	Phosphosphingolipids [SP03]	0.008849379632566046	1.0
+MUAC	Steroid conjugates [ST05]	0.008934946640726405	1.0
+Ceramides [SP02]	Weight	0.008981722167903888	1.0
+Glycerophosphoethanolamines [GP02]	Fatty Acids and Conjugates [FA01]	0.009042260203144336	1.0
+Neutral glycosphingolipids [SP05]	Steroid conjugates [ST05]	0.009076775933845423	1.0
+Bifidobacterium_bifidum	Ceramides [SP02]	0.009103162070906575	1.0
+Expressive Communication Score	Glycerophosphoinositols [GP06]	0.009117318358492362	1.0
+wolke_vocalisation	Glycerophosphoinositols [GP06]	0.009158867123236355	1.0
+Neutral glycosphingolipids [SP05]	Glycerophosphoglycerols [GP04]	0.009203499152691058	1.0
+MUAC	Fatty esters [FA07]	0.009203677820968228	1.0
+Fatty esters [FA07]	Weight	0.009216308955775127	1.0
+Dorea_formicigenerans	PWY-7992: superpathway of menaquinol-8 biosynthesis III	0.009218647420811694	1.0
+MUAC	Neutral glycosphingolipids [SP05]	0.009236823577968886	1.0
+Glycerophosphoglycerols [GP04]	Steroid conjugates [ST05]	0.009242305337799982	1.0
+Fatty amides [FA08]	Triradylglycerols [GL03]	0.009246376091161666	1.0
+MUAC	Glycerophosphoethanolamines [GP02]	0.009430661690672243	1.0
+Weight	wolke_activity	0.009436787959264387	1.0
+Fatty Acids and Conjugates [FA01]	Steroid conjugates [ST05]	0.009513320322322702	1.0
+Glycerophosphocholines [GP01]	MUAC	0.009710452660653773	1.0
+Sterols [ST01]	HC	0.00974881008275959	1.0
+Glycerophosphoglycerols [GP04]	ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	0.00978357459101322	1.0
+Lactobacillus_mucosae	Fatty esters [FA07]	0.009922621217541134	1.0
+Sterols [ST01]	Fatty esters [FA07]	0.010019761519641127	1.0
+MUAC	wolke_vocalisation	0.01020924296783274	1.0
+Sterols [ST01]	Glycerophosphoglycerols [GP04]	0.010266292559854243	1.0
+Occipital Theta	Occipital Gamma	0.010288919073804477	1.0
+Fatty esters [FA07]	Glycerophosphoinositols [GP06]	0.010357225032570158	1.0
+wolke_activity	Lactobacillus_fermentum	0.010436381056809479	1.0
+Streptococcus_mitis	Expressive Communication Score	0.010560199437073689	1.0
+MUAC	Fatty Acids and Conjugates [FA01]	0.010610950311509581	1.0
+Neutral glycosphingolipids [SP05]	Triradylglycerols [GL03]	0.010626750216029173	1.0
+Fatty amides [FA08]	Glycerophosphoglycerols [GP04]	0.010685471197224752	1.0
+Fatty esters [FA07]	Glycerophosphoglycerols [GP04]	0.010753015366793304	1.0
+Sterols [ST01]	Fatty Acids and Conjugates [FA01]	0.01087952038860686	1.0
+Weight	Fatty esters [FA07]	0.010882769243275145	1.0
+Fatty amides [FA08]	Ceramides [SP02]	0.010982631236882928	1.0
+Glycerophosphoglycerols [GP04]	Neutral glycosphingolipids [SP05]	0.011067566941779221	1.0
+Glycerophosphoethanolamines [GP02]	Steroid conjugates [ST05]	0.011234097841188286	1.0
+Expressive Communication Score	Streptococcus_mitis	0.011445910335230512	1.0
+Glycerophosphoinositols [GP06]	wolke_vocalisation	0.011463530987467482	1.0
+Fatty amides [FA08]	Glycerophosphoethanolamines [GP02]	0.011802009233860959	1.0
+Lactobacillus_fermentum	wolke_activity	0.011802836828726475	1.0
+Sterols [ST01]	Triradylglycerols [GL03]	0.011810710182561142	1.0
+Expressive Communication Score	Fatty amides [FA08]	0.011989127387530616	1.0
+Bifidobacterium_bifidum	PWY-7328: superpathway of UDP-glucose-derived O-antigen building blocks biosynthesis	0.012144894746599123	1.0
+Glycerophosphoglycerols [GP04]	Fatty amides [FA08]	0.012166092165538924	1.0
+Glycerophosphoethanolamines [GP02]	Fatty amides [FA08]	0.012181918122291727	1.0
+wolke_activity	Weight	0.012336907453218728	1.0
+Ceramides [SP02]	Bifidobacterium_bifidum	0.012355559697129526	1.0
+Glycerophosphoethanolamines [GP02]	MUAC	0.012495417735637842	1.0
+MUAC	HC	0.012764864225252867	1.0
+Neutral glycosphingolipids [SP05]	HC	0.012919177775680897	1.0
+Sterols [ST01]	Weight	0.012991448104307928	1.0
+Lactobacillus_mucosae	Megasphaera_micronuciformis	0.01301902130033732	1.0
+Glycerophosphocholines [GP01]	Weight	0.013182167556095274	1.0
+Ceramides [SP02]	Triradylglycerols [GL03]	0.013207099644057429	1.0
+Fatty esters [FA07]	Triradylglycerols [GL03]	0.013316257115180407	1.0
+wolke_vocalisation	Glycerophosphoglycerols [GP04]	0.013406389359462319	1.0
+Ceramides [SP02]	Glycerophosphoinositols [GP06]	0.013420527344136568	1.0
+Streptococcus_peroris	Streptococcus_mitis	0.013469994863730855	1.0
+Sterols [ST01]	Glycerophosphoethanolamines [GP02]	0.013599162581761639	1.0
+Fatty Acids and Conjugates [FA01]	Glycerophosphoethanolamines [GP02]	0.013866525586338333	1.0
+Fatty esters [FA07]	Steroid conjugates [ST05]	0.013931398585168465	1.0
+Lactobacillus_mucosae	Bifidobacterium_bifidum	0.014141324963865417	1.0
+Bifidobacterium_bifidum	Lactobacillus_mucosae	0.014508384484547466	1.0
+Fatty Acids and Conjugates [FA01]	MUAC	0.01458942947106294	1.0
+Phosphosphingolipids [SP03]	Bifidobacterium_bifidum	0.0146384114651477	1.0
+Lactobacillus_mucosae	Streptococcus_peroris	0.014677167463133614	1.0
+Phosphosphingolipids [SP03]	Fatty esters [FA07]	0.015053145193916472	1.0
+Fatty amides [FA08]	Phosphosphingolipids [SP03]	0.015059103406722448	1.0
+HC	Steroid conjugates [ST05]	0.01524150185675839	1.0
+wolke_activity	Expressive Communication Score	0.015440714444600103	1.0
+wolke_activity	wolke_vocalisation	0.015469829950492143	1.0
+Steroid conjugates [ST05]	Ceramides [SP02]	0.015493841794843838	1.0
+Steroid conjugates [ST05]	Glycerophosphoethanolamines [GP02]	0.015559570908110588	1.0
+Dorea_longicatena	ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	0.01563321455570301	1.0
+Glycerophosphoinositols [GP06]	Steroid conjugates [ST05]	0.015708904919645793	1.0
+Steroid conjugates [ST05]	Fatty esters [FA07]	0.015921995434160736	1.0
+Fatty esters [FA07]	Glycerophosphocholines [GP01]	0.016074700223879853	1.0
+Glycerophosphoinositols [GP06]	Ceramides [SP02]	0.01639182087947049	1.0
+Ceramides [SP02]	Steroid conjugates [ST05]	0.016459798412177363	1.0
+Fatty esters [FA07]	Sterols [ST01]	0.016602985916211052	1.0
+Ceramides [SP02]	Glycerophosphocholines [GP01]	0.016913505188884213	1.0
+Triradylglycerols [GL03]	Phosphosphingolipids [SP03]	0.017150519066877343	1.0
+Glycerophosphoglycerols [GP04]	Glycerophosphocholines [GP01]	0.017154593703865604	1.0
+Fatty Acids and Conjugates [FA01]	Ceramides [SP02]	0.017281446330426848	1.0
+Sterols [ST01]	MUAC	0.01730191556698036	1.0
+Steroid conjugates [ST05]	HC	0.01751812810586602	1.0
+Steroid conjugates [ST05]	Weight	0.017621452144169707	1.0
+Steroid conjugates [ST05]	Neutral glycosphingolipids [SP05]	0.017915823612744998	1.0
+PWY-7992: superpathway of menaquinol-8 biosynthesis III	Dorea_formicigenerans	0.018082861318805866	1.0
+Glycerophosphocholines [GP01]	Fatty amides [FA08]	0.01830644166668055	1.0
+Glycerophosphoethanolamines [GP02]	Glycerophosphoglycerols [GP04]	0.018365738870626758	1.0
+Triradylglycerols [GL03]	Ceramides [SP02]	0.01837011479374284	1.0
+Fatty esters [FA07]	Phosphosphingolipids [SP03]	0.01866067695071454	1.0
+Phosphosphingolipids [SP03]	Triradylglycerols [GL03]	0.018896867144006884	1.0
+Fatty esters [FA07]	Fatty Acids and Conjugates [FA01]	0.01890661227462063	1.0
+Fatty Acids and Conjugates [FA01]	Sterols [ST01]	0.018960374129597987	1.0
+Glycerophosphoethanolamines [GP02]	Sterols [ST01]	0.01915594973013733	1.0
+Ceramides [SP02]	Fatty amides [FA08]	0.019229730423565298	1.0
+Fatty esters [FA07]	Glycerophosphoethanolamines [GP02]	0.019309150242939537	1.0
+Neutral glycosphingolipids [SP05]	MUAC	0.019558751273144725	1.0
+Sterols [ST01]	Glycerophosphoinositols [GP06]	0.019719606982048634	1.0
+Bifidobacterium_bifidum	Enterococcus_gallinarum	0.019772201324586725	1.0
+Fatty amides [FA08]	Steroid conjugates [ST05]	0.019873089541147627	1.0
+HC	MUAC	0.020158270759503067	1.0
+Steroid conjugates [ST05]	Triradylglycerols [GL03]	0.02033076516583201	1.0
+Clostridium_perfringens	Megasphaera_micronuciformis	0.02033733494837578	1.0
+Fatty esters [FA07]	Neutral glycosphingolipids [SP05]	0.0206175153192762	1.0
+Triradylglycerols [GL03]	Fatty amides [FA08]	0.02088402964714412	1.0
+Dorea_formicigenerans	ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast	0.021110801858674907	1.0
+Neutral glycosphingolipids [SP05]	Weight	0.021169546307787054	1.0
+Glycerophosphoglycerols [GP04]	Glycerophosphoethanolamines [GP02]	0.021290052015398495	1.0
+wolke_vocalisation	Expressive Communication Score	0.02135558612003194	1.0
+Neutral glycosphingolipids [SP05]	Sterols [ST01]	0.02157015917820562	1.0
+Glycerophosphocholines [GP01]	Fatty esters [FA07]	0.021633828139063747	1.0
+Enterococcus_gallinarum	Bifidobacterium_bifidum	0.021693452202246263	1.0
+Fatty Acids and Conjugates [FA01]	Weight	0.02195835520985054	1.0
+Glycerophosphoethanolamines [GP02]	Fatty esters [FA07]	0.0220265636794094	1.0
+Triradylglycerols [GL03]	Sterols [ST01]	0.02212804601347952	1.0
+Fatty esters [FA07]	MUAC	0.022264867437076948	1.0
+Steroid conjugates [ST05]	Phosphosphingolipids [SP03]	0.02230086093770783	1.0
+Dorea_longicatena	Dorea_formicigenerans	0.022540794457344922	1.0
+Fatty amides [FA08]	Fatty esters [FA07]	0.022585641629244244	1.0
+Phosphosphingolipids [SP03]	Steroid conjugates [ST05]	0.02271662409474171	1.0
+Glycerophosphoinositols [GP06]	Sterols [ST01]	0.022805435286120338	1.0
+Fatty Acids and Conjugates [FA01]	Neutral glycosphingolipids [SP05]	0.023205814117169515	1.0
+Fatty Acids and Conjugates [FA01]	Triradylglycerols [GL03]	0.023954499509267785	1.0
+Fatty esters [FA07]	Ceramides [SP02]	0.024029504128495676	1.0
+Triradylglycerols [GL03]	Glycerophosphoglycerols [GP04]	0.024395096158672924	1.0
+Triradylglycerols [GL03]	Fatty Acids and Conjugates [FA01]	0.02458497815348651	1.0
+Fatty Acids and Conjugates [FA01]	Fatty amides [FA08]	0.024779269052905728	1.0
+Fatty amides [FA08]	Fatty Acids and Conjugates [FA01]	0.025101083979840486	1.0
+Fatty Acids and Conjugates [FA01]	Phosphosphingolipids [SP03]	0.02544541642321306	1.0
+Steroid conjugates [ST05]	MUAC	0.02565005551627966	1.0
+Phosphosphingolipids [SP03]	Glycerophosphoethanolamines [GP02]	0.025737955544903404	1.0
+Dorea_formicigenerans	Dorea_longicatena	0.025845084979203844	1.0
+Glycerophosphoethanolamines [GP02]	Ceramides [SP02]	0.026101373856990455	1.0
+Phosphosphingolipids [SP03]	Fatty amides [FA08]	0.026107177557212532	1.0
+Ceramides [SP02]	Glycerophosphoethanolamines [GP02]	0.027194818309670635	1.0
+Ceramides [SP02]	Sterols [ST01]	0.027289483819483866	1.0
+Glycerophosphoethanolamines [GP02]	Triradylglycerols [GL03]	0.027399701325355037	1.0
+Neutral glycosphingolipids [SP05]	Fatty amides [FA08]	0.02838237857399851	1.0
+Neutral glycosphingolipids [SP05]	Glycerophosphocholines [GP01]	0.02923300399990847	1.0
+Ceramides [SP02]	Fatty Acids and Conjugates [FA01]	0.02934449255767974	1.0
+Glycerophosphocholines [GP01]	Neutral glycosphingolipids [SP05]	0.029709793205461178	1.0
+Triradylglycerols [GL03]	Steroid conjugates [ST05]	0.02980108672838988	1.0
+Triradylglycerols [GL03]	Neutral glycosphingolipids [SP05]	0.029893362485665657	1.0
+Glycerophosphocholines [GP01]	Glycerophosphoglycerols [GP04]	0.03002551127301924	1.0
+Steroid conjugates [ST05]	Glycerophosphocholines [GP01]	0.030147470960781984	1.0
+Triradylglycerols [GL03]	Glycerophosphocholines [GP01]	0.030508152769757272	1.0
+Neutral glycosphingolipids [SP05]	Fatty Acids and Conjugates [FA01]	0.030592751612992432	1.0
+Glycerophosphoglycerols [GP04]	Triradylglycerols [GL03]	0.03079218485253024	1.0
+Glycerophosphoglycerols [GP04]	Glycerophosphoinositols [GP06]	0.031043301375048328	1.0
+Sterols [ST01]	Ceramides [SP02]	0.031237563519164593	1.0
+Glycerophosphocholines [GP01]	Ceramides [SP02]	0.03148854066680355	1.0
+Expressive Communication Score	wolke_vocalisation	0.03185080150261549	1.0
+Fatty esters [FA07]	Fatty amides [FA08]	0.03204941333977626	1.0
+wolke_vocalisation	wolke_activity	0.032748344283733674	1.0
+Glycerophosphoethanolamines [GP02]	Neutral glycosphingolipids [SP05]	0.033131797405743416	1.0
+Neutral glycosphingolipids [SP05]	Glycerophosphoethanolamines [GP02]	0.0332164339105156	1.0
+Neutral glycosphingolipids [SP05]	Fatty esters [FA07]	0.03368917512035683	1.0
+Glycerophosphocholines [GP01]	Phosphosphingolipids [SP03]	0.03686922410287464	1.0
+Glycerophosphoethanolamines [GP02]	Glycerophosphoinositols [GP06]	0.03699450375977505	1.0
+Glycerophosphocholines [GP01]	Triradylglycerols [GL03]	0.03774015025056905	1.0
+Glycerophosphoinositols [GP06]	Glycerophosphoglycerols [GP04]	0.03827369906276394	1.0
+Neutral glycosphingolipids [SP05]	Ceramides [SP02]	0.03861018048207824	1.0
+Expressive Communication Score	wolke_activity	0.038791191663700444	1.0
+Phosphosphingolipids [SP03]	Fatty Acids and Conjugates [FA01]	0.03978147200341972	1.0
+Glycerophosphocholines [GP01]	Steroid conjugates [ST05]	0.04032541715704711	1.0
+Sterols [ST01]	Steroid conjugates [ST05]	0.04099422603242717	1.0
+Steroid conjugates [ST05]	Sterols [ST01]	0.04181348736158979	1.0
+Glycerophosphoinositols [GP06]	Triradylglycerols [GL03]	0.04182364197357565	1.0
+Weight	MUAC	0.042024335236875786	1.0
+Triradylglycerols [GL03]	Glycerophosphoinositols [GP06]	0.04207596987636119	1.0
+Neutral glycosphingolipids [SP05]	Phosphosphingolipids [SP03]	0.042095257468093776	1.0
+Glycerophosphoinositols [GP06]	Glycerophosphoethanolamines [GP02]	0.042239096404254474	1.0
+Triradylglycerols [GL03]	Glycerophosphoethanolamines [GP02]	0.04257379838147254	1.0
+Ceramides [SP02]	Neutral glycosphingolipids [SP05]	0.04307519233957718	1.0
+Weight	HC	0.043717144611622356	1.0
+HC	Weight	0.04476211933404037	1.0
+Glycerophosphoinositols [GP06]	Glycerophosphocholines [GP01]	0.04478491629905349	1.0
+Phosphosphingolipids [SP03]	Glycerophosphocholines [GP01]	0.045501603354654224	1.0
+Glycerophosphocholines [GP01]	Glycerophosphoinositols [GP06]	0.045614403941148185	1.0
+MUAC	Weight	0.04577310930459045	1.0
+Sterols [ST01]	Phosphosphingolipids [SP03]	0.04668671267696749	1.0
+Sterols [ST01]	Glycerophosphocholines [GP01]	0.046722544940479296	1.0
+Fatty Acids and Conjugates [FA01]	Fatty esters [FA07]	0.04760118340949994	1.0
+Ceramides [SP02]	Fatty esters [FA07]	0.04859138558204018	1.0
+Phosphosphingolipids [SP03]	Sterols [ST01]	0.04898139442248009	1.0
+Glycerophosphocholines [GP01]	Sterols [ST01]	0.04965574674438742	1.0
+Glycerophosphoethanolamines [GP02]	Glycerophosphocholines [GP01]	0.05117625419751193	1.0
+Phosphosphingolipids [SP03]	Neutral glycosphingolipids [SP05]	0.051683729998970404	1.0
+Ceramides [SP02]	Phosphosphingolipids [SP03]	0.05194396270072366	1.0
+Streptococcus_mitis	Streptococcus_peroris	0.054303102024352116	1.0
+Glycerophosphocholines [GP01]	Glycerophosphoethanolamines [GP02]	0.054409966279410804	1.0
+Phosphosphingolipids [SP03]	Ceramides [SP02]	0.0627120226663457	1.0

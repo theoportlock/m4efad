@@ -1,0 +1,293 @@
+"Study ID","Event Name","Age (in Months)","Test age in months and days (months part)","Test age in months and days (days part)","Start Point ","Cognitive Raw Score","Cognitive Scaled Score (Table A.1)","Receptive Communication Raw Score","Receptive Communication Scaled Score (Table A.1)","Expressive Communication Raw Score","Expressive Communication Scaled score (Table A.1)","Sum of Both Language Scaled Scores (Receptive + Expressive)","Fine Motor Raw Score","Fine Motor Scaled Score (Table A.1)","Gross Motor Raw Score","Gross Motor Scaled Score (Table A.1)","Sum of Both Motor Scaled Scores (Fine + Gross)","Cognitive Sum of Scaled Scores","Cognitive Standard Score (Table A.4)","Language Sum of Scaled Scores ","Language Standard Score (Table A.4)","Motor Sum of Scaled Scores","Motor Standard Score (Table A.4)",Complete?
+LCC1001,"12_month (Arm 2: Intervention)","12 months",11,20,I,67,10,26,7,21,8,15,44,12,71,11,23,10,100,15,86,23,109,Complete
+LCC1002,"12_month (Arm 2: Intervention)","12 months",11,09,I,56,8,23,5,18,8,13,39,9,64,10,19,8,90,13,79,19,98,Complete
+LCC1003,"12_month (Arm 2: Intervention)","12 months",12,25,I,66,9,27,7,24,9,16,42,10,81,13,23,9,95,16,89,23,109,Complete
+LCC1004,"12_month (Arm 2: Intervention)","12 months",12,23,I,65,8,25,6,25,9,15,45,11,75,11,22,8,90,15,86,22,106,Complete
+LCC1005,"12_month (Arm 2: Intervention)","12 months",12,28,I,75,11,23,5,18,6,11,45,11,76,11,22,11,105,11,75,22,106,Complete
+LCC1006,"12_month (Arm 2: Intervention)","12 months",11,24,I,73,12,27,7,19,8,15,45,12,66,9,21,12,110,15,86,21,103,Complete
+LCC1007,"12_month (Arm 2: Intervention)","12 months",11,22,I,72,12,24,5,19,8,13,44,12,68,10,22,12,110,13,79,22,106,Complete
+LCC1008,"12_month (Arm 2: Intervention)","12 months",11,21,I,61,8,27,7,18,7,14,39,9,55,5,14,8,90,14,83,14,82,Complete
+LCC1009,"12_month (Arm 2: Intervention)","12 months",11,12,I,59,9,24,6,19,8,14,42,11,61,8,19,9,95,14,83,19,98,Complete
+LCC1010,"12_month (Arm 2: Intervention)","12 months",11,10,I,67,12,24,6,18,8,14,45,13,58,7,20,12,110,14,83,20,101,Complete
+LCC1011,"12_month (Arm 2: Intervention)","12 months",12,14,I,60,8,23,5,18,7,12,40,9,64,8,17,8,90,12,77,17,91,Complete
+LCC1012,"12_month (Arm 2: Intervention)","36 months",12,15,I,60,8,23,5,19,8,13,42,11,67,9,20,8,90,13,79,20,101,Complete
+LCC1014,"12_month (Arm 2: Intervention)","12 months",11,22,I,70,11,24,5,19,8,13,44,12,72,11,21,11,105,13,79,23,109,Complete
+LCC1015,"12_month (Arm 2: Intervention)","12 months",11,12,I,76,13,27,8,20,9,17,48,14,67,11,25,13,115,17,92,25,114,Complete
+LCC1016,"12_month (Arm 2: Intervention)","12 months",11,08,I,69,12,24,6,18,8,14,44,12,65,10,22,12,110,14,83,22,106,Complete
+LCC1017,"12_month (Arm 2: Intervention)","12 months",12,26,I,75,11,31,9,26,10,19,44,11,64,7,18,11,105,19,98,18,95,Complete
+LCC1018,"12_month (Arm 2: Intervention)","12 months",11,16,I,76,12,30,9,26,11,20,42,11,74,12,23,12,110,20,100,23,109,Complete
+LCC1019,"12_month (Arm 2: Intervention)","12 months",11,27,I,69,11,26,7,18,7,14,43,11,63,8,19,11,105,14,83,19,98,Complete
+LCC1020,"12_month (Arm 2: Intervention)","12 months",11,21,I,69,11,24,5,20,8,13,46,12,75,12,24,11,105,13,79,24,112,Complete
+LCC1021,"12_month (Arm 2: Intervention)","12 months",11,05,I,68,12,25,7,19,8,15,38,9,62,9,18,12,110,15,86,18,95,Complete
+LCC1022,"12_month (Arm 2: Intervention)","12 months",11,08,I,67,12,23,5,13,5,10,38,9,59,8,17,12,110,10,72,17,91,Complete
+LCC1023,"12_month (Arm 2: Intervention)","12 months",12,27,I,71,10,27,7,26,10,17,50,13,75,11,24,10,100,17,92,24,112,Complete
+LCC1024,"12_month (Arm 2: Intervention)","12 months",11,6,I,69,12,24,6,18,8,14,39,9,64,10,19,12,110,14,83,19,98,Complete
+LCC1025,"12_month (Arm 2: Intervention)","12 months",12,26,I,65,8,25,6,26,10,16,45,11,73,10,21,8,90,16,89,21,103,Complete
+LCC1026,"12_month (Arm 2: Intervention)","12 months",12,24,I,68,9,27,7,20,7,14,49,13,57,4,17,9,95,14,83,17,91,Complete
+LCC1027,"12_month (Arm 2: Intervention)","12 months",11,22,I,60,8,26,7,21,8,15,46,12,65,8,20,8,90,15,86,20,101,Complete
+LCC1028,"12_month (Arm 2: Intervention)","12 months",11,13,I,60,10,24,6,18,8,14,43,12,65,10,22,10,100,14,83,22,106,Complete
+LCC1029,"12_month (Arm 2: Intervention)","12 months",12,07,I,74,12,28,8,19,8,16,42,11,67,9,20,12,110,16,89,20,101,Complete
+LCC1030,"12_month (Arm 2: Intervention)","12 months",12,18,I,65,8,24,5,19,7,12,42,10,76,11,21,8,90,12,77,21,103,Complete
+LCC1031,"12_month (Arm 2: Intervention)","12 months",12,10,I,60,8,27,7,24,10,17,41,10,65,8,18,8,90,17,92,18,95,Complete
+LCC1032,"12_month (Arm 2: Intervention)","12 months",12,27,I,73,11,30,9,28,11,20,46,12,68,8,20,11,105,20,100,20,101,Complete
+LCC1033,"12_month (Arm 2: Intervention)","12 months",11,19,I,51,5,23,5,13,5,10,38,8,63,8,16,5,75,10,72,16,87,Complete
+LCC1034,"12_month (Arm 2: Intervention)","12 months",12,10,I,73,12,33,11,29,12,23,45,12,74,12,24,12,110,23,108,24,112,Complete
+LCC1035,"12_month (Arm 2: Intervention)","12 months",12,28,I,69,10,26,6,16,5,11,46,12,67,8,20,10,100,12,77,20,101,Complete
+LCC1037,"12_month (Arm 2: Intervention)","12 months",12,28,I,73,11,30,9,21,8,17,46,12,68,8,20,11,105,17,92,20,101,Complete
+LCC1038,"12_month (Arm 2: Intervention)","12 months",11,22,I,66,10,22,5,17,7,12,40,9,64,8,17,10,100,12,77,17,91,Complete
+LCC1039,"12_month (Arm 2: Intervention)","12 months",12,11,I,66,10,28,8,22,9,17,45,12,74,12,24,10,100,17,92,24,112,Complete
+LCC1040,"12_month (Arm 2: Intervention)","12 months",12,20,I,73,11,24,5,20,7,12,45,11,64,7,18,11,105,12,77,18,95,Complete
+LCC1042,"12_month (Arm 2: Intervention)","12 months",11,23,I,66,10,28,8,23,9,17,44,12,68,10,22,10,100,17,92,22,106,Complete
+LCC1043,"12_month (Arm 2: Intervention)","12 months",11,18,I,65,10,25,6,20,8,14,42,11,66,9,20,10,100,14,83,20,101,Complete
+LCC1044,"12_month (Arm 2: Intervention)","12 months",11,25,I,60,8,23,5,12,4,9,37,8,56,5,13,8,90,9,70,13,79,Complete
+LCC1045,"12_month (Arm 2: Intervention)","12 months",11,27,I,68,11,26,7,25,10,17,45,12,68,10,22,11,105,17,92,22,106,Complete
+LCC1046,"12_month (Arm 2: Intervention)","12 months",11,19,I,61,8,24,5,16,6,11,43,11,64,8,19,8,90,11,75,19,98,Complete
+LCC1047,"12_month (Arm 2: Intervention)","12 months",12,3,I,65,10,24,5,17,7,12,48,13,66,9,22,10,100,12,77,22,106,Complete
+LCC1048,"12_month (Arm 2: Intervention)","12 months",12,18,I,70,10,24,5,19,7,12,40,9,77,12,21,10,100,12,77,21,103,Complete
+LCC1049,"12_month (Arm 2: Intervention)","12 months",12,14,I,60,8,24,5,17,7,12,34,6,65,8,14,8,90,12,77,14,82,Complete
+LCC1050,"12_month (Arm 2: Intervention)","12 months",12,00,I,70,11,27,7,23,9,16,44,12,64,8,20,11,105,16,89,20,101,Complete
+LCC1051,"12_month (Arm 2: Intervention)","12 months",12,11,I,64,10,24,5,16,6,11,44,12,67,9,21,10,100,11,75,21,103,Complete
+LCC1052,"12_month (Arm 2: Intervention)","12 months",11,29,I,59,8,26,7,15,6,13,41,10,65,8,18,8,90,13,79,18,95,Complete
+LCC1053,"12_month (Arm 2: Intervention)","12 months",12,00,I,73,12,25,6,15,6,12,44,12,65,8,20,12,110,12,77,20,101,Complete
+LCC1054,"12_month (Arm 2: Intervention)","12 months",12,18,I,82,13,31,9,27,10,19,46,12,75,11,23,13,115,19,98,23,109,Complete
+LCC1055,"12_month (Arm 2: Intervention)","12 months",12,20,I,77,12,25,6,21,8,14,46,12,78,12,24,12,110,14,83,24,112,Complete
+LCC1056,"12_month (Arm 2: Intervention)","12 months",12,7,I,72,12,25,6,18,7,13,45,12,76,13,25,12,110,13,79,25,114,Complete
+LCC1057,"12_month (Arm 2: Intervention)","12 months",12,11,I,75,12,29,9,21,8,17,42,11,65,8,19,12,110,17,92,19,98,Complete
+LCC1058,"12_month (Arm 2: Intervention)","12 months",11,12,I,66,11,23,5,17,7,12,44,12,64,10,22,11,105,12,77,22,106,Complete
+LCC1059,"12_month (Arm 2: Intervention)","12 months",11,21,I,73,12,30,9,21,8,17,43,11,65,8,19,12,110,17,92,19,98,Complete
+LCC1060,"12_month (Arm 2: Intervention)","12 months",12,24,I,71,10,26,6,16,5,11,45,11,74,10,21,10,100,11,75,21,103,Complete
+LCC1061,"12_month (Arm 2: Intervention)","12 months",12,16,I,71,10,24,5,20,7,12,45,11,73,10,21,10,100,12,77,21,103,Complete
+LCC1062,"12_month (Arm 2: Intervention)","12 months",11,20,I,65,10,25,6,19,8,14,40,9,64,8,17,10,100,14,83,17,91,Complete
+LCC1063,"12_month (Arm 2: Intervention)","12 months",11,17,I,68,11,25,6,15,6,12,43,11,68,10,21,11,105,12,77,21,103,Complete
+LCC1064,"12_month (Arm 2: Intervention)","12 months",12,0,I,68,11,24,5,18,7,12,42,11,64,8,19,11,105,12,77,19,98,Complete
+LCC1065,"12_month (Arm 2: Intervention)","12 months",12,18,I,70,10,24,5,15,5,10,42,10,77,12,22,10,100,10,72,22,106,Complete
+LCC1066,"12_month (Arm 2: Intervention)","12 months",11,16,I,71,11,26,7,21,8,15,45,12,75,12,24,11,105,15,86,24,112,Complete
+LCC1067,"12_month (Arm 2: Intervention)","12 months",12,13,I,73,12,24,5,22,9,14,46,12,65,8,20,12,110,14,83,20,101,Complete
+LCC1068,"12_month (Arm 2: Intervention)","12 months",11,22,I,64,10,27,7,24,10,17,44,12,67,9,21,10,100,17,92,21,103,Complete
+LCC1069,"12_month (Arm 2: Intervention)","12 months",12,19,I,73,11,27,7,20,7,14,43,10,66,7,17,11,105,14,83,17,91,Complete
+LCC1070,"12_month (Arm 2: Intervention)","12 months",12,27,I,75,11,28,7,21,8,15,44,11,66,7,18,11,105,15,86,18,95,Complete
+LCC1071,"12_month (Arm 2: Intervention)","12 months",12,14,I,58,7,26,7,22,9,16,41,10,63,8,18,7,85,16,89,18,95,Complete
+LCC1072,"12_month (Arm 2: Intervention)","12 months",12,21,I,79,12,30,9,28,11,20,46,12,76,11,23,12,110,20,100,23,109,Complete
+LCC1073,"12_month (Arm 2: Intervention)","12 months",12,24,I,68,9,23,5,19,7,12,42,10,61,6,16,9,95,12,77,16,87,Complete
+LCC1074,"12_month (Arm 2: Intervention)","12 months",11,17,I,74,12,26,7,25,10,17,42,11,66,9,20,12,110,17,92,20,101,Complete
+LCC1075,"12_month (Arm 2: Intervention)","12 months",12,18,I,70,10,30,9,20,7,16,46,12,76,11,23,10,100,16,89,23,109,Complete
+LCC1076,"12_month (Arm 2: Intervention)","12 months",11,3,I,53,6,23,5,15,6,11,43,12,59,8,20,6,80,11,75,20,101,Complete
+LCC1077,"12_month (Arm 2: Intervention)","12 months",11,28,I,59,8,26,7,25,10,17,42,11,67,9,20,8,90,17,92,20,101,Complete
+LCC1079,"12_month (Arm 2: Intervention)","12 months",12,08,I,49,4,22,5,13,5,10,36,7,64,8,15,4,70,10,72,15,84,Complete
+LCC1080,"12_month (Arm 2: Intervention)","12 months",12,28,I,68,9,26,6,20,7,13,44,11,73,10,21,9,95,13,79,21,105,Complete
+LCC1082,"12_month (Arm 2: Intervention)","12 months",11,15,I,58,9,26,7,22,10,17,39,9,59,8,17,9,95,17,92,17,91,Complete
+LCC1083,"12_month (Arm 2: Intervention)","12 months",12,25,I,75,11,30,9,28,11,20,51,13,70,9,22,11,105,20,100,22,106,Complete
+LCC1084,"12_month (Arm 2: Intervention)","12 months",12,17,I,73,11,30,9,25,9,18,44,11,66,7,18,11,105,18,95,18,95,Complete
+LCC1085,"12_month (Arm 2: Intervention)","12 months",12,16,I,76,11,29,8,20,7,15,47,12,74,10,22,11,105,15,86,22,106,Complete
+LCC1086,"12_month (Arm 2: Intervention)","12 months",12,20,I,75,11,28,7,25,9,16,40,9,71,9,18,11,105,16,89,18,95,Complete
+LCC1087,"12_month (Arm 2: Intervention)","12 months",12,03,,64,10,28,8,18,7,15,45,12,57,6,18,10,100,15,86,18,95,Complete
+LCC1088,"12_month (Arm 2: Intervention)","12 months",12,07,I,72,12,23,5,19,8,13,45,12,67,9,21,12,110,13,79,21,103,Complete
+LCC1089,"12_month (Arm 2: Intervention)","12 months",12,29,I,71,10,26,6,20,7,13,43,10,74,10,20,10,100,13,79,20,101,Complete
+LCC1090,"12_month (Arm 2: Intervention)","12 months",11,17,I,73,12,24,5,19,8,13,40,9,65,8,17,12,110,13,79,17,91,Complete
+LCC1091,"12_month (Arm 2: Intervention)","12 months",12,09,I,62,9,22,5,15,6,11,39,9,58,6,15,9,95,11,75,15,84,Complete
+LCC1092,"12_month (Arm 2: Intervention)","12 months",11,26,I,72,12,29,9,23,9,18,40,9,65,8,17,12,110,18,95,17,91,Complete
+LCC1093,"12_month (Arm 2: Intervention)","12 months",11,22,I,57,7,24,5,17,7,12,38,8,64,8,16,7,85,12,77,16,87,Complete
+LCC1094,"12_month (Arm 2: Intervention)","12 months",12,15,I,63,9,23,5,18,7,12,42,11,61,7,18,9,95,12,77,18,95,Complete
+LCC1095,"12_month (Arm 2: Intervention)","12 months",11,15,I,66,11,23,5,20,9,14,45,13,76,14,27,11,105,14,83,27,117,Complete
+LCC1096,"12_month (Arm 2: Intervention)","12 months",11,23,I,75,12,24,5,21,8,13,47,13,68,10,23,12,110,13,79,23,109,Complete
+LCC1097,"12_month (Arm 2: Intervention)","12 months",,,I,62,9,24,5,18,7,12,38,8,64,8,16,9,95,12,77,16,87,Complete
+LCC1098,"12_month (Arm 2: Intervention)","12 months",11,26,I,72,12,30,9,24,10,19,45,12,71,11,23,12,110,19,98,23,109,Complete
+LCC1099,"12_month (Arm 2: Intervention)","12 months",11,13,I,75,13,25,7,21,9,16,44,12,70,12,24,13,115,16,89,24,112,Complete
+LCC1100,"12_month (Arm 2: Intervention)","12 months",12,17,I,73,11,24,5,21,8,13,43,10,72,10,20,11,105,13,79,20,101,Complete
+LCC1102,"12_month (Arm 2: Intervention)","12 months",11,19,I,59,8,25,6,22,9,15,39,9,64,8,17,8,90,15,86,17,91,Complete
+LCC1103,"12_month (Arm 2: Intervention)","12 months",11,21,I,69,11,25,6,19,8,14,43,11,67,9,20,11,105,14,83,20,101,Complete
+LCC1104,"12_month (Arm 2: Intervention)","12 months",12,24,I,81,12,31,9,26,10,19,48,12,78,12,24,12,110,19,98,24,112,Complete
+LCC1105,"12_month (Arm 2: Intervention)","12 months",12,22,I,75,11,25,6,22,8,14,47,12,70,9,21,11,105,14,83,21,103,Complete
+LCC1106,"12_month (Arm 2: Intervention)","12 months",12,15,I,62,9,26,7,20,8,15,40,9,65,8,17,9,95,15,86,17,91,Complete
+LCC1107,"12_month (Arm 2: Intervention)","12 months",12,25,I,67,9,24,5,16,5,10,39,8,62,6,14,9,95,10,72,14,82,Complete
+LCC1108,"12_month (Arm 2: Intervention)","12 months",11,23,I,68,11,24,5,18,7,12,36,7,70,10,17,11,105,12,77,17,91,Complete
+LCC1109,"12_month (Arm 2: Intervention)","12 months",12,19,I,77,12,31,9,30,11,20,50,13,77,12,25,12,110,20,100,25,114,Complete
+LCC1110,"12_month (Arm 2: Intervention)","12 months",11,18,I,80,13,25,6,18,7,13,45,12,62,7,19,13,115,13,79,19,98,Complete
+LCC1112,"12_month (Arm 2: Intervention)","12 months",11,10,I,71,13,29,9,24,11,20,40,10,75,13,23,13,115,20,100,23,109,Complete
+LCC1113,"12_month (Arm 2: Intervention)","12 months",12,28,I,72,10,22,4,18,6,10,47,12,75,11,23,10,100,10,72,23,109,Complete
+LCC1114,"12_month (Arm 2: Intervention)","12 months",11,19,I,71,11,23,5,10,3,8,37,8,64,8,16,11,105,8,68,16,87,Complete
+LCC1115,"12_month (Arm 2: Intervention)","12 months",12,22,I,78,12,26,6,20,7,13,46,12,65,7,19,12,110,13,79,19,98,Complete
+LCC1116,"12_month (Arm 2: Intervention)","12 months",11,15,I,69,12,27,8,20,9,17,44,12,66,10,22,12,110,17,92,22,106,Complete
+LCC1117,"12_month (Arm 2: Intervention)","12 months",11,15,I,66,11,29,9,20,9,18,40,10,65,10,20,11,105,18,95,20,101,Complete
+LCC1118,"12_month (Arm 2: Intervention)","12 months",11,13,I,66,11,27,8,24,11,19,42,11,66,10,21,11,105,19,98,21,103,Complete
+LCC1119,"12_month (Arm 2: Intervention)","12 months",12,12,I,74,12,26,7,15,6,13,43,11,64,8,19,12,110,13,79,19,98,Complete
+LCC1120,"12_month (Arm 2: Intervention)","12 months",11,10,I,64,11,26,7,22,10,17,42,11,75,13,24,11,105,17,92,24,112,Complete
+LCC1121,"12_month (Arm 2: Intervention)","12 months",11,23,I,70,11,26,7,20,8,15,47,13,76,13,26,11,105,15,86,26,116,Complete
+LCC1122,"12_month (Arm 2: Intervention)","12 months",11,10,I,63,11,23,5,22,10,15,38,9,74,13,22,11,105,15,86,22,106,Complete
+LCC1123,"12_month (Arm 2: Intervention)","12 months",12,08,I,68,11,26,7,20,8,15,41,10,60,7,17,11,105,15,86,17,91,Complete
+LCC1124,"12_month (Arm 2: Intervention)","12 months",12,16,I,71,10,26,6,14,4,10,42,10,68,8,18,10,100,10,72,18,95,Complete
+LCC1125,"12_month (Arm 2: Intervention)","12 months",11,12,I,76,13,26,7,20,9,16,41,11,64,10,21,13,115,16,86,21,103,Complete
+LCC1126,"12_month (Arm 2: Intervention)","12 months",11,26,I,62,9,26,7,21,8,15,45,12,64,8,20,9,95,15,86,20,101,Complete
+LCC1127,"12_month (Arm 2: Intervention)","12 months",11,13,I,69,12,29,9,21,9,18,41,11,70,12,23,12,110,18,95,23,109,Complete
+LCC1128,"12_month (Arm 2: Intervention)","12 months",12,6,I,73,12,24,5,19,8,13,40,9,64,8,17,12,110,13,79,17,91,Complete
+LCC1129,"12_month (Arm 2: Intervention)","12 months",12,12,I,61,8,23,5,18,7,12,36,7,58,6,13,8,90,12,77,13,79,Complete
+LCC1130,"12_month (Arm 2: Intervention)","12 months",12,12,I,64,10,23,5,21,8,13,39,9,59,6,15,10,100,13,79,15,84,Complete
+LCC1131,"12_month (Arm 2: Intervention)","12 months",11,09,I,72,13,26,7,22,10,17,43,12,74,13,25,13,115,17,92,25,114,Complete
+LCC1132,"12_month (Arm 2: Intervention)","12 months",11,08,I,61,10,23,5,16,7,12,42,11,65,10,21,10,100,12,77,21,103,Complete
+LCC1134,"12_month (Arm 2: Intervention)","12 months",12,16,I,71,10,24,5,17,6,11,39,8,56,4,12,10,100,11,75,12,77,Complete
+LCC1135,"12_month (Arm 2: Intervention)","12 months",11,09,I,60,10,24,6,17,7,13,36,8,63,9,17,10,100,13,79,17,91,Complete
+LCC1136,"12_month (Arm 2: Intervention)","12 months",11,10,I,62,10,26,7,18,8,15,38,9,62,9,18,10,100,15,86,18,95,Complete
+LCC1137,"12_month (Arm 2: Intervention)","12 months",12,06,I,64,10,28,8,20,8,16,43,11,67,9,20,10,100,16,89,20,101,Complete
+LCC1138,"12_month (Arm 2: Intervention)","12 months",11,26,I,60,8,23,5,20,8,13,38,8,65,8,16,8,90,13,79,16,87,Complete
+LCC1139,"12_month (Arm 2: Intervention)","12 months",12,26,I,53,4,22,4,13,4,8,39,8,58,5,13,4,70,8,68,13,79,Complete
+LCC1140,"12_month (Arm 2: Intervention)","12 months",11,10,I,70,12,29,9,22,10,19,39,9,68,11,20,12,110,19,98,20,101,Complete
+LCC1141,"12_month (Arm 2: Intervention)","12 months",11,24,I,70,11,25,6,20,8,14,40,9,74,12,21,11,105,14,83,21,103,Complete
+LCC1142,"12_month (Arm 2: Intervention)","12 months",11,4,I,70,12,24,6,21,9,15,43,12,66,10,22,12,110,15,86,22,106,Complete
+LCC1143,"12_month (Arm 2: Intervention)","12 months",11,05,I,69,12,25,7,21,9,16,40,10,67,11,21,12,110,16,89,21,103,Complete
+LCC1144,"12_month (Arm 2: Intervention)","12 months",11,12,I,55,7,24,6,16,7,13,41,11,61,8,19,7,85,13,79,19,98,Complete
+LCC1145,"12_month (Arm 2: Intervention)","12 months",11,19,I,60,8,23,5,17,7,12,40,9,55,5,14,8,90,12,77,14,82,Complete
+LCC1146,"12_month (Arm 2: Intervention)","12 months",11,01,I,56,8,23,5,18,8,13,40,10,67,11,21,8,90,13,79,21,103,Complete
+LCC1147,"12_month (Arm 2: Intervention)","12 months",12,16,I,73,11,24,5,16,5,10,44,11,75,11,22,11,105,10,72,22,106,Complete
+LCC1148,"12_month (Arm 2: Intervention)","12 months",11,03,I,69,12,25,7,19,8,15,39,9,69,12,21,12,110,15,86,21,103,Complete
+LCC1149,"12_month (Arm 2: Intervention)","12 months",11,11,I,75,13,23,5,18,8,13,43,12,67,11,23,13,115,13,79,23,109,Complete
+LCC1150,"12_month (Arm 2: Intervention)","12 months",11,12,I,56,8,25,7,18,8,15,37,8,66,10,18,8,90,15,86,18,95,Complete
+LCC1151,"12_month (Arm 2: Intervention)","12 months",11,25,I,59,8,24,5,15,6,11,37,8,46,1,9,8,90,11,75,9,69,Complete
+LCC1152,"12_month (Arm 2: Intervention)","12 months",11,6,I,64,11,24,6,19,8,14,35,7,65,10,17,11,105,14,83,17,91,Complete
+LCC1153,"12_month (Arm 2: Intervention)","12 months",11,11,I,38,2,15,1,06,1,2,36,8,72,13,21,2,60,2,45,21,103,Complete
+LCC1154,"12_month (Arm 2: Intervention)","12 months",11,22,I,69,11,25,6,20,8,14,43,11,70,10,21,11,105,14,83,21,103,Complete
+LCC1155,"12_month (Arm 2: Intervention)","12 months",11,05,I,78,14,29,9,20,9,18,38,9,68,11,20,14,120,18,95,20,101,Complete
+LCC1156,"12_month (Arm 2: Intervention)","12 months",12,13,I,65,10,23,5,14,5,10,46,12,66,9,21,10,100,10,72,21,103,Complete
+LCC1157,"12_month (Arm 2: Intervention)","12 months",12,20,I,64,8,23,5,18,6,11,39,8,66,7,15,8,90,11,75,15,84,Complete
+LCC1158,"12_month (Arm 2: Intervention)","12 months",11,14,I,69,12,25,7,26,12,19,39,9,68,11,20,12,110,19,98,20,101,Complete
+LCC1159,"12_month (Arm 2: Intervention)","12 months",12,21,I,76,11,30,9,28,11,20,44,11,75,11,22,11,105,20,100,22,106,Complete
+LCC2001,"12_month  (Arm 1: Control)","12 months",12,07,I,66,10,27,7,18,7,14,39,9,72,11,20,10,100,14,83,20,101,Complete
+LCC2002,"12_month  (Arm 1: Control)","12 months",,,I,68,9,27,7,20,7,14,46,12,72,10,22,9,95,14,83,22,106,Complete
+LCC2003,"12_month  (Arm 1: Control)",,,,I,71,11,27,7,18,7,14,43,11,75,12,23,11,105,14,83,23,109,Complete
+LCC2004,"12_month  (Arm 1: Control)","12 months",13,13,I,63,9,26,6,17,6,12,43,10,70,9,19,8,90,12,77,19,98,Complete
+LCC2005,"12_month  (Arm 1: Control)",,,,I,74,11,28,7,20,7,14,46,12,74,10,22,11,105,14,83,22,106,Complete
+LCC2006,"12_month  (Arm 1: Control)","12 months",12,05,I,64,10,26,7,18,7,14,39,9,73,12,21,10,100,14,83,21,103,Complete
+LCC2007,"12_month  (Arm 1: Control)","12 months",12,04,I,65,10,27,7,21,8,15,39,9,68,10,19,10,100,15,86,19,98,Complete
+LCC2008,"12_month  (Arm 1: Control)",,,,I,73,11,25,6,16,5,11,46,12,76,11,23,11,105,11,75,23,109,Complete
+LCC2010,"12_month  (Arm 1: Control)","12 months",13,06,I,70,10,28,7,23,8,15,45,11,72,10,21,10,100,15,86,21,103,Complete
+LCC2011,"12_month  (Arm 1: Control)","12 months",12,27,I,66,9,28,7,27,10,17,43,10,65,7,17,9,95,17,92,17,91,Complete
+LCC2012,"12_month  (Arm 1: Control)","12 months",,,I,80,12,30,9,19,7,16,46,12,76,11,23,12,110,16,89,23,109,Complete
+LCC2013,"12_month  (Arm 1: Control)","12 months",,,I,58,6,22,4,18,6,10,38,7,76,11,18,6,63,10,72,18,95,Complete
+LCC2014,"12_month  (Arm 1: Control)","12 months",,,I,65,8,24,5,22,8,13,45,11,76,11,22,8,90,13,79,22,106,Complete
+LCC2015,"12_month  (Arm 1: Control)","12 months",13,02,I,80,12,25,6,24,9,15,45,11,76,11,22,12,110,15,86,22,106,Complete
+LCC2016,"12_month  (Arm 1: Control)","12 months",12,18,I,59,6,25,6,21,8,14,42,10,73,10,20,6,80,14,83,20,101,Complete
+LCC2018,"12_month  (Arm 1: Control)","12 months",,,I,67,9,22,4,21,8,12,43,10,76,11,21,9,95,12,77,21,103,Complete
+LCC2020,"12_month  (Arm 1: Control)","12 months",12,14,I,53,5,24,5,18,7,12,42,11,64,8,19,5,75,12,77,19,98,Complete
+LCC2021,"12_month  (Arm 1: Control)","12 months",12,29,I,69,10,24,5,22,8,13,43,10,72,10,20,10,100,13,79,20,101,Complete
+LCC2022,"12_month  (Arm 1: Control)","12 months",,,I,58,6,23,5,18,6,11,45,11,72,10,21,6,80,11,75,21,103,Complete
+LCC2023,"12_month  (Arm 1: Control)","12 months",,,I,64,10,25,6,15,6,12,46,12,64,8,20,10,100,12,77,20,101,Complete
+LCC2024,"12_month  (Arm 1: Control)","12 months",12,27,I,68,9,26,6,21,8,14,44,11,64,7,18,9,95,14,83,18,95,Complete
+LCC2025,"12_month  (Arm 1: Control)","12 months",,,I,69,10,24,5,18,6,11,45,11,66,7,18,10,100,11,75,18,95,Complete
+LCC2026,"12_month  (Arm 1: Control)","12 months",12,16,I,72,10,30,9,27,10,19,45,11,73,10,21,10,100,19,98,21,103,Complete
+LCC2027,"12_month  (Arm 1: Control)","12 months",12,28,I,73,11,24,5,18,6,11,46,12,64,7,19,11,105,11,75,19,98,Complete
+LCC2028,"12_month  (Arm 1: Control)","12 months",12,14,I,72,12,24,5,24,10,15,43,11,63,8,19,12,110,15,86,19,98,Complete
+LCC2029,"12_month  (Arm 1: Control)","12 months",12,28,I,75,11,28,7,21,8,15,47,12,75,11,23,11,105,15,86,23,109,Complete
+LCC2030,"12_month  (Arm 1: Control)","12 months",12,07,I,73,12,27,7,23,9,16,48,13,73,12,25,12,110,16,89,25,114,Complete
+LCC2031,"12_month  (Arm 1: Control)","12 months",12,22,I,69,10,22,4,24,9,13,40,9,69,8,17,10,100,13,79,17,91,Complete
+LCC2032,"12_month  (Arm 1: Control)","12 months",12,28,I,64,8,24,5,16,5,10,44,11,65,7,18,8,90,10,72,18,95,Complete
+LCC2033,"12_month  (Arm 1: Control)","12 months",12,5,I,76,12,24,5,18,7,12,45,12,76,13,25,12,110,12,77,25,114,Complete
+LCC2034,"12_month  (Arm 1: Control)","12 months",11,29,I,73,12,23,5,18,7,12,42,11,65,8,19,12,110,12,77,19,98,Complete
+LCC2036,"12_month  (Arm 1: Control)","12 months",12,27,I,70,10,23,5,18,6,,43,10,62,6,16,10,100,11,75,16,87,Complete
+LCC2037,"12_month  (Arm 1: Control)","12 months",12,16,I,75,11,29,8,24,9,17,43,10,76,11,21,11,105,17,92,21,103,Complete
+LCC2038,"12_month  (Arm 1: Control)","12 months",11,16,I,69,11,26,7,23,9,16,44,12,61,7,19,11,105,16,89,19,98,Complete
+LCC2039,"12_month  (Arm 1: Control)","12 months",12,16,I,76,11,29,8,25,9,17,45,11,72,10,21,11,105,17,92,21,103,Complete
+LCC2040,"12_month  (Arm 1: Control)","12 months",11,22,I,70,11,27,7,23,9,16,44,12,64,8,20,11,105,16,89,20,101,Complete
+LCC2041,"12_month  (Arm 1: Control)","12 months",11,25,I,54,6,25,6,18,7,13,41,10,58,6,16,6,80,13,79,16,87,Complete
+LCC2042,"12_month  (Arm 1: Control)","12 months",11,18,I,59,8,26,7,25,10,17,44,12,76,13,25,8,90,17,92,25,114,Complete
+LCC2043,"12_month  (Arm 1: Control)","12 months",11,23,I,62,9,25,6,18,7,13,43,11,76,13,24,9,95,13,79,24,112,Complete
+LCC2044,"12_month  (Arm 1: Control)","12 months",12,04,I,61,8,32,10,26,11,21,42,11,73,12,23,8,90,21,103,23,109,Complete
+LCC2045,"12_month  (Arm 1: Control)","12 months",12,23,I,75,11,32,10,27,10,20,51,13,73,10,23,11,105,20,100,23,109,Complete
+LCC2046,"12_month  (Arm 1: Control)","12 months",11,16,I,66,10,24,5,21,8,13,39,9,62,7,16,10,100,13,79,16,87,Complete
+LCC2047,"12_month  (Arm 1: Control)","12 months",12,21,I,80,12,24,5,24,9,14,46,12,77,12,24,12,110,14,83,24,112,Complete
+LCC2048,"12_month  (Arm 1: Control)","12 months",11,25,I,68,11,27,7,25,10,17,46,12,62,7,19,11,105,17,92,19,98,Complete
+LCC2049,"12_month  (Arm 1: Control)","12 months",12,16,I,64,8,22,4,22,8,12,47,12,71,9,21,8,90,12,77,21,103,Complete
+LCC2050,"12_month  (Arm 1: Control)","12 months",12,26,I,75,11,33,10,29,11,21,46,12,66,7,19,11,105,21,103,19,98,Complete
+LCC2051,"12_month  (Arm 1: Control)","12 months",12,24,I,65,8,26,6,22,8,14,44,11,67,8,19,8,90,14,83,19,98,Complete
+LCC2053,"12_month  (Arm 1: Control)","12 months",11,20,I,60,8,26,7,23,9,16,43,11,65,8,19,8,90,16,89,19,98,Complete
+LCC2054,"12_month  (Arm 1: Control)","12 months",11,24,I,62,9,27,7,23,9,16,43,11,63,8,19,9,95,16,89,19,98,Complete
+LCC2055,"12_month  (Arm 1: Control)","12 months",11,13,I,61,10,27,8,23,11,19,45,13,62,9,22,10,100,19,98,22,106,Complete
+LCC2056,"12_month  (Arm 1: Control)","12 months",12,10,I,83,13,29,9,27,11,20,48,13,67,9,22,13,115,20,100,22,106,Complete
+LCC2057,"12_month  (Arm 1: Control)","12 months",12,21,I,70,10,22,4,18,6,10,46,12,72,10,22,10,100,10,72,22,106,Complete
+LCC2058,"12_month  (Arm 1: Control)","12 months",12,12,I,77,13,23,5,20,8,13,47,12,74,13,25,13,115,13,79,25,114,Complete
+LCC2059,"12_month  (Arm 1: Control)","12 months",11,29,I,60,8,25,6,16,6,12,34,6,68,10,16,8,90,12,77,16,87,Complete
+LCC2060,"12_month  (Arm 1: Control)","12 months",12,18,I,68,9,22,4,18,6,10,45,11,66,7,18,9,95,10,72,18,95,Complete
+LCC2061,"12_month  (Arm 1: Control)","12 months",11,25,I,70,11,26,7,23,9,16,44,12,66,9,21,11,105,16,89,21,103,Complete
+LCC2062,"12_month  (Arm 1: Control)","12 months",11,3,I,62,10,24,6,18,8,14,39,9,74,13,22,10,100,14,83,22,106,Complete
+LCC2063,"12_month  (Arm 1: Control)","12 months",12,06,I,76,12,31,10,27,11,21,45,12,72,11,23,12,110,21,103,23,109,Complete
+LCC2064,"12_month  (Arm 1: Control)","36 months",11,18,I,70,11,23,5,17,7,12,39,9,75,12,21,11,105,12,77,21,103,Complete
+LCC2065,"12_month  (Arm 1: Control)","12 months",12,12,I,70,11,27,7,22,9,16,46,12,71,11,23,11,105,16,89,23,109,Complete
+LCC2066,"12_month  (Arm 1: Control)","12 months",12,16,I,64,8,25,6,21,8,14,45,11,78,12,23,8,90,14,83,23,109,Complete
+LCC2067,"12_month  (Arm 1: Control)","12 months",11,24,I,71,11,27,7,26,11,18,45,12,66,9,21,11,105,18,95,21,103,Complete
+LCC2068,"12_month  (Arm 1: Control)","12 months",11,24,I,72,12,24,5,19,8,13,43,11,77,13,24,12,110,13,79,24,112,Complete
+LCC2069,"12_month  (Arm 1: Control)","12 months",12,10,I,76,12,28,8,21,8,16,48,13,65,8,21,12,110,16,89,21,103,Complete
+LCC2070,"12_month  (Arm 1: Control)","12 months",13,00,I,59,6,23,5,18,6,11,43,10,60,5,15,6,80,11,75,15,84,Complete
+LCC2071,"12_month  (Arm 1: Control)","12 months",11,29,I,65,10,25,6,21,8,14,41,10,75,12,22,10,100,14,83,22,106,Complete
+LCC2072,"12_month  (Arm 1: Control)","12 months",11,12,I,70,12,33,12,29,14,26,42,11,69,12,23,12,110,26,117,23,109,Complete
+LCC2073,"12_month  (Arm 1: Control)","12 months",12,15,I,79,13,29,9,24,10,19,47,13,66,9,22,13,115,19,98,22,106,Complete
+LCC2074,"12_month  (Arm 1: Control)","12 months",12,26,I,62,7,25,6,21,8,14,42,10,56,4,14,7,85,14,83,14,82,Complete
+LCC2075,"12_month  (Arm 1: Control)","12 months",12,23,I,60,7,26,6,22,8,14,45,11,62,6,17,7,85,14,83,17,91,Complete
+LCC3001,"36_month (Arm 3: Outcome Reference)","36 months",37,29,P,120,5,59,5,51,5,10,71,8,91,3,11,5,75,10,72,11,74,Complete
+LCC3002,"36_month (Arm 3: Outcome Reference)","36 months",37,28,P,112,4,58,4,60,7,11,76,10,104,8,18,4,70,11,75,18,95,Complete
+LCC3004,"36_month (Arm 3: Outcome Reference)","36 months",37,24,P,114,5,55,4,57,6,10,67,7,95,5,12,5,75,10,72,12,77,Complete
+LCC3006,"36_month (Arm 3: Outcome Reference)","36 months",37,22,P,118,5,63,6,51,5,11,76,10,99,6,16,5,75,11,75,16,87,Complete
+LCC3007,"36_month (Arm 3: Outcome Reference)","36 months",37,22,P,107,2,60,5,54,5,10,63,5,94,4,9,2,60,10,72,9,69,Complete
+LCC3009,"36_month (Arm 3: Outcome Reference)","36 months",37,18,P,120,5,61,5,62,7,,71,8,99,6,12,5,75,12,77,14,82,Complete
+LCC3010,"36_month (Arm 3: Outcome Reference)","36 months",35,26,P,125,7,65,7,63,8,15,70,9,102,8,17,7,85,15,86,17,91,Complete
+LCC3011,"36_month (Arm 3: Outcome Reference)","36 months",36,13,P,114,5,64,7,38,3,10,63,6,97,6,12,5,75,10,72,12,77,Complete
+LCC3012,"36_month (Arm 3: Outcome Reference)","36 months",35,18,P,110,4,62,6,60,7,13,72,10,98,7,17,4,70,13,79,17,91,Complete
+LCC3013,"36_month (Arm 3: Outcome Reference)","36 months",35,05,P,125,8,68,9,60,7,16,73,11,96,7,18,8,90,16,89,18,95,Complete
+LCC3014,"36_month (Arm 3: Outcome Reference)","36 months",34,19,P,88,1,46,2,41,4,6,56,4,90,5,9,1,55,6,63,9,69,Complete
+LCC3015,"36_month (Arm 3: Outcome Reference)","36 months",34,26,P,126,8,68,9,61,8,17,61,6,104,9,15,8,90,17,92,15,84,Complete
+LCC3016,"36_month (Arm 3: Outcome Reference)","36 months",34,25,P,108,4,51,4,57,7,11,64,8,94,6,14,4,70,11,75,14,82,Complete
+LCC3017,"36_month (Arm 3: Outcome Reference)","36 months",34,17,P,130,9,63,7,61,8,15,74,11,98,7,18,9,95,15,86,18,95,Complete
+LCC3018,"36_month (Arm 3: Outcome Reference)","36 months",35,13,P,131,9,66,8,66,9,17,72,10,100,8,18,9,95,17,92,18,95,Complete
+LCC3019,"36_month (Arm 3: Outcome Reference)","36 months",35,17,P,131,8,69,9,60,7,16,73,10,108,10,20,8,90,16,89,20,101,Complete
+LCC3020,"36_month (Arm 3: Outcome Reference)","36 months",35,09,P,120,7,60,6,64,9,15,65,8,90,5,13,7,85,15,86,13,79,Complete
+LCC3021,"36_month (Arm 3: Outcome Reference)","36 months",36,04,P,125,7,62,6,55,6,12,70,9,96,6,15,7,85,12,77,15,84,Complete
+LCC3022,"36_month (Arm 3: Outcome Reference)","36 months",35,22,P,132,8,69,9,67,9,18,70,9,99,7,16,8,90,18,95,16,87,Complete
+LCC3023,"36_month (Arm 3: Outcome Reference)","36 months",34,13,P,127,9,71,11,66,10,21,69,10,101,9,19,9,95,21,103,19,98,Complete
+LCC3024,"36_month (Arm 3: Outcome Reference)","36 months",37,3,P,118,5,62,5,46,4,9,74,9,96,5,14,5,75,9,70,14,82,Complete
+LCC3025,"36_month (Arm 3: Outcome Reference)","36 months",36,23,P,119,5,68,8,64,8,16,78,11,98,6,17,5,75,16,89,17,91,Complete
+LCC3026,"36_month (Arm 3: Outcome Reference)","36 months",36,07,P,118,6,62,6,59,7,13,70,9,102,8,17,6,80,13,79,17,91,Complete
+LCC3027,"36_month (Arm 3: Outcome Reference)","36 months",35,22,P,112,4,57,5,54,6,11,67,8,105,9,17,4,70,11,75,17,91,Complete
+LCC3028,"36_month (Arm 3: Outcome Reference)","36 months",37,1,P,126,7,68,8,64,8,16,80,12,99,6,18,7,85,16,89,18,95,Complete
+LCC3029,"36_month (Arm 3: Outcome Reference)","36 months",36,16,P,127,7,60,5,55,6,11,72,8,84,2,10,7,85,11,75,10,72,Complete
+LCC3030,"36_month (Arm 3: Outcome Reference)","36 months",39,16,Q,114,4,68,7,56,5,12,73,8,103,7,20,4,70,12,77,15,84,Complete
+LCC3031,"36_month (Arm 3: Outcome Reference)","36 months",36,20,P,119,5,63,6,62,7,13,71,8,97,6,14,5,75,13,79,14,82,Complete
+LCC3032,"36_month (Arm 3: Outcome Reference)","36 months",34,27,P,90,1,47,3,47,5,8,57,5,99,8,13,1,55,8,68,13,84,Complete
+LCC3033,"36_month (Arm 3: Outcome Reference)","36 months",34,7,P,114,6,62,7,57,7,14,72,11,92,6,17,6,80,14,83,17,91,Complete
+LCC3034,"36_month (Arm 3: Outcome Reference)","36 months",34,16,P,125,8,63,7,68,10,17,70,10,106,10,20,8,90,17,92,20,101,Complete
+LCC3035,"36_month (Arm 3: Outcome Reference)","36 months",34,21,P,119,7,64,7,54,6,13,66,8,99,8,16,7,85,13,79,16,87,Complete
+LCC3036,"36_month (Arm 3: Outcome Reference)","36 months",34,26,P,130,9,66,8,62,8,16,69,9,104,9,18,9,95,16,89,18,95,Complete
+LCC3037,"36_month (Arm 3: Outcome Reference)","36 months",34,22,P,119,7,67,8,60,7,15,76,12,99,8,20,7,85,15,86,20,101,Complete
+LCC3038,"36_month (Arm 3: Outcome Reference)","36 months",36,02,P,116,5,67,8,54,6,14,64,7,96,6,13,5,75,14,83,13,79,Complete
+LCC3039,"36_month (Arm 3: Outcome Reference)","36 months",36,28,P,110,3,29,1,35,2,3,56,3,85,2,5,3,65,3,51,5,58,Complete
+LCC3040,"36_month (Arm 3: Outcome Reference)","36 months",37,14,P,117,5,55,4,61,7,11,66,6,96,5,11,5,75,11,75,11,74,Complete
+LCC3041,"36_month (Arm 3: Outcome Reference)","36 months",35,15,P,119,7,61,6,54,6,12,73,11,101,8,19,7,85,12,77,19,98,Complete
+LCC3042,"36_month (Arm 3: Outcome Reference)","36 months",35,9,P,108,4,60,6,62,8,14,74,11,100,8,19,4,70,14,83,19,98,Complete
+LCC3043,"36_month (Arm 3: Outcome Reference)","36 months",37,01,P,131,8,71,9,67,9,18,78,11,107,9,20,8,90,18,95,20,101,Complete
+LCC3044,"36_month (Arm 3: Outcome Reference)",,,,P,118,6,63,7,65,6,13,72,10,103,9,19,6,80,13,79,19,98,Complete
+LCC3045,"36_month (Arm 3: Outcome Reference)","36 months",37,3,P,125,6,63,6,57,6,12,68,7,102,7,14,6,80,12,77,14,82,Complete
+LCC3046,"36_month (Arm 3: Outcome Reference)","36 months",36,12,P,112,4,54,4,64,8,12,72,10,95,6,16,4,70,12,77,16,87,Complete
+LCC3047,"36_month (Arm 3: Outcome Reference)","36 months",36,07,P,99,1,44,1,42,4,5,58,5,102,8,13,1,55,5,60,13,79,Complete
+LCC3048,"36_month (Arm 3: Outcome Reference)","36 months",35,4,P,121,7,70,10,62,8,18,72,10,100,8,18,7,85,18,95,18,95,Complete
+LCC3049,"36_month (Arm 3: Outcome Reference)","36 months",35,27,P,115,5,59,5,59,7,12,66,7,104,9,16,5,75,12,77,16,87,Complete
+LCC3050,"36_month (Arm 3: Outcome Reference)","36 months",36,27,P,115,4,61,5,57,6,11,72,8,104,8,16,4,70,11,75,16,87,Complete
+LCC3051,"36_month (Arm 3: Outcome Reference)","36 months",36,15,P,126,7,67,8,62,7,15,71,9,104,9,18,7,85,15,86,18,95,Complete
+LCC3052,"36_month (Arm 3: Outcome Reference)","36 months",35,8,P,97,1,56,5,47,5,10,66,8,94,6,14,1,55,10,72,14,82,Complete
+LCC3053,"36_month (Arm 3: Outcome Reference)","36 months",34,23,P,128,8,70,10,55,6,16,72,10,100,8,18,8,90,16,89,18,95,Complete
+LCC3054,"36_month (Arm 3: Outcome Reference)","36 months",35,08,P,94,1,52,4,44,4,8,57,5,91,5,10,1,55,8,68,10,72,Complete
+LCC3055,"36_month (Arm 3: Outcome Reference)","36 months",34,04,P,106,5,57,6,56,7,13,66,9,103,9,18,5,75,13,79,18,95,Complete
+LCC3056,"36_month (Arm 3: Outcome Reference)","36 months",35,29,P,121,6,65,7,58,6,13,65,7,106,10,17,6,80,13,79,17,91,Complete
+LCC3057,"36_month (Arm 3: Outcome Reference)","36 months",36,20,P,126,7,65,6,61,7,13,64,6,104,8,14,7,85,13,79,14,82,Complete
+LCC3058,"36_month (Arm 3: Outcome Reference)","36 months",35,24,P,121,6,62,6,58,6,12,74,10,104,9,19,6,80,12,77,19,98,Complete
+LCC3059,"36_month (Arm 3: Outcome Reference)","36 months",37,05,P,118,5,66,7,61,7,14,69,7,99,6,13,5,75,14,83,13,79,Complete
+LCC3060,"36_month (Arm 3: Outcome Reference)","36 months",36,15,P,125,7,70,9,65,8,17,71,9,103,8,17,7,85,17,92,17,91,Complete
+LCC3061,"36_month (Arm 3: Outcome Reference)","36 months",36,28,P,124,6,63,6,57,6,12,66,6,94,4,10,6,80,12,77,10,72,Complete
+LCC3062,"36_month (Arm 3: Outcome Reference)","36 months",35,11,P,118,6,65,8,56,6,14,69,9,105,10,19,6,80,14,83,19,98,Complete
+LCC3064,"36_month (Arm 3: Outcome Reference)","36 months",34,28,P,118,6,66,8,66,9,17,71,10,104,9,19,6,80,17,92,19,98,Complete
+LCC3065,"36_month (Arm 3: Outcome Reference)","36 months",35,03,P,116,6,60,6,55,6,12,62,7,98,7,14,6,80,12,77,14,82,Complete
+LCC3066,"36_month (Arm 3: Outcome Reference)","36 months",35,17,P,118,6,60,5,64,8,13,70,9,99,7,16,6,80,13,79,16,87,Complete
+LCC3067,"36_month (Arm 3: Outcome Reference)","36 months",35,05,P,120,7,66,8,62,8,16,76,12,109,11,23,7,85,16,89,23,109,Complete
+LCC3068,"36_month (Arm 3: Outcome Reference)","36 months",34,18,P,122,7,64,7,56,6,13,67,9,103,9,18,7,85,13,79,18,95,Complete
+LCC3069,"36_month (Arm 3: Outcome Reference)","36 months",36,09,P,113,5,58,5,55,6,11,76,11,97,6,17,5,75,11,75,17,91,Complete
+LCC3070,"36_month (Arm 3: Outcome Reference)","36 months",36,21,P,122,6,68,8,63,7,15,67,7,104,8,15,6,80,15,86,15,84,Complete
+LCC3071,"36_month (Arm 3: Outcome Reference)","36 months",34,27,P,111,5,70,10,65,9,19,74,11,106,10,21,5,75,19,98,21,103,Complete
+LCC3072,"36_month (Arm 3: Outcome Reference)","36 months",34,7,P,116,7,58,6,54,6,12,57,5,95,7,12,7,85,12,77,12,77,Complete
+LCC3073,"36_month (Arm 3: Outcome Reference)","36 months",34,28,P,124,8,63,7,61,8,15,71,10,100,8,18,8,90,15,86,18,95,Complete
+LCC3074,"36_month (Arm 3: Outcome Reference)","36 months",36,19,P,117,5,59,5,62,7,12,67,7,103,8,15,5,75,12,77,15,84,Complete
+LCC3075,"36_month (Arm 3: Outcome Reference)","36 months",34,19,P,121,7,58,5,56,6,11,65,8,104,9,17,7,85,11,75,17,91,Complete

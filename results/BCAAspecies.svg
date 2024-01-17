@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="216pt" height="216pt" viewBox="0 0 216 216" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2023-12-29T17:44:15.789529</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.6.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 216 
+L 216 216 
+L 216 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 27 192.24 
+L 194.4 192.24 
+L 194.4 25.92 
+L 27 25.92 
+L 27 192.24 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m1e5d1f5424" d="M 0 0 
+L 0 6 
+" style="stroke: #000000; stroke-width: 0.25"/>
+      </defs>
+      <g>
+       <use xlink:href="#m1e5d1f5424" x="75.825" y="192.24" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font: 5px 'Arial'" transform="translate(53.898613 227.994368) rotate(-45)">Malnourished</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m1e5d1f5424" x="145.575" y="192.24" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font: 5px 'Arial'" transform="translate(121.355488 230.287494) rotate(-45)">Well-nourished</text>
+     </g>
+    </g>
+    <g id="text_3">
+     <text style="font: 5px 'Arial'; text-anchor: middle" x="110.7" y="238.569087" transform="rotate(-0 110.7 238.569087)">Condition</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="mbe2d93a199" d="M 0 0 
+L -6 0 
+" style="stroke: #000000; stroke-width: 0.25"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbe2d93a199" x="27" y="192.24" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font: 5px 'Arial'; text-anchor: end" x="15" y="194.029453" transform="rotate(-0 15 194.029453)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mbe2d93a199" x="27" y="160.56" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font: 5px 'Arial'; text-anchor: end" x="15" y="162.349453" transform="rotate(-0 15 162.349453)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mbe2d93a199" x="27" y="128.88" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font: 5px 'Arial'; text-anchor: end" x="15" y="130.669453" transform="rotate(-0 15 130.669453)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mbe2d93a199" x="27" y="97.2" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font: 5px 'Arial'; text-anchor: end" x="15" y="98.989453" transform="rotate(-0 15 98.989453)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mbe2d93a199" x="27" y="65.52" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font: 5px 'Arial'; text-anchor: end" x="15" y="67.309453" transform="rotate(-0 15 67.309453)">0.8</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mbe2d93a199" x="27" y="33.84" style="stroke: #000000; stroke-width: 0.25"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font: 5px 'Arial'; text-anchor: end" x="15" y="35.629453" transform="rotate(-0 15 35.629453)">1.0</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font: 5px 'Arial'; text-anchor: middle" x="3.05625" y="109.08" transform="rotate(-90 3.05625 109.08)">Relative abundance</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 44.4375 192.24 
+L 107.2125 192.24 
+L 107.2125 160.250005 
+L 44.4375 160.250005 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #1f77b4"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 114.1875 192.24 
+L 176.9625 192.24 
+L 176.9625 160.987575 
+L 114.1875 160.987575 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #1f77b4"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 44.4375 160.250005 
+L 107.2125 160.250005 
+L 107.2125 131.932958 
+L 44.4375 131.932958 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #aec7e8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 114.1875 160.987575 
+L 176.9625 160.987575 
+L 176.9625 133.48429 
+L 114.1875 133.48429 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #aec7e8"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 44.4375 131.932958 
+L 107.2125 131.932958 
+L 107.2125 105.11647 
+L 44.4375 105.11647 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #ff7f0e"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 114.1875 133.48429 
+L 176.9625 133.48429 
+L 176.9625 111.157061 
+L 114.1875 111.157061 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #ff7f0e"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 44.4375 105.11647 
+L 107.2125 105.11647 
+L 107.2125 92.172511 
+L 44.4375 92.172511 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #ffbb78"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 114.1875 111.157061 
+L 176.9625 111.157061 
+L 176.9625 96.193259 
+L 114.1875 96.193259 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #ffbb78"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 44.4375 92.172511 
+L 107.2125 92.172511 
+L 107.2125 81.016663 
+L 44.4375 81.016663 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #2ca02c"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 114.1875 96.193259 
+L 176.9625 96.193259 
+L 176.9625 85.588539 
+L 114.1875 85.588539 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #2ca02c"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 44.4375 81.016663 
+L 107.2125 81.016663 
+L 107.2125 75.612399 
+L 44.4375 75.612399 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #98df8a"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 114.1875 85.588539 
+L 176.9625 85.588539 
+L 176.9625 76.884552 
+L 114.1875 76.884552 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #98df8a"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 44.4375 75.612399 
+L 107.2125 75.612399 
+L 107.2125 69.296138 
+L 44.4375 69.296138 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #d62728"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 114.1875 76.884552 
+L 176.9625 76.884552 
+L 176.9625 69.911945 
+L 114.1875 69.911945 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #d62728"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 44.4375 69.296138 
+L 107.2125 69.296138 
+L 107.2125 62.263659 
+L 44.4375 62.263659 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #ff9896"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 114.1875 69.911945 
+L 176.9625 69.911945 
+L 176.9625 63.996723 
+L 114.1875 63.996723 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #ff9896"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 44.4375 62.263659 
+L 107.2125 62.263659 
+L 107.2125 56.675972 
+L 44.4375 56.675972 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #9467bd"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 114.1875 63.996723 
+L 176.9625 63.996723 
+L 176.9625 57.7166 
+L 114.1875 57.7166 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #9467bd"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 44.4375 56.675972 
+L 107.2125 56.675972 
+L 107.2125 51.408803 
+L 44.4375 51.408803 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #c5b0d5"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 114.1875 57.7166 
+L 176.9625 57.7166 
+L 176.9625 52.485834 
+L 114.1875 52.485834 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #c5b0d5"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 44.4375 51.408803 
+L 107.2125 51.408803 
+L 107.2125 45.848178 
+L 44.4375 45.848178 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #8c564b"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 114.1875 52.485834 
+L 176.9625 52.485834 
+L 176.9625 47.856025 
+L 114.1875 47.856025 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #8c564b"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 44.4375 45.848178 
+L 107.2125 45.848178 
+L 107.2125 43.261916 
+L 44.4375 43.261916 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #c49c94"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 114.1875 47.856025 
+L 176.9625 47.856025 
+L 176.9625 44.788019 
+L 114.1875 44.788019 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #c49c94"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 44.4375 43.261916 
+L 107.2125 43.261916 
+L 107.2125 42.114597 
+L 44.4375 42.114597 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #e377c2"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 114.1875 44.788019 
+L 176.9625 44.788019 
+L 176.9625 42.751361 
+L 114.1875 42.751361 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #e377c2"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 44.4375 42.114597 
+L 107.2125 42.114597 
+L 107.2125 39.578451 
+L 44.4375 39.578451 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #f7b6d2"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 114.1875 42.751361 
+L 176.9625 42.751361 
+L 176.9625 42.254941 
+L 114.1875 42.254941 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #f7b6d2"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 44.4375 39.578451 
+L 107.2125 39.578451 
+L 107.2125 38.623782 
+L 44.4375 38.623782 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #7f7f7f"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 114.1875 42.254941 
+L 176.9625 42.254941 
+L 176.9625 40.226573 
+L 114.1875 40.226573 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #7f7f7f"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 44.4375 38.623782 
+L 107.2125 38.623782 
+L 107.2125 37.556457 
+L 44.4375 37.556457 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #c7c7c7"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 114.1875 40.226573 
+L 176.9625 40.226573 
+L 176.9625 38.677435 
+L 114.1875 38.677435 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #c7c7c7"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 44.4375 37.556457 
+L 107.2125 37.556457 
+L 107.2125 36.604518 
+L 44.4375 36.604518 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #bcbd22"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 114.1875 38.677435 
+L 176.9625 38.677435 
+L 176.9625 37.150353 
+L 114.1875 37.150353 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #bcbd22"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 44.4375 36.604518 
+L 107.2125 36.604518 
+L 107.2125 35.543467 
+L 44.4375 35.543467 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #dbdb8d"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 114.1875 37.150353 
+L 176.9625 37.150353 
+L 176.9625 36.114323 
+L 114.1875 36.114323 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #dbdb8d"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 44.4375 35.543467 
+L 107.2125 35.543467 
+L 107.2125 35.063331 
+L 44.4375 35.063331 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #17becf"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 114.1875 36.114323 
+L 176.9625 36.114323 
+L 176.9625 34.463231 
+L 114.1875 34.463231 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #17becf"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 44.4375 35.063331 
+L 107.2125 35.063331 
+L 107.2125 33.84 
+L 44.4375 33.84 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #9edae5"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 114.1875 34.463231 
+L 176.9625 34.463231 
+L 176.9625 33.84 
+L 114.1875 33.84 
+z
+" clip-path="url(#p8f799ce185)" style="fill: #9edae5"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 27 192.24 
+L 27 25.92 
+" style="fill: none; stroke: #000000; stroke-width: 0.25; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 194.4 192.24 
+L 194.4 25.92 
+" style="fill: none; stroke: #000000; stroke-width: 0.25; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_45">
+    <path d="M 27 192.24 
+L 194.4 192.24 
+" style="fill: none; stroke: #000000; stroke-width: 0.25; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_46">
+    <path d="M 27 25.92 
+L 194.4 25.92 
+" style="fill: none; stroke: #000000; stroke-width: 0.25; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="legend_1">
+    <g id="patch_47">
+     <path d="M 197.4829 147.832153 
+L 217 147.832153 
+Q 279.015378 147.832153 279.015378 146.999153 
+Q 279.015378 28.0025 278.182378 28.0025 
+M 217 28.0025 
+L 197.4829 28.0025 
+Q 196.6499 28.0025 196.6499 28.8355 
+L 196.6499 146.999153 
+Q 196.6499 147.832153 197.4829 147.832153 
+L 197.4829 147.832153 
+" style="fill: none; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="patch_48">
+     <path d="M 198.3159 32.649729 
+L 206.6459 32.649729 
+L 206.6459 29.734229 
+L 198.3159 29.734229 
+z
+" style="fill: #1f77b4"/>
+    </g>
+    <g id="text_11">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="32.649729" transform="rotate(-0 209.9779 32.649729)">Escherichia_coli</text>
+    </g>
+    <g id="patch_49">
+     <path d="M 198.3159 38.541252 
+L 206.6459 38.541252 
+L 206.6459 35.625752 
+L 198.3159 35.625752 
+z
+" style="fill: #aec7e8"/>
+    </g>
+    <g id="text_12">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="38.541252" transform="rotate(-0 209.9779 38.541252)">Prevotella_copri</text>
+    </g>
+    <g id="patch_50">
+     <path d="M 198.3159 44.483535 
+L 206.6459 44.483535 
+L 206.6459 41.568035 
+L 198.3159 41.568035 
+z
+" style="fill: #ff7f0e"/>
+    </g>
+    <g id="text_13">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="44.483535" transform="rotate(-0 209.9779 44.483535)">Bifidobacterium_longum</text>
+    </g>
+    <g id="patch_51">
+     <path d="M 198.3159 50.423866 
+L 206.6459 50.423866 
+L 206.6459 47.508366 
+L 198.3159 47.508366 
+z
+" style="fill: #ffbb78"/>
+    </g>
+    <g id="text_14">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="50.423866" transform="rotate(-0 209.9779 50.423866)">unclassified</text>
+    </g>
+    <g id="patch_52">
+     <path d="M 198.3159 56.315389 
+L 206.6459 56.315389 
+L 206.6459 53.399889 
+L 198.3159 53.399889 
+z
+" style="fill: #2ca02c"/>
+    </g>
+    <g id="text_15">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="56.315389" transform="rotate(-0 209.9779 56.315389)">others</text>
+    </g>
+    <g id="patch_53">
+     <path d="M 198.3159 62.257673 
+L 206.6459 62.257673 
+L 206.6459 59.342173 
+L 198.3159 59.342173 
+z
+" style="fill: #98df8a"/>
+    </g>
+    <g id="text_16">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="62.257673" transform="rotate(-0 209.9779 62.257673)">Bacteroides_fragilis</text>
+    </g>
+    <g id="patch_54">
+     <path d="M 198.3159 68.248765 
+L 206.6459 68.248765 
+L 206.6459 65.333265 
+L 198.3159 65.333265 
+z
+" style="fill: #d62728"/>
+    </g>
+    <g id="text_17">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="68.248765" transform="rotate(-0 209.9779 68.248765)">Bifidobacterium_bifidum</text>
+    </g>
+    <g id="patch_55">
+     <path d="M 198.3159 74.191048 
+L 206.6459 74.191048 
+L 206.6459 71.275548 
+L 198.3159 71.275548 
+z
+" style="fill: #ff9896"/>
+    </g>
+    <g id="text_18">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="74.191048" transform="rotate(-0 209.9779 74.191048)">Bifidobacterium_breve</text>
+    </g>
+    <g id="patch_56">
+     <path d="M 198.3159 80.082571 
+L 206.6459 80.082571 
+L 206.6459 77.167071 
+L 198.3159 77.167071 
+z
+" style="fill: #9467bd"/>
+    </g>
+    <g id="text_19">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="80.082571" transform="rotate(-0 209.9779 80.082571)">Megasphaera_elsdenii</text>
+    </g>
+    <g id="patch_57">
+     <path d="M 198.3159 86.073663 
+L 206.6459 86.073663 
+L 206.6459 83.158163 
+L 198.3159 83.158163 
+z
+" style="fill: #c5b0d5"/>
+    </g>
+    <g id="text_20">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="86.073663" transform="rotate(-0 209.9779 86.073663)">Bifidobacterium_kashiwanohense</text>
+    </g>
+    <g id="patch_58">
+     <path d="M 198.3159 92.015947 
+L 206.6459 92.015947 
+L 206.6459 89.100447 
+L 198.3159 89.100447 
+z
+" style="fill: #8c564b"/>
+    </g>
+    <g id="text_21">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="92.015947" transform="rotate(-0 209.9779 92.015947)">Bifidobacterium_pseudocatenulatum</text>
+    </g>
+    <g id="patch_59">
+     <path d="M 198.3159 97.90747 
+L 206.6459 97.90747 
+L 206.6459 94.99197 
+L 198.3159 94.99197 
+z
+" style="fill: #c49c94"/>
+    </g>
+    <g id="text_22">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="97.90747" transform="rotate(-0 209.9779 97.90747)">Klebsiella_pneumoniae</text>
+    </g>
+    <g id="patch_60">
+     <path d="M 198.3159 103.849753 
+L 206.6459 103.849753 
+L 206.6459 100.934253 
+L 198.3159 100.934253 
+z
+" style="fill: #e377c2"/>
+    </g>
+    <g id="text_23">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="103.849753" transform="rotate(-0 209.9779 103.849753)">Streptococcus_infantarius</text>
+    </g>
+    <g id="patch_61">
+     <path d="M 198.3159 109.792037 
+L 206.6459 109.792037 
+L 206.6459 106.876537 
+L 198.3159 106.876537 
+z
+" style="fill: #f7b6d2"/>
+    </g>
+    <g id="text_24">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="109.792037" transform="rotate(-0 209.9779 109.792037)">Streptococcus_salivarius</text>
+    </g>
+    <g id="patch_62">
+     <path d="M 198.3159 115.73432 
+L 206.6459 115.73432 
+L 206.6459 112.81882 
+L 198.3159 112.81882 
+z
+" style="fill: #7f7f7f"/>
+    </g>
+    <g id="text_25">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="115.73432" transform="rotate(-0 209.9779 115.73432)">Campylobacter_jejuni</text>
+    </g>
+    <g id="patch_63">
+     <path d="M 198.3159 121.674652 
+L 206.6459 121.674652 
+L 206.6459 118.759152 
+L 198.3159 118.759152 
+z
+" style="fill: #c7c7c7"/>
+    </g>
+    <g id="text_26">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="121.674652" transform="rotate(-0 209.9779 121.674652)">Parabacteroides_distasonis</text>
+    </g>
+    <g id="patch_64">
+     <path d="M 198.3159 127.566174 
+L 206.6459 127.566174 
+L 206.6459 124.650674 
+L 198.3159 124.650674 
+z
+" style="fill: #bcbd22"/>
+    </g>
+    <g id="text_27">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="127.566174" transform="rotate(-0 209.9779 127.566174)">Ruminococcus_gnavus</text>
+    </g>
+    <g id="patch_65">
+     <path d="M 198.3159 133.506505 
+L 206.6459 133.506505 
+L 206.6459 130.591005 
+L 198.3159 130.591005 
+z
+" style="fill: #dbdb8d"/>
+    </g>
+    <g id="text_28">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="133.506505" transform="rotate(-0 209.9779 133.506505)">Enterobacter_cloacae_complex</text>
+    </g>
+    <g id="patch_66">
+     <path d="M 198.3159 139.398028 
+L 206.6459 139.398028 
+L 206.6459 136.482528 
+L 198.3159 136.482528 
+z
+" style="fill: #17becf"/>
+    </g>
+    <g id="text_29">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="139.398028" transform="rotate(-0 209.9779 139.398028)">Bacteroides_xylanisolvens</text>
+    </g>
+    <g id="patch_67">
+     <path d="M 198.3159 145.338359 
+L 206.6459 145.338359 
+L 206.6459 142.422859 
+L 198.3159 142.422859 
+z
+" style="fill: #9edae5"/>
+    </g>
+    <g id="text_30">
+     <text style="font: 4.165px 'Arial'; text-anchor: start" x="209.9779" y="145.338359" transform="rotate(-0 209.9779 145.338359)">Bacteroides_ovatus</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8f799ce185">
+   <rect x="27" y="25.92" width="167.4" height="166.32"/>
+  </clipPath>
+ </defs>
+</svg>

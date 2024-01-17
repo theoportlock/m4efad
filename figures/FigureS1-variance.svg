@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="249pt"
+   height="288pt"
+   viewBox="0 0 249 288"
+   version="1.1"
+   id="svg144"
+   sodipodi:docname="FigureS1-variance.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   inkscape:export-filename="S1ExplainedVariance.png"
+   inkscape:export-xdpi="500"
+   inkscape:export-ydpi="500"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview144"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="2.5"
+     inkscape:cx="116"
+     inkscape:cy="188.6"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="3840"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text_18" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2023-11-03T11:23:03.131853</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+    <clipPath
+       id="p0dff0075b1-9">
+      <rect
+         x="83.633896"
+         y="72.218285"
+         width="39.456104"
+         height="142.14235"
+         id="rect144-3" />
+    </clipPath>
+    <clipPath
+       id="p0dff0075b1-4">
+      <rect
+         x="83.633896"
+         y="72.218285"
+         width="39.456104"
+         height="142.14235"
+         id="rect144-7" />
+    </clipPath>
+    <clipPath
+       id="p0dff0075b1-5">
+      <rect
+         x="83.633896"
+         y="72.218285"
+         width="39.456104"
+         height="142.14235"
+         id="rect144-0" />
+    </clipPath>
+  </defs>
+  <g
+     id="figure_1"
+     transform="translate(-20.009081,8.5962291)">
+    <g
+       id="patch_1" />
+    <g
+       id="axes_1"
+       transform="translate(61.39077,0.08172651)">
+      <g
+         id="LineCollection_1">
+        <path
+           d="M 22.512035,76.39894 H 14.58856 v 8.361315 h 7.923475"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path2" />
+        <path
+           d="m 22.512035,109.8442 h -1.791092 v 8.36131 h 1.791092"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path3" />
+        <path
+           d="m 22.512035,101.48288 h -4.050196 v 12.54198 h 2.259104"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path4" />
+        <path
+           d="m 22.512035,126.56683 h -2.936019 v 8.36131 h 2.936019"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path5" />
+        <path
+           d="m 22.512035,151.65077 h -1.23248 v 8.36132 h 1.23248"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path6" />
+        <path
+           d="m 22.512035,143.28946 h -3.483011 v 12.54197 h 2.250531"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path7" />
+        <path
+           d="m 19.576016,130.74748 h -1.346079 v 18.81296 h 0.799087"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path8" />
+        <path
+           d="m 18.461839,107.75387 h -1.283208 v 32.40009 h 1.051306"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path9" />
+        <path
+           d="m 22.512035,185.09603 h -1.367487 v 8.36131 h 1.367487"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path10" />
+        <path
+           d="m 22.512035,201.81866 h -1.86962 v 8.36131 h 1.86962"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path11" />
+        <path
+           d="m 21.144548,189.27669 h -0.967702 v 16.72263 h 0.465569"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path12" />
+        <path
+           d="M 22.512035,176.73471 H 19.856808 V 197.638 h 0.320038"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path13" />
+        <path
+           d="m 22.512035,168.3734 h -6.216379 v 18.81296 h 3.561152"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path14" />
+        <path
+           d="m 17.178631,123.95392 h -1.354704 v 53.82596 h 0.471729"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path15" />
+        <path
+           d="M 22.512035,93.121569 H 13.003592 V 150.8669 h 2.820335"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path16" />
+        <path
+           d="M 14.58856,80.579597 H 9.986287 v 41.414633 h 3.017305"
+           clip-path="url(#p3cd974740a)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path17" />
+      </g>
+    </g>
+    <g
+       id="axes_2"
+       transform="translate(-5e-7,15.820235)">
+      <g
+         id="LineCollection_2">
+        <path
+           d="m 87.579507,56.740783 v -25.81471 h 7.89122 v 25.81471"
+           clip-path="url(#p7ed01928a4)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path18" />
+        <path
+           d="M 111.25317,56.740783 V 30.001228 h 7.89122 v 26.739555"
+           clip-path="url(#p7ed01928a4)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path19" />
+        <path
+           d="M 103.36195,56.740783 V 15.35944 h 11.83683 v 14.641788"
+           clip-path="url(#p7ed01928a4)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path20" />
+        <path
+           d="M 91.525117,30.926073 V 11.616228 h 17.755243 v 3.743212"
+           clip-path="url(#p7ed01928a4)"
+           style="fill:none;stroke:#333333;stroke-width:0.5"
+           id="path21" />
+      </g>
+    </g>
+    <g
+       id="axes_3">
+      <g
+         id="patch_2">
+        <path
+           d="M 83.633896,214.36063 H 123.09 V 72.218283 H 83.633896 Z"
+           style="fill:none"
+           id="path22" />
+      </g>
+      <g
+         id="matplotlib.axis_1"
+         transform="translate(0,-4.5)">
+        <g
+           id="xtick_1"
+           transform="translate(4.5739304,11.869189)">
+          <g
+             id="line2d_1">
+            <defs
+               id="defs22">
+              <path
+                 id="m9326a68fbc"
+                 d="M 0,0 V 6"
+                 style="stroke:#000000;stroke-width:0.25" />
+            </defs>
+            <g
+               id="g22" />
+          </g>
+          <g
+             id="text_1"
+             transform="translate(1.3516374,-1.3341074)">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               transform="rotate(-40)"
+               id="text22"
+               x="-130.50177"
+               y="221.707">Gut bacterial species</text>
+          </g>
+        </g>
+        <g
+           id="xtick_2"
+           transform="translate(4.0803585,4.8866318)">
+          <g
+             id="line2d_2">
+            <g
+               id="g23" />
+          </g>
+          <g
+             id="text_2">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               transform="rotate(-40)"
+               id="text23"
+               x="-130.03899"
+               y="232.2924">Gut bacterial functions</text>
+          </g>
+        </g>
+        <g
+           id="xtick_3"
+           transform="translate(0.10814578,7.5075854)">
+          <g
+             id="line2d_3">
+            <g
+               id="g24" />
+          </g>
+          <g
+             id="text_3">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               transform="rotate(-40)"
+               id="text24"
+               x="-76.563225"
+               y="238.54745">EEG</text>
+          </g>
+        </g>
+        <g
+           id="xtick_4"
+           transform="translate(0.10814131,7.0112755)">
+          <g
+             id="line2d_4">
+            <g
+               id="g25" />
+          </g>
+          <g
+             id="text_4">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               transform="rotate(-40)"
+               id="text25"
+               x="-93.052292"
+               y="243.36288">Bayley scores</text>
+          </g>
+        </g>
+        <g
+           id="xtick_5"
+           transform="translate(0.10811718,-0.4887294)">
+          <g
+             id="line2d_5">
+            <g
+               id="g26" />
+          </g>
+          <g
+             id="text_5"
+             transform="translate(5.5382913,-9.5605057)">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               transform="rotate(-40)"
+               id="text26"
+               x="-100.38188"
+               y="257.94446">Plasma lipids</text>
+          </g>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#e4822b;fill-rule:evenodd;stroke-width:0.56"
+           x="147.82442"
+           y="238.15585"
+           id="text151"><tspan
+             sodipodi:role="line"
+             id="tspan151"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#191919;stroke-width:0.56"
+             x="147.82442"
+             y="238.15585">Gut microbiome</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#e4822b;fill-rule:evenodd;stroke-width:0.56"
+           x="147.7043"
+           y="248.01862"
+           id="text152"><tspan
+             sodipodi:role="line"
+             id="tspan152"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#191919;stroke-width:0.56"
+             x="147.7043"
+             y="248.01862">Brain function</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#e4822b;fill-rule:evenodd;stroke-width:0.56"
+           x="147.7043"
+           y="257.60083"
+           id="text153"><tspan
+             sodipodi:role="line"
+             id="tspan153"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#191919;stroke-width:0.56"
+             x="147.7043"
+             y="257.60083">Blood</tspan></text>
+      </g>
+      <g
+         id="line2d_6">
+        <defs
+           id="defs26">
+          <path
+             id="m96ed75964b"
+             d="M 0,0 H 6"
+             style="stroke:#000000;stroke-width:0.25" />
+        </defs>
+        <g
+           id="g27" />
+      </g>
+      <g
+         id="text_6"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="78.904175"
+           id="text27">Malnutrition - MAM</text>
+      </g>
+      <g
+         id="line2d_7">
+        <g
+           id="g28" />
+      </g>
+      <g
+         id="text_7"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="87.308144"
+           id="text28">Toilet facility shared with other households</text>
+      </g>
+      <g
+         id="line2d_8">
+        <g
+           id="g29" />
+      </g>
+      <g
+         id="text_8"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="95.626801"
+           id="text29">Mothers occupation: Housewife</text>
+      </g>
+      <g
+         id="line2d_9">
+        <g
+           id="g30" />
+      </g>
+      <g
+         id="text_9"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="103.98812"
+           id="text30">Fathers occupation: Unskilled labourer</text>
+      </g>
+      <g
+         id="line2d_10">
+        <g
+           id="g31" />
+      </g>
+      <g
+         id="text_10"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="112.39209"
+           id="text31">Sanitation before feeding: Both hands</text>
+      </g>
+      <g
+         id="line2d_11">
+        <g
+           id="g32" />
+      </g>
+      <g
+         id="text_11"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="120.7534"
+           id="text32">Sanitation before feeding: Piped water</text>
+      </g>
+      <g
+         id="line2d_12">
+        <g
+           id="g33" />
+      </g>
+      <g
+         id="text_12"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="129.07207"
+           id="text33">Household: Owns clock</text>
+      </g>
+      <g
+         id="line2d_13">
+        <g
+           id="g34" />
+      </g>
+      <g
+         id="text_13"
+         transform="translate(-4.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="132.09"
+           y="137.47603"
+           id="text34">Sanitation before feeding - mother: Both hands</text>
+      </g>
+      <g
+         id="line2d_14">
+        <g
+           id="g35" />
+      </g>
+      <g
+         id="text_14"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="145.79469"
+           id="text35">Toilet Pit: Latrine</text>
+      </g>
+      <g
+         id="line2d_15">
+        <g
+           id="g36" />
+      </g>
+      <g
+         id="text_15"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="154.15601"
+           id="text36">Household: Tin walls</text>
+      </g>
+      <g
+         id="line2d_16">
+        <g
+           id="g37" />
+      </g>
+      <g
+         id="text_16"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="162.51732"
+           id="text37">Household: Brick walls</text>
+      </g>
+      <g
+         id="line2d_17">
+        <g
+           id="g38" />
+      </g>
+      <g
+         id="text_17"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="170.9213"
+           id="text38">Cooking inside/outside home</text>
+      </g>
+      <g
+         id="line2d_18">
+        <g
+           id="g39" />
+      </g>
+      <g
+         id="text_18"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="179.23994"
+           id="text39">Household: Drain</text>
+      </g>
+      <g
+         id="line2d_19">
+        <g
+           id="g40" />
+      </g>
+      <g
+         id="text_19"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="187.60126"
+           id="text40">Household: Own house</text>
+      </g>
+      <g
+         id="line2d_20">
+        <g
+           id="g41" />
+      </g>
+      <g
+         id="text_20"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="195.96259"
+           id="text41">Sex</text>
+      </g>
+      <g
+         id="line2d_21">
+        <g
+           id="g42" />
+      </g>
+      <g
+         id="text_21"
+         transform="translate(-7.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="135.09"
+           y="204.3239"
+           id="text42">Water Treatment: None</text>
+      </g>
+      <g
+         id="line2d_22">
+        <g
+           id="g43" />
+      </g>
+      <g
+         id="text_22"
+         transform="translate(-1.8675962,-2.425827)">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+           x="129.09"
+           y="212.72786"
+           id="text43">Nuclear family</text>
+      </g>
+      <g
+         id="QuadMesh_1"
+         transform="translate(0.10814,-2.0328969)">
+        <path
+           d="m 83.633896,72.218283 h 7.891221 v 8.361314 h -7.891221 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e3bfbd"
+           id="path43" />
+        <path
+           d="m 91.525117,72.218283 h 7.891221 v 8.361314 h -7.891221 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ecd2d0"
+           id="path44" />
+        <path
+           d="m 99.416338,72.218283 h 7.891222 v 8.361314 h -7.891222 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#dcaeab"
+           id="path45" />
+        <path
+           d="m 107.30756,72.218283 h 7.89122 v 8.361314 h -7.89122 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#a9373b"
+           id="path46" />
+        <path
+           d="M 115.19878,72.218283 H 123.09 v 8.361314 h -7.89122 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#a9373b"
+           id="path47" />
+        <path
+           d="m 83.633896,80.579597 h 7.891221 v 8.361315 h -7.891221 v -8.361315"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e3bfbd"
+           id="path48" />
+        <path
+           d="m 91.525117,80.579597 h 7.891221 v 8.361315 h -7.891221 v -8.361315"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ce8b88"
+           id="path49" />
+        <path
+           d="m 99.416338,80.579597 h 7.891222 v 8.361315 h -7.891222 v -8.361315"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e5c2c0"
+           id="path50" />
+        <path
+           d="m 107.30756,80.579597 h 7.89122 v 8.361315 h -7.89122 v -8.361315"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#b75756"
+           id="path51" />
+        <path
+           d="M 115.19878,80.579597 H 123.09 v 8.361315 h -7.89122 v -8.361315"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#d7a09d"
+           id="path52" />
+        <path
+           d="m 83.633896,88.940912 h 7.891221 v 8.361314 h -7.891221 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf5f4"
+           id="path53" />
+        <path
+           d="m 91.525117,88.940912 h 7.891221 v 8.361314 h -7.891221 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf5f4"
+           id="path54" />
+        <path
+           d="m 99.416338,88.940912 h 7.891222 v 8.361314 h -7.891222 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#be6463"
+           id="path55" />
+        <path
+           d="m 107.30756,88.940912 h 7.89122 v 8.361314 h -7.89122 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e7c7c5"
+           id="path56" />
+        <path
+           d="M 115.19878,88.940912 H 123.09 v 8.361314 h -7.89122 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf5f4"
+           id="path57" />
+        <path
+           d="m 83.633896,97.302226 h 7.891221 v 8.361314 h -7.891221 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#d7a29f"
+           id="path58" />
+        <path
+           d="m 91.525117,97.302226 h 7.891221 v 8.361314 h -7.891221 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#b75756"
+           id="path59" />
+        <path
+           d="m 99.416338,97.302226 h 7.891222 v 8.361314 h -7.891222 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#edd5d3"
+           id="path60" />
+        <path
+           d="m 107.30756,97.302226 h 7.89122 v 8.361314 h -7.89122 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ebd0ce"
+           id="path61" />
+        <path
+           d="M 115.19878,97.302226 H 123.09 v 8.361314 h -7.89122 v -8.361314"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f7eae8"
+           id="path62" />
+        <path
+           d="m 83.633896,105.66354 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e0b7b5"
+           id="path63" />
+        <path
+           d="m 91.525117,105.66354 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#cb8481"
+           id="path64" />
+        <path
+           d="m 99.416338,105.66354 h 7.891222 v 8.36132 h -7.891222 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f1dddb"
+           id="path65" />
+        <path
+           d="m 107.30756,105.66354 h 7.89122 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f5e5e4"
+           id="path66" />
+        <path
+           d="M 115.19878,105.66354 H 123.09 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f1dddb"
+           id="path67" />
+        <path
+           d="m 83.633896,114.02486 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e5c3c1"
+           id="path68" />
+        <path
+           d="m 91.525117,114.02486 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#d39794"
+           id="path69" />
+        <path
+           d="m 99.416338,114.02486 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f9eeed"
+           id="path70" />
+        <path
+           d="m 107.30756,114.02486 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f2e0df"
+           id="path71" />
+        <path
+           d="M 115.19878,114.02486 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f5e5e4"
+           id="path72" />
+        <path
+           d="m 83.633896,122.38617 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#d29491"
+           id="path73" />
+        <path
+           d="m 91.525117,122.38617 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#dfb5b3"
+           id="path74" />
+        <path
+           d="m 99.416338,122.38617 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf3f2"
+           id="path75" />
+        <path
+           d="m 107.30756,122.38617 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f5e5e4"
+           id="path76" />
+        <path
+           d="M 115.19878,122.38617 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e8cac8"
+           id="path77" />
+        <path
+           d="m 83.633896,130.74748 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#cc8582"
+           id="path78" />
+        <path
+           d="m 91.525117,130.74748 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e4c0be"
+           id="path79" />
+        <path
+           d="m 99.416338,130.74748 h 7.891222 v 8.36132 h -7.891222 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#edd5d3"
+           id="path80" />
+        <path
+           d="m 107.30756,130.74748 h 7.89122 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#efdad8"
+           id="path81" />
+        <path
+           d="M 115.19878,130.74748 H 123.09 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f7eae8"
+           id="path82" />
+        <path
+           d="m 83.633896,139.1088 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f0dbda"
+           id="path83" />
+        <path
+           d="m 91.525117,139.1088 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e9cbc9"
+           id="path84" />
+        <path
+           d="m 99.416338,139.1088 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf2f1"
+           id="path85" />
+        <path
+           d="m 107.30756,139.1088 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf3f3"
+           id="path86" />
+        <path
+           d="M 115.19878,139.1088 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f2e0df"
+           id="path87" />
+        <path
+           d="m 83.633896,147.47011 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e5c2c0"
+           id="path88" />
+        <path
+           d="m 91.525117,147.47011 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e8cac8"
+           id="path89" />
+        <path
+           d="m 99.416338,147.47011 h 7.891222 v 8.36132 h -7.891222 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f0dbda"
+           id="path90" />
+        <path
+           d="m 107.30756,147.47011 h 7.89122 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ebd0ce"
+           id="path91" />
+        <path
+           d="M 115.19878,147.47011 H 123.09 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e1b9b6"
+           id="path92" />
+        <path
+           d="m 83.633896,155.83143 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e2bcb9"
+           id="path93" />
+        <path
+           d="m 91.525117,155.83143 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e7c8c6"
+           id="path94" />
+        <path
+           d="m 99.416338,155.83143 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f3e2e0"
+           id="path95" />
+        <path
+           d="m 107.30756,155.83143 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#eacfcd"
+           id="path96" />
+        <path
+           d="M 115.19878,155.83143 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e9cbc9"
+           id="path97" />
+        <path
+           d="m 83.633896,164.19274 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f7eae8"
+           id="path98" />
+        <path
+           d="m 91.525117,164.19274 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f1dddb"
+           id="path99" />
+        <path
+           d="m 99.416338,164.19274 h 7.891222 v 8.36132 h -7.891222 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf5f4"
+           id="path100" />
+        <path
+           d="m 107.30756,164.19274 h 7.89122 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#c87e7b"
+           id="path101" />
+        <path
+           d="M 115.19878,164.19274 H 123.09 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#edd5d3"
+           id="path102" />
+        <path
+           d="m 83.633896,172.55406 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f7eae8"
+           id="path103" />
+        <path
+           d="m 91.525117,172.55406 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf2f1"
+           id="path104" />
+        <path
+           d="m 99.416338,172.55406 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e7c8c6"
+           id="path105" />
+        <path
+           d="m 107.30756,172.55406 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f7ebea"
+           id="path106" />
+        <path
+           d="M 115.19878,172.55406 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f2dfdd"
+           id="path107" />
+        <path
+           d="m 83.633896,180.91537 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf3f3"
+           id="path108" />
+        <path
+           d="m 91.525117,180.91537 h 7.891221 v 8.36132 h -7.891221 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf5f4"
+           id="path109" />
+        <path
+           d="m 99.416338,180.91537 h 7.891222 v 8.36132 h -7.891222 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf4f3"
+           id="path110" />
+        <path
+           d="m 107.30756,180.91537 h 7.89122 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f2e0df"
+           id="path111" />
+        <path
+           d="M 115.19878,180.91537 H 123.09 v 8.36132 h -7.89122 v -8.36132"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f0dbda"
+           id="path112" />
+        <path
+           d="m 83.633896,189.27669 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f7eae8"
+           id="path113" />
+        <path
+           d="m 91.525117,189.27669 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf3f3"
+           id="path114" />
+        <path
+           d="m 99.416338,189.27669 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f9efee"
+           id="path115" />
+        <path
+           d="m 107.30756,189.27669 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ebd0ce"
+           id="path116" />
+        <path
+           d="M 115.19878,189.27669 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f5e5e4"
+           id="path117" />
+        <path
+           d="m 83.633896,197.638 h 7.891221 v 8.36132 H 83.633896 V 197.638"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf3f2"
+           id="path118" />
+        <path
+           d="m 91.525117,197.638 h 7.891221 v 8.36132 H 91.525117 V 197.638"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f2e0df"
+           id="path119" />
+        <path
+           d="m 99.416338,197.638 h 7.891222 v 8.36132 H 99.416338 V 197.638"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ecd2d0"
+           id="path120" />
+        <path
+           d="m 107.30756,197.638 h 7.89122 v 8.36132 h -7.89122 V 197.638"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#ecd3d2"
+           id="path121" />
+        <path
+           d="M 115.19878,197.638 H 123.09 v 8.36132 h -7.89122 V 197.638"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf3f2"
+           id="path122" />
+        <path
+           d="m 83.633896,205.99932 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf4f3"
+           id="path123" />
+        <path
+           d="m 91.525117,205.99932 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf5f4"
+           id="path124" />
+        <path
+           d="m 99.416338,205.99932 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#f4e3e2"
+           id="path125" />
+        <path
+           d="m 107.30756,205.99932 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#eed7d5"
+           id="path126" />
+        <path
+           d="M 115.19878,205.99932 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#faf4f3"
+           id="path127" />
+        <path
+           d="m 83.633896,205.99932 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#228c3a"
+           id="path147"
+           transform="matrix(0.89473468,0,0,0.89473468,9.2190842,31.12466)" />
+        <path
+           d="m 91.525117,205.99932 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#228c3a"
+           id="path148"
+           transform="matrix(0.89473468,0,0,0.89473468,10.049756,31.12466)" />
+        <path
+           d="m 99.416338,205.99932 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#1f5690"
+           id="path149"
+           transform="matrix(0.89473468,0,0,0.89473468,10.880428,31.12466)" />
+        <path
+           d="m 99.416338,205.99932 h 7.891222 v 8.36131 h -7.891222 v -8.36131"
+           clip-path="url(#p0dff0075b1-4)"
+           style="fill:#1f5690;stroke-linecap:butt;stroke-linejoin:round"
+           id="path149-8"
+           transform="translate(38.673662,33.22262)" />
+        <path
+           d="m 107.30756,205.99932 h 7.89122 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#1f5690"
+           id="path150"
+           transform="matrix(0.89473468,0,0,0.89473468,11.7111,31.12466)" />
+        <path
+           d="M 115.19878,205.99932 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+           clip-path="url(#p0dff0075b1)"
+           style="fill:#e4822b"
+           id="path151"
+           transform="matrix(0.89473468,0,0,0.89473468,12.541772,31.12466)" />
+      </g>
+      <g
+         id="text_23">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="111.37206"
+           y="77.532288"
+           id="text127">*</text>
+      </g>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+         x="119.26329"
+         y="77.532288"
+         id="text128">*</text>
+      <g
+         id="text_25">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="95.589622"
+           y="85.8936"
+           id="text129">*</text>
+      </g>
+      <g
+         id="text_26">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="111.37206"
+           y="85.8936"
+           id="text130">*</text>
+      </g>
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+         x="119.26329"
+         y="85.8936"
+         id="text131">*</text>
+      <g
+         id="text_28">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="103.48085"
+           y="94.254921"
+           id="text132">*</text>
+      </g>
+      <g
+         id="text_29">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="87.698402"
+           y="102.61624"
+           id="text133">*</text>
+      </g>
+      <g
+         id="text_30">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="95.589622"
+           y="102.61624"
+           id="text134">*</text>
+      </g>
+      <g
+         id="text_31">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="95.589622"
+           y="110.97755"
+           id="text135">*</text>
+      </g>
+      <g
+         id="text_32">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="95.589622"
+           y="119.33886"
+           id="text136">*</text>
+      </g>
+      <g
+         id="text_33">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="87.698402"
+           y="127.70018"
+           id="text137">*</text>
+      </g>
+      <g
+         id="text_34">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="87.698402"
+           y="136.06149"
+           id="text138">*</text>
+      </g>
+      <g
+         id="text_35">
+        <text
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"
+           x="111.37206"
+           y="169.50676"
+           id="text139">*</text>
+      </g>
+      <path
+         d="m 83.633896,205.99932 h 7.891221 v 8.36131 h -7.891221 v -8.36131"
+         clip-path="url(#p0dff0075b1-9)"
+         style="fill:#228c3a;stroke-linecap:butt;stroke-linejoin:round"
+         id="path147-1"
+         transform="translate(54.564244,21.328413)" />
+      <path
+         d="M 115.19878,205.99932 H 123.09 v 8.36131 h -7.89122 v -8.36131"
+         clip-path="url(#p0dff0075b1-5)"
+         style="fill:#e4822b;stroke-linecap:butt;stroke-linejoin:round"
+         id="path151-3"
+         transform="translate(22.99936,41.051033)" />
+    </g>
+    <g
+       id="axes_4"
+       transform="translate(38.600801,12.156679)">
+      <g
+         id="patch_3">
+        <path
+           d="M 9.36,56.740783 H 22.512035 V 9.36 H 9.36 Z"
+           style="fill:none"
+           id="path139" />
+      </g>
+      <g
+         id="matplotlib.axis_3" />
+      <g
+         id="matplotlib.axis_4">
+        <g
+           id="ytick_18">
+          <g
+             id="line2d_23">
+            <g
+               id="g139">
+              <use
+                 xlink:href="#m96ed75964b"
+                 x="22.512035"
+                 y="56.740784"
+                 style="stroke:#000000;stroke-width:0.25"
+                 id="use139" />
+            </g>
+          </g>
+          <g
+             id="text_36">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+               x="34.512035"
+               y="59.246017"
+               id="text140">0.0</text>
+          </g>
+        </g>
+        <g
+           id="ytick_19">
+          <g
+             id="line2d_24">
+            <g
+               id="g140">
+              <use
+                 xlink:href="#m96ed75964b"
+                 x="22.512035"
+                 y="39.593105"
+                 style="stroke:#000000;stroke-width:0.25"
+                 id="use140" />
+              <g
+                 id="use144">
+                <path
+                   style="color:#000000;fill:#000000;stroke-linejoin:round;-inkscape-stroke:none"
+                   d="m 22.512035,36.593105 h 6"
+                   id="path144" />
+                <path
+                   style="color:#000000;fill:#000000;stroke-linejoin:round;-inkscape-stroke:none"
+                   d="m 22.511719,36.46875 v 0.25 h 2.458431 v -0.25 z"
+                   id="path145"
+                   sodipodi:nodetypes="ccccc" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="text_37">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+               x="34.512035"
+               y="42.098339"
+               id="text141">2.5</text>
+          </g>
+        </g>
+        <g
+           id="ytick_20">
+          <g
+             id="line2d_25">
+            <g
+               id="g141">
+              <use
+                 xlink:href="#m96ed75964b"
+                 x="22.512035"
+                 y="22.445429"
+                 style="stroke:#000000;stroke-width:0.25"
+                 id="use141" />
+            </g>
+          </g>
+          <g
+             id="text_38">
+            <text
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:start"
+               x="34.512035"
+               y="24.950663"
+               id="text142">5.0</text>
+          </g>
+        </g>
+      </g>
+      <image
+         xlink:href="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABIAAABCCAYAAABaQIagAAAAgUlEQVR4nO2Xyw2AMAzFisT+08IF5cMIXHwwUTuAlfol/RzPffUC1rka4ZCgTAbUVQyosIp0oMpgQFxFQTlqKH7h1nyp+To7bI4GywZBUGqjHdn6aO2b9oegLfsbBDqyvUaMjmwg7oSkfke+rRlTs82aUTZ1ZXOfGp/ssc+aCtmIvAw8wSCztZAkAAAAAElFTkSuQmCC"
+         id="imageac166b94be"
+         transform="matrix(1,0,0,-1,0,47.52)"
+         x="9.3599997"
+         y="-9.3599997"
+         width="12.96"
+         height="47.52" />
+      <g
+         id="LineCollection_3" />
+      <g
+         id="patch_4">
+        <path
+           d="m 9.36,56.740783 h 6.576017 6.576018 V 9.36 H 15.936017 9.36 Z"
+           style="fill:none"
+           id="path142" />
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs144">
+    <clipPath
+       id="p3cd974740a">
+      <rect
+         x="9.3599997"
+         y="72.218285"
+         width="13.152035"
+         height="142.14235"
+         id="rect142" />
+    </clipPath>
+    <clipPath
+       id="p7ed01928a4">
+      <rect
+         x="83.633896"
+         y="9.3599997"
+         width="39.456104"
+         height="47.380783"
+         id="rect143" />
+    </clipPath>
+    <clipPath
+       id="p0dff0075b1">
+      <rect
+         x="83.633896"
+         y="72.218285"
+         width="39.456104"
+         height="142.14235"
+         id="rect144" />
+    </clipPath>
+  </defs>
+  <g
+     id="text_28-3"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-57.995984,-35.775561)">
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;line-height:normal;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;stroke-linecap:butt;stroke-linejoin:round"
+       x="103.95617"
+       y="96.288475"
+       id="text132-6">*</text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke-width:0.56"
+     x="27.830294"
+     y="19.866442"
+     id="text145"><tspan
+       sodipodi:role="line"
+       id="tspan145"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.56"
+       x="27.830294"
+       y="19.866442">Explained Variance</tspan><tspan
+       sodipodi:role="line"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.5px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.56"
+       x="27.830294"
+       y="26.741442"
+       id="tspan146">PERMANOVA -log<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan154">2</tspan>(pval)</tspan></text>
+</svg>
