@@ -151,7 +151,7 @@ def setupplot(grid=False, logy=False, agg=False, figsize=(3,3)):
     if logy: plt.yscale('log')
 
 
-def clustermap(df, sig=None, figsize=(4,4), corr=False, **kwargs):
+def clustermap(df, sig=None, figsize=(4,4), corr=False, square=False):
     pd.set_option("use_inf_as_na", True)
     g = sns.clustermap(
         data=df,
@@ -161,7 +161,7 @@ def clustermap(df, sig=None, figsize=(4,4), corr=False, **kwargs):
         dendrogram_ratio=(0.25, 0.25),
         yticklabels=True,
         xticklabels=True,
-        **kwargs,
+        square=square,
     )
     if not sig is None:
         for i, ix in enumerate(g.dendrogram_row.reordered_ind):
@@ -528,7 +528,6 @@ def plot(plottype, df, logx=False, logy=False, **kwargs):
         'curve':curve,
         'multibox':multibox,
         'dendrogram':dendrogram,
-        'scatter':scatter,
         'upset':upset,
         'networkplot':networkplot,
         'venn':venn,
