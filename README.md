@@ -3,4 +3,6 @@ This repository is a store of code used for the production of the figures that w
 
 The codebase is organised as per the figures in the manuscript.
 
+'Data' directory is available upon requrest
+
 Requirements for python packages are detailed in 'requirements.txt'
