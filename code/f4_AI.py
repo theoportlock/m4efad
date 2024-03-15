@@ -46,9 +46,6 @@ f.savefig('aucrocvals')
 # Merged model
 datasets.pop('anthro')
 normdatasets = {key: f.standard(f.filter(dataset, prevail=0.3)) for key, dataset in datasets.items()}
-#normdatasets = {key: f.standard(dataset) for key, dataset in datasets.items()}
-#normdatasets = {key: f.CLR(f.mult(f.minmax(f.filter(dataset, nonzero=True)))) for key, dataset in datasets.items()}
-#normdatasets = {key: f.standard(f.CLR(f.mult(f.minmax(f.filter(dataset, nonzero=True))))) for key, dataset in datasets.items()}
 alldata = f.merge(normdatasets).droplevel(0, axis=1)
 
 tdf = f.stratify(alldata, meta, 'Condition')
