@@ -11,6 +11,7 @@ meta = f.load('meta')
 bayleys = f.load('bayleys')
 bayleyscondition = f.stratify(bayleys, meta, 'Condition')
 chan = f.change(bayleyscondition, analysis=['prevail','diff','mww'])['MalnourishedvsWell-nourished']
+chan = chan.loc[:, ~chan.columns.str.contains('prev')]
 f.save(chan, 'bayleyschange')
 f.setupplot()
 fig, ax= plt.subplots(len(bayleyscondition.columns), 1, figsize=(4,4))
@@ -33,12 +34,14 @@ f.setupplot()
 f.heatmap(fc, sig)
 f.savefig('eeghm')
 chan.index = [' '.join(ind) for ind in chan.index.values]
+chan = chan.loc[:, ~chan.columns.str.contains('prev')]
 f.save(chan, 'eegchange')
 
 # wolkes changes
 wolkes = f.load('wolkes')
 wolkescondition = f.stratify(wolkes, meta, 'Condition')
 chan = f.change(wolkescondition, analysis=['prevail', 'diff','mww'])['MalnourishedvsWell-nourished']
+chan = chan.loc[:, ~chan.columns.str.contains('prev')]
 f.save(chan, 'wolkeschange')
 fig, ax= plt.subplots(len(wolkescondition.columns), 1, figsize=(4,4), sharex=True)
 for i, col in enumerate(reversed(wolkescondition.columns.to_list())):

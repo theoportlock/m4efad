@@ -100,7 +100,7 @@ plotdf = mergedchange.join(shaps)
 # plot difference
 f.setupplot()
 fig, ax = plt.subplots()
-sns.scatterplot(data = plotdf, x='-log2(pval)', y='SHAPmean', hue='dataset', s=15, cmap='tab20', ax=ax)
+sns.scatterplot(data = plotdf, x='-log2(pval)', y='SHAPmean', hue='dataset', s=15, ax=ax)
 ax.set_ylabel('SHAP_value')
 ax.set_xlabel('-log10(p-value)')
 print(plotdf.SHAPmean.quantile(0.85))

@@ -56,21 +56,8 @@ outdf['qval'] = fdrcorrection(outdf.pval)[1]
 foutdf = outdf.loc[outdf.qval.lt(0.05)].sort_values('cor')
 f.save(foutdf, 'correlations')
 
-'''
-# Circos
-alldata = alldata.loc[:, (slice(None), fshaps.index)]
-alldata = alldata.T
-dictdata={}
-for dat in datasets.keys():
-    dictdata[dat] = alldata.xs(dat).T
-f.circos(dictdata, thresh=0.2)
-
-# Plot individual features/correlations
-#alldf = alldf.drop('LCC30721001')
-salldf = f.stratify(alldf, meta, 'Condition')
-'''
-
 # Connections
+salldf = f.stratify(alldf, meta, 'Condition')
 f.setupplot(figsize=(1,1))
 y='Bacteroides_fragilis'
 f.box(salldf, y=y)
@@ -78,7 +65,7 @@ f.savefig(y)
 
 y='P108-PWY: pyruvate fermentation to propanoate I'
 f.box(salldf, y=y)
-f.savefig(y)
+f.savefig('pyruvatediffs')
 
 y='Expressive Communication Score'
 f.box(salldf, y=y)
@@ -87,24 +74,4 @@ f.savefig(y)
 x='P108-PWY: pyruvate fermentation to propanoate I'
 y='Expressive Communication Score'
 sns.regplot(data = salldf, x=x, y=y, scatter_kws={"color": "black", 's':1}, line_kws={"color": "red"})
-f.savefig(x+y)
-
-'''
-y='P108-PWY: pyruvate fermentation to propanoate I'
-x='Bacteroides_fragilis'
-x='Temporal High-Alpha'
-x='Frontal Beta'
-x='Acidaminococcus_intestini'
-y='wolke_vocalisation'
-y='Temporal Gamma'
-y='Expressive Communication Score'
-sns.regplot(data = salldf, x=x, y=y)
-plt.show()
-y='OCFA'
-f.box(salldf, y=y)
-f.savefig(y)
-y='Acidaminococcus_intestini'
-y='Expressive Communication Score'
-y='PWY-6703: preQ0 biosynthesis'
-f.box(salldf, y=y)
-'''
+f.savefig('pyruvatediffs'+y)

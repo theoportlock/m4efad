@@ -2,9 +2,9 @@ patientinfo
 diversitychange
 specieschange
 pathwayschange
+eegchange
 bayleyschange
 wolkeschange
-eegchange
 lipidchange
 lipidclasschange
 shaps

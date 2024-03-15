@@ -22,6 +22,7 @@ diversity = f.calculate('diversity', df)
 diversityCondition = f.stratify(diversity, meta, 'Condition')
 print(diversity.mean(), diversity.std())
 diversityConditionchange = f.change(diversityCondition)['MalnourishedvsWell-nourished']
+diversityConditionchange = diversityConditionchange.loc[:, ~diversityConditionchange.columns.str.contains('prev')]
 f.save(diversityConditionchange, 'diversitychange')
 f.setupplot(figsize=(1,3))
 #f.multibox(diversityCondition[['Shannon','Evenness']], sharey=False)
@@ -61,8 +62,8 @@ f.save(change, 'specieschange')
 #individ plot
 up = sig.loc[sig['Well-nourishedmean'].gt(sig['Malnourishedmean'])]
 down = sig.loc[sig['Well-nourishedmean'].lt(sig['Malnourishedmean'])]
-f.describe(clrchange, change='Log2FC', sig='MWW_pval')
-f.save(clrchange, 'specieschange')
+f.describe(change, change='Log2FC', sig='MWW_qval')
+f.save(change, 'specieschange')
 sigfilt = f.filter(condition, filter_df=sig, filter_df_axis=1)
 #f.multibox(sigfilt, logy=True)
 upfilt = f.filter(condition, filter_df=up, filter_df_axis=1)

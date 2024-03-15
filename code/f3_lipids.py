@@ -17,6 +17,7 @@ f.setupplot()
 f.volcano(metabconditionchange, annot=True, fc=0.5, pval=0.0005)
 plt.xlim([-2.5, 2.5])
 f.savefig('lipidvolc')
+metabconditionchange = metabconditionchange.loc[:, ~metabconditionchange.columns.str.contains('prev')]
 f.save(metabconditionchange, 'lipidchange')
 
 # grouped by lipid class
@@ -26,6 +27,7 @@ metabconditionchangefilt = f.filter(metabconditionchange, column='MWW_qval', lt=
 f.setupplot(figsize=(6,2))
 f.multibox(metabcondition.loc[:,metabconditionchangefilt.index], sharey=False)
 f.savefig('lipidclasschangebox')
+metabconditionchange = metabconditionchange.loc[:, ~metabconditionchange.columns.str.contains('prev')]
 f.save(metabconditionchange, 'lipidclasschange')
 
 # Lysolipid changes

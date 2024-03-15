@@ -1,0 +1,27 @@
+Supplementary table number	Description
+1	Patient information and confounding factor analysis
+2	Differences in gut microbiome diversity
+3	Differential abundance analysis of gut microbial taxa profiles
+4	Differential abundance analysis of gut microbial pathway profiles
+5	Differences in EEG PSD
+6	Differences in Bayleys score
+7	Differences in Wolkes score
+8	Differences in plasma lipidome
+9	Differences in plasma lipid classes
+10	SHAP scores of features for the prediction of MAM
+11	Spearman correlation between features
+	
+Glossary	
+Abbreviation	Description
+WLZ_WHZ (z-score)	weight-for-height/length z-score
+MUAC (cm)	mid-upper arm circumference
+HC	head circumferance
+mean	mathematical average
+std	standard deviation
+FC	Fold change
+Log2FC	log2 fold change
+Log10FC	log10 fold change
+MWW	Mann Whitney-Wilcoxon
+meandiff	difference in mean values
+SHAP	mean SHAP value
+cor	Spearman correlation

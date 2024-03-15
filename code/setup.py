@@ -16,7 +16,8 @@ meta4 = pd.read_excel("../data/oct_23_metadata_wellcomeleap.xlsx", sheet_name='b
 meta = pd.concat([meta1, meta2, meta3, meta4])
 controls = meta.loc[meta.index.str.contains('positive_control')]
 meta = meta.loc[meta.Age_months == 12] # filter baseline only and no controls
-meta = meta.drop(['Subject_ID','Collection_date','Sequence_date', 'Age_months'], axis=1)
+#meta = meta.drop(['Subject_ID','Collection_date','Sequence_date', 'Age_months'], axis=1)
+meta = meta.drop(['Subject_ID','Sequence_date', 'Age_months'], axis=1)
 
 # for anthropometrics ------------
 anthro1 = pd.read_excel('../data/06._LEAP_Child_Anthropometry_for_1_Yrs_MAM (Only Baseline)_06-Mar-2023.xlsx', index_col=0)
@@ -270,7 +271,7 @@ othermeta['C_Fuel'] = othermeta['C_Fuel'].replace({1:"Gas", 2:"Electric stove", 
 othermeta['Drain'] = othermeta['Drain'].sub(2).abs()
 othermeta = othermeta.drop(['DOB','Other_Et', 'OtherLan', 'DOI', 'OFO', 'OMO','Lan', 'Sex'], axis=1)
 meta = meta.join(othermeta, how='inner')
-meta = meta.drop(['Seq_ID'], axis=1)
+#meta = meta.drop(['Seq_ID'], axis=1)
 meta['Condition'] = meta['Condition'].replace('Healthy','Well-nourished')
 meta['Condition'] = meta['Condition'].replace('MAM','Malnourished')
 meta.Seq_batch = meta.Seq_batch.astype(int)
