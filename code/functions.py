@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-from combat.pycombat import pycombat
+#from combat.pycombat import pycombat
 from itertools import combinations, count, permutations
-from matplotlib_venn import venn3
+#from matplotlib_venn import venn3
 from scipy.cluster.hierarchy import linkage, dendrogram
 from scipy.spatial import distance
 from scipy.stats import chi2_contingency, fisher_exact, zscore, levene, mannwhitneyu, shapiro, spearmanr
@@ -18,7 +18,7 @@ from sklearn.metrics import auc, classification_report, confusion_matrix, mean_a
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.utils import resample
-from sklearn_som.som import SOM
+#from sklearn_som.som import SOM
 from statsmodels.stats.multitest import fdrcorrection
 from upsetplot import UpSet, from_contents
 import argparse
@@ -30,12 +30,12 @@ import numpy as np
 import os
 import pandas as pd
 import pickle
-import pycircos
+#import pycircos
 import seaborn as sns
 import shap
 import shutil
 import skbio
-import statannot
+#import statannot
 import subprocess
 import umap
 
