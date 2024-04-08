@@ -3,7 +3,7 @@ This repository is a store of code used for the production of the figures that w
 
 Shotgun metagenomics sequencing data filtered for human reads can be found on the NCBI-SRA: PRJNA1087376
 
-These reads data were converted into species and functional profiles according to the Terra Worflow files in 'biobakery_analysis/'
+These reads data were converted into species and functional profiles according to the Terra Worflow files in 'biobakery\_analysis/'
 
 These profiles in addition to the additional lipid, EEG, Environmental factor, Bayley, and Wolkes datasets are found in the 'Data' directory which is available upon requrest and on the manuscript's figshare page.
 
@@ -14,7 +14,8 @@ All scripts are to be executed using python 3.8.17.
 Requirements for python package installation are detailed in 'requirements.txt' and should take around 5 minutes to install with the command below. It is recommended that you do this in a python virual environment. This can be done (on mac or linux) with the commands:
 
 ```
-python -m venv venv; source venv/bin/activate
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -24,7 +25,8 @@ Downstream analysis was done using scripts found in the 'code/' directory.
 
 The codebase is organised as per the figures in the manuscript.
 
-Scripts should be ran from within the 'code/' directory and in the order that follows.
+Scripts should be ran from within the 'code/' directory and in the order that follows:
+
 ```
 python setup.py
 python f1_microbiome.py
@@ -37,6 +39,6 @@ python s1_explainedvariance.py
 python makesupptable.py
 ```
 
-Please don't hesitate to reach out if you have any questions.
+Please don't hesitate to reach out if you have any queries.
 
 Theo.
