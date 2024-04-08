@@ -27,13 +27,13 @@ The codebase is organised as per the figures in the manuscript.
 Scripts should be ran from within the 'code/' directory and in the order that follows.
 ```
 python setup.py
-python f1\_microbiome.py
-python f2\_brain.py
-python f3\_lipids.py
-python f4\_AI.py
-python f5\_network.py
-python t1\_infantinfo.py
-python s1\_explainedvariance.py
+python f1_microbiome.py
+python f2_brain.py
+python f3_lipids.py
+python f4_AI.py
+python f5_network.py
+python t1_infantinfo.py
+python s1_explainedvariance.py
 python makesupptable.py
 ```
 
