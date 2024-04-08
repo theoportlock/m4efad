@@ -145,7 +145,7 @@ def setupplot(grid=False, logy=False, agg=False, figsize=(3,3)):
     matplotlib.rcParams['axes.facecolor'] = 'none'
     matplotlib.rcParams['xtick.major.width'] = linewidth
     matplotlib.rcParams['ytick.major.width'] = linewidth
-    matplotlib.rcParams['font.family'] = 'Arial'
+    #matplotlib.rcParams['font.family'] = 'Arial'
     matplotlib.rcParams['axes.axisbelow'] = True
     if grid: plt.grid(alpha=0.3)
     if logy: plt.yscale('log')

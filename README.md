@@ -7,16 +7,36 @@ These reads data were converted into species and functional profiles according t
 
 These profiles in addition to the additional lipid, EEG, Environmental factor, Bayley, and Wolkes datasets are found in the 'Data' directory which is available upon requrest and on the manuscript's figshare page.
 
-The codebase is organised as per the figures in the manuscript.
+## Installation
+
+All scripts are to be executed using python 3.8.17.
+
+Requirements for python package installation are detailed in 'requirements.txt' and should take around 5 minutes to install with the command below. It is recommended that you do this in a python virual environment. This can be done (on mac or linux) with the commands:
+
+```
+python -m venv venv; source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Running
 
 Downstream analysis was done using scripts found in the 'code/' directory.
 
-All scripts can be ran using python 3.8.17.
+The codebase is organised as per the figures in the manuscript.
 
-Requirements for python package installation are detailed in 'requirements.txt'.
+Scripts should be ran from within the 'code/' directory and in the order that follows.
+```
+python setup.py
+python f1\_microbiome.py
+python f2\_brain.py
+python f3\_lipids.py
+python f4\_AI.py
+python f5\_network.py
+python t1\_infantinfo.py
+python s1\_explainedvariance.py
+python makesupptable.py
+```
 
-These can be ran by 'pip install -r requirements.txt' and should take around 5 minutes and it is recommended that you do this in a python virual environment or conda environment.
-
-Please don't hesitate to contact me if you require further details.
+Please don't hesitate to reach out if you have any questions.
 
 Theo.

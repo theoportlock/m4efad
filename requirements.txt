@@ -12,3 +12,4 @@ statannot==0.2.3
 statsmodels==0.14.0
 umap==0.1.1
 UpSetPlot==0.8.0
+openpyxl==3.1.2
