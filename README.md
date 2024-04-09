@@ -25,6 +25,8 @@ Downstream analysis was done using scripts found in the 'code/' directory.
 
 The codebase is organised as per the figures in the manuscript.
 
+Important: The 'data/' directory on this manuscripts figshare page (access token given to reviewers) should be downloaded and placed in this project's top directory.
+
 Scripts should be ran from within the 'code/' directory and in the order that follows:
 
 ```
