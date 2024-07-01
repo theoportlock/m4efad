@@ -25,7 +25,6 @@ diversityConditionchange = f.change(diversityCondition)['MalnourishedvsWell-nour
 diversityConditionchange = diversityConditionchange.loc[:, ~diversityConditionchange.columns.str.contains('prev')]
 f.save(diversityConditionchange, 'diversitychange')
 f.setupplot(figsize=(1,3))
-#f.multibox(diversityCondition[['Shannon','Evenness']], sharey=False)
 f.box(diversityCondition['Shannon'].to_frame())
 f.savefig('speciesdiversityConditionbox')
 
@@ -39,7 +38,7 @@ print(f.PERMANOVA(condition, pval=True))
 print(f.PERMANOVA(condition, pval=False))
 f.savefig('speciesConditionpcoa')
 
-# taxa changes
+# Taxa changes
 condition = f.stratify(df, meta, 'Condition')
 condition = f.filter(condition, prevail=0.1)
 change = f.change(condition, analysis=['prevail','fc'])['MalnourishedvsWell-nourished']
@@ -65,11 +64,9 @@ down = sig.loc[sig['Well-nourishedmean'].lt(sig['Malnourishedmean'])]
 f.describe(change, change='Log2FC', sig='MWW_qval')
 f.save(change, 'specieschange')
 sigfilt = f.filter(condition, filter_df=sig, filter_df_axis=1)
-#f.multibox(sigfilt, logy=True)
 upfilt = f.filter(condition, filter_df=up, filter_df_axis=1)
 downfilt = f.filter(condition, filter_df=down, filter_df_axis=1)
 f.setupplot(figsize=(1,2))
-#f.multibox(downfilt, logy=True)
 f.box(downfilt['Prevotella_copri'].to_frame())
 plt.yscale('log')
 f.savefig('specdownbox')
