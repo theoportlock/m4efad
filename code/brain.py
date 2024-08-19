@@ -2,17 +2,16 @@
 import pandas as pd
 import seaborn as sns
 import numpy as np
-import functions as f
+import metatoolkit.functions as f
 import matplotlib.pyplot as plt
 
 meta = f.load('meta')
 
 # bayleys changes
-bayleys = f.load('bayleys')
+bayleys = f.load('bayley')
 bayleyscondition = f.stratify(bayleys, meta, 'Condition')
-chan = f.change(bayleyscondition, analysis=['prevail','diff','mww'])['MalnourishedvsWell-nourished']
-chan = chan.loc[:, ~chan.columns.str.contains('prev')]
-f.save(chan, 'bayleyschange')
+chan = f.load('bayleychange')
+fchan = f.filter(chan, query='metadata == "Condition.MAM"')
 f.setupplot()
 fig, ax= plt.subplots(len(bayleyscondition.columns), 1, figsize=(4,4))
 for i, col in enumerate(bayleyscondition.columns):
@@ -21,21 +20,19 @@ for i, col in enumerate(bayleyscondition.columns):
     ax[i].set_xlabel(None)
 f.savefig('bayleysbox')
 
-# EEG changes
-eeg = f.load('eeg')
-eegcondition = f.stratify(eeg, meta, 'Condition')
-chan = f.change(eegcondition, analysis=['prevail','diff','mww'])['MalnourishedvsWell-nourished']
-chan.index = chan.index.str.split(' ', expand=True)
-sig = chan['MWW_pval'].unstack().lt(0.05)
-fc = chan['meandiff'].unstack()
-fc = fc.loc[['Temporal','Frontal','Occipital','Parietal'],['Delta','Theta','Low-Alpha','High-Alpha','Beta','Gamma']]
-sig = sig.loc[['Temporal','Frontal','Occipital','Parietal'],['Delta','Theta','Low-Alpha','High-Alpha','Beta','Gamma']]
+# PSD changes
+psd = f.load('psd')
+chan = f.load('psdchange')
+fchan = f.filter(chan, query='metadata == "Condition.MAM"')
+fchan.index = fchan.index.str.replace('High.','High_').str.replace('Low.','Low_')
+fchan.index = fchan.index.str.split('.', expand=True)
+sig = fchan['qval'].unstack().lt(0.25)
+fc = fchan['coef'].unstack()
+fc = fc.loc[['Temporal','Frontal','Occipital','Parietal'],['Delta','Theta','Low_Alpha','High_Alpha','Beta','Gamma']]
+sig = sig.loc[['Temporal','Frontal','Occipital','Parietal'],['Delta','Theta','Low_Alpha','High_Alpha','Beta','Gamma']]
 f.setupplot()
 f.heatmap(fc, sig)
-f.savefig('eeghm')
-chan.index = [' '.join(ind) for ind in chan.index.values]
-chan = chan.loc[:, ~chan.columns.str.contains('prev')]
-f.save(chan, 'eegchange')
+f.savefig('psdhm')
 
 # wolkes changes
 wolkes = f.load('wolkes')
@@ -51,6 +48,6 @@ for i, col in enumerate(reversed(wolkescondition.columns.to_list())):
 f.savefig('wolkesbox')
 
 # correlations
-cor, pval = f.corrpair(eeg, pd.concat([wolkes, bayleys], axis=1, join='inner'), min_unique=3)
+cor, pval = f.corrpair(psd, pd.concat([wolkes, bayleys], axis=1, join='inner'), min_unique=3)
 f.clustermap(cor, pval.lt(0.3))
 f.savefig('eegwolkebayleyscorr')

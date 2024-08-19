@@ -1,11 +1,11 @@
 patientinfo
-diversitychange
-specieschange
+alpha_diversitychange
+taxochange
 pathwayschange
-eegchange
-bayleyschange
+psdchange
+bayleychange
 wolkeschange
 lipidchange
-lipidclasschange
+lipid_classeschange
 shaps
 correlations

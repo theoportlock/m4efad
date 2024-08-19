@@ -368,6 +368,28 @@ def multibox(df, sharey=True, logy=False):
     if logy: plt.yscale('log')
     return ax
 
+def multiviolin(df, sharey=True, logy=False):
+    fig, ax = plt.subplots(nrows=1, ncols=len(df.columns), sharey=sharey, constrained_layout=True)
+    i, j = 0, df.columns[0]
+    for i, j in enumerate(df.columns):
+        violin(df=df[j].to_frame(), x=df[j].index, y=j, ax=ax[i])
+        ax[i].set_ylabel("")
+        ax[i].set_title(j)
+    if logy: plt.yscale('log')
+    return ax
+
+def violin(df, **kwargs):
+    df = df.reset_index()
+    if kwargs.get('x') is None: kwargs['x'] = df.columns[0]
+    if kwargs.get('y') is None: kwargs['y'] = df.columns[1]
+    if kwargs.get('ax') is None: kwargs['ax'] = plt.subplots()[1]
+    sns.violinplot(data=df, inner="point", density_norm="count", cut=0, **kwargs)
+    if kwargs.get('hue'): kwargs['dodge'] = True
+    #sns.stripplot(data=df, s=1, color="0.2", **kwargs)
+    plt.setp(kwargs['ax'].get_xticklabels(), rotation=40, ha="right")
+    return kwargs['ax']
+
+
 def volcano(df, hue=None, change='Log2FC', sig='MWW_pval', fc=1, pval=0.05, annot=True, ax=None, **kwargs):
     if not ax: fig, ax= plt.subplots()
     lfc = df[change]

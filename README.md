@@ -23,6 +23,8 @@ pip install -r requirements.txt
 
 Downstream analysis was done using scripts found in the 'code/' directory.
 
+Additional scripts are located in the 'metatoolkit' package in i
+
 The codebase is organised as per the figures in the manuscript.
 
 Important: The 'data/' directory on this manuscripts figshare page (access token given to reviewers) should be downloaded and placed in this project's top directory.

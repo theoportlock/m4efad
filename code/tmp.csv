@@ -1,0 +1,17 @@
+"","Df","Variance","F","Pr(>F)"
+"Condition.MAM",1,27.6824919185897,1.4060371739635,0.177
+"Delivery_Mode.Caesarean",1,18.4880257507571,0.9390358192899,0.45
+"Sex_of_the_Child.Female",1,28.6990757479051,1.45767106077799,0.17
+"Duration_of_Exclusive_Breast_Feeding_Months",1,28.2368269564335,1.43419271979842,0.177
+"Condition.MAM:Delivery_Mode.Caesarean",1,11.9819717975143,0.608583136743335,0.754
+"Condition.MAM:Sex_of_the_Child.Female",1,46.699565547392,2.3719441645889,0.031
+"Delivery_Mode.Caesarean:Sex_of_the_Child.Female",1,21.0208467940381,1.06768177184082,0.359
+"Condition.MAM:Duration_of_Exclusive_Breast_Feeding_Months",1,17.6456227650193,0.896248850656854,0.476
+"Delivery_Mode.Caesarean:Duration_of_Exclusive_Breast_Feeding_Months",1,33.0433471617649,1.67832341821883,0.105
+"Sex_of_the_Child.Female:Duration_of_Exclusive_Breast_Feeding_Months",1,13.0588325654409,0.663278583791255,0.678
+"Condition.MAM:Delivery_Mode.Caesarean:Sex_of_the_Child.Female",1,8.60413520615799,0.437017519421443,0.917
+"Condition.MAM:Delivery_Mode.Caesarean:Duration_of_Exclusive_Breast_Feeding_Months",1,9.28851821496281,0.471778405632065,0.842
+"Condition.MAM:Sex_of_the_Child.Female:Duration_of_Exclusive_Breast_Feeding_Months",1,5.57462476062011,0.283143933262225,0.971
+"Delivery_Mode.Caesarean:Sex_of_the_Child.Female:Duration_of_Exclusive_Breast_Feeding_Months",1,26.5478725943738,1.3484080792694,0.231
+"Condition.MAM:Delivery_Mode.Caesarean:Sex_of_the_Child.Female:Duration_of_Exclusive_Breast_Feeding_Months",1,24.1667028818377,1.22746473561422,0.279
+"Residual",214,4213.29775647311,NA,NA
