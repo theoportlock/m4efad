@@ -70,7 +70,7 @@ taxo = taxo.loc[taxo.index.str[3] !='3']
 taxo = taxo.loc[taxo.index.str[-1] !='2']
 taxo.index = taxo.index.str[:-3]
 taxo.index = taxo.index.rename('ID')
-taxo.columns = taxo.columns.str.replace('.*\|','',regex=True)
+taxo.columns = taxo.columns.str.replace('.*\|','',regex=True) # Remove other part of name
 f.save(taxo, 'taxo')
 
 # for functions - in cpm
