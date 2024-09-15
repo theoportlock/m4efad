@@ -9,7 +9,7 @@ These profiles in addition to the additional lipid, EEG, Environmental factor, B
 
 ## Installation
 
-All scripts are to be executed using python 3.8.17.
+Python scripts are to be executed using python 3.8.17.
 
 Requirements for python package installation are detailed in 'requirements.txt' and should take around 5 minutes to install with the command below. It is recommended that you do this in a python virual environment. This can be done (on mac or linux) with the commands:
 
@@ -17,31 +17,22 @@ Requirements for python package installation are detailed in 'requirements.txt' 
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+cd metatoolkit/
+pip install .
+cd ../
 ```
 
 ## Running
 
 Downstream analysis was done using scripts found in the 'code/' directory.
 
-Additional scripts are located in the 'metatoolkit' package in i
+Additional scripts are located in the 'metatoolkit' package
 
 The codebase is organised as per the figures in the manuscript.
 
 Important: The 'data/' directory on this manuscripts figshare page (access token given to reviewers) should be downloaded and placed in this project's top directory.
 
-Scripts should be ran from within the 'code/' directory and in the order that follows:
-
-```
-python setup.py
-python f1_microbiome.py
-python f2_brain.py
-python f3_lipids.py
-python f4_AI.py
-python f5_network.py
-python t1_infantinfo.py
-python s1_explainedvariance.py
-python makesupptable.py
-```
+All scripts for analysis should be ran from within the 'code/' directory under 'analysis.sh'
 
 Please don't hesitate to reach out if you have any queries.
 
