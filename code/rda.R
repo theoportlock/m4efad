@@ -19,7 +19,7 @@ option_list <- list(
               help = "Path to the metadata file", metavar = "character"),
   make_option(c("-f", "--fixed_effects"), type = "character", default = NULL,
               help = "Fixed effects (comma-separated, e.g., 'Factor1,Factor2')", metavar = "character"),
-  make_option(c("-o", "--output"), type = "character", default = "../results/adonis2_results.tsv",
+  make_option(c("-o", "--output"), type = "character", default = "../results/lda_results.tsv",
               help = "Path to the output TSV file", metavar = "character")
 )
 
@@ -27,24 +27,26 @@ option_list <- list(
 opt_parser <- OptionParser(option_list = option_list)
 opt <- parse_args(opt_parser)
 
-opt$metadata = '../results/metaonehotstandard.tsv'
-#opt$metadata = '../results/metaonehot.tsv'
-#opt$metadata = '../results/meta.tsv'
-opt$taxo = '../results/species.tsv'
-#opt$taxo = '../results/pathways.tsv'
-#opt$taxo = '../results/psd.tsv'
-opt$fixed_effects = 'Condition.MAM,Delivery_Mode.Caesarean,Sex_of_the_Child.Female,Duration_of_Exclusive_Breast_Feeding_Months'
+print(opt)
+
+#opt$metadata = '../results/metaonehotstandard.tsv'
+##opt$metadata = '../results/metaonehot.tsv'
+##opt$metadata = '../results/meta.tsv'
+#opt$taxonomic_data = '../results/species.tsv'
+##opt$taxonomic_data = '../results/pathways.tsv'
+##opt$taxonomic_data = '../results/psd.tsv'
+#opt$fixed_effects = 'Condition.MAM,Delivery_Mode.Caesarean,Sex_of_the_Child.Female,Duration_of_Exclusive_Breast_Feeding_Months'
 
 # Check if required arguments are provided
-if (is.null(opt$taxo) || is.null(opt$metadata) || is.null(opt$fixed_effects)) {
-  stop("Please provide the paths for the taxo matrix file, metadata file, and fixed effects.")
+if (is.null(opt$taxonomic_data) || is.null(opt$metadata) || is.null(opt$fixed_effects)) {
+  stop("Please provide the paths for the taxonomic_data matrix file, metadata file, and fixed effects.")
 }
 
 # Load data
 taxo <- tryCatch({
-  read.csv(opt$taxo, header = TRUE, sep = "\t", row.names = 1)
+  read.csv(opt$taxonomic_data, header = TRUE, sep = "\t", row.names = 1)
 }, error = function(e) {
-  stop("Error reading the taxo matrix file: ", e$message)
+  stop("Error reading the taxonomic_data matrix file: ", e$message)
 })
 
 metadata <- tryCatch({
@@ -89,11 +91,9 @@ ordiplot(output, scaling = 2)
 #ordiplot(output, scaling = 2)
 dev.off()
 
-
 # Stats
 RsquareAdj(output)
 vif.cca(output) # variance inflation factor (<10 OK)
 anova.cca(output, permutations = 1000) # full model
 anova.cca(output, permutations = 1000, by="margin") # per variable
-
 

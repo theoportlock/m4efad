@@ -31,6 +31,7 @@ leiden_clustering.py covariateedgesfilterfilter -c effect
 ###### FIGURE 1 - MICROBIOME ######
 ./plot_anthro.py
 taxo_summary.py taxo
+./calculate_pb.py
 covariates='Condition.MAM,Delivery_Mode.Caesarean,Sex_of_the_Child.Male,Duration_of_Exclusive_Breast_Feeding_Months'
 Maaslin2.R -f $covariates ../results/taxo.tsv ../results/metaonehot.tsv ../results/taxochange
 yes | cp ../results/taxochange/all_results.tsv ../results/taxochange.tsv
@@ -50,6 +51,7 @@ filter.py taxo --colfilt 's__'
 ./adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
 ./adonis.R -d ../results/beta_weighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_weighted-unifracAdonis.tsv
 ./adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
+./rda.R -t ../results/taxo.tsv -m ../results/metaonehotstandard.tsv -f $covariates 
 change.py alpha_diversity --df2 categories
 stratify.py alpha_diversity Condition
 box.py alpha_diversityCondition -y diversity_shannon
@@ -57,6 +59,7 @@ box.py alpha_diversityCondition -y diversity_shannon
 ls ../results/beta* | parallel pcoa.py {}
 ls ../results/*Pcoa.tsv | parallel stratify.py {} Condition
 ls ../results/*PcoaCondition.tsv | parallel spindle.py {}
+# Just check filter_species.py for diversity measurements
 
 ###### FIGURE 2 - BRAIN ######
 Maaslin2.R -f $covariates -n None -t None ../results/bayley.tsv ../results/metaonehot.tsv ../results/bayleychange
@@ -87,6 +90,7 @@ volcano.py lipid_classeschange --change coef --sig qval --fc 0.01 --pval 0.25
 ./lipids.py
 
 ###### FIGURE 4 - INTEGRATIVE ######
+./cluster_EV.py
 merge.py lipid_richness alpha_diversity
 corr.py lipid_richnessalpha_diversity bayley
 clustermap.py lipid_richnessalpha_diversitybayleycorr
@@ -98,6 +102,7 @@ merge.py $datasets -o alldata
 ./plot_aucrocs.py
 filter.py alldata --prevail 0.1
 stratify.py alldatafilter Condition.MAM --df2 metaonehot 
+# Pycaretclassifier.py for improving the crossval
 predict.py classifier alldatafilterCondition.MAM --shap_val --shap_interact -n 100
 group.py alldatafilterCondition.MAMmeanabsshaps --func 'mean' --axis 'columns'
 ./shap_maaslin_compare.py

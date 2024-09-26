@@ -3,7 +3,7 @@
 '''
 Author: Theo Portlock
 '''
-import functions as f
+import metatoolkit.functions as f
 import itertools
 import numpy as np
 import matplotlib.pyplot as plt
