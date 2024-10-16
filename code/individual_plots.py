@@ -24,19 +24,23 @@ y='s__Streptococcus_salivarius'
 f.box(salldf, y=y, x='Condition')
 f.savefig('strepbox')
 
-y='P108-PWY: pyruvate fermentation to propanoate I'
+y='PWY-6876: isopropanol biosynthesis (engineered)'
 f.box(salldf, y=y, x='Condition')
-f.savefig('pyruvatebox')
+f.savefig('isobox')
+
+y='GLUCOSE1PMETAB-PWY: glucose and glucose-1-phosphate degradation'
+f.box(salldf, y=y, x='Condition')
+f.savefig('glucobox')
 
 y='Expressive Communication Score'
 f.box(salldf, y=y, x='Condition')
 f.savefig('ecscorebox')
 
-x='P108-PWY: pyruvate fermentation to propanoate I'
-y='Expressive Communication Score'
+x='PWY-6876: isopropanol biosynthesis (engineered)'
+y='Gross Motor Score'
 sns.regplot(data = salldf, x=x, y=y, color='red', scatter=False)
 sns.scatterplot(data = salldf, x=x, y=y, s=2, hue='Condition', legend=False)
-f.savefig('pyruvateECcorr')
+f.savefig('isoECcorr')
 
 y='s__Bacteroides_fragilis'
 x='s__Streptococcus_salivarius'
@@ -51,3 +55,9 @@ y='P108-PWY: pyruvate fermentation to propanoate I'
 sns.regplot(data = salldf, x=x, y=y, color='red', scatter=False)
 sns.scatterplot(data = salldf, x=x, y=y, s=2, hue='Condition', legend=False)
 f.savefig('bacterpyruvatecorr')
+
+y='Vocalisation'
+x='GLUCOSE1PMETAB-PWY: glucose and glucose-1-phosphate degradation'
+sns.regplot(data = salldf, x=x, y=y, color='red', scatter=False)
+sns.scatterplot(data = salldf, x=x, y=y, s=2, hue='Condition', legend=False)
+f.savefig('vocglucosecorr')

@@ -8,7 +8,6 @@ df = df.drop(['metadata','value','N','N.not.0','pval','qval'], axis=1)
 meandf= df.groupby('dataset').sum()
 
 f.setupplot()
-#meandf.SHAPmean.plot.pie()
 fig, ax = plt.subplots(figsize=(4, 4))  # Set the figure size
 ax.pie(
     meandf['SHAPmean'],  # Data for the pie chart
@@ -20,4 +19,3 @@ ax.pie(
 )
 ax.set_title('SHAP Mean by Dataset', fontsize=16)  # Title with increased font size
 f.savefig('shappie')
-

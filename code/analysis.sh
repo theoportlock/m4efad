@@ -75,7 +75,7 @@ box.py pathwayscompleteCondition -y 'HSERMETANA-PWY: L-methionine biosynthesis I
 Maaslin2.R -f $covariates -a 0 ../results/pathways.tsv ../results/metaonehot.tsv ../results/pathwayschange
 yes | cp ../results/pathwayschange/all_results.tsv ../results/pathwayschange.tsv
 filter.py pathwayschange -q 'metadata == "Condition.MAM"'
-volcano.py pathwayschangefilter --change coef --sig pval --fc 0.01 --pval 0.2
+volcano.py pathwayschangefilter --change coef --sig pval --fc 0.01 --pval 0.05
 
 Maaslin2.R -f $covariates ../results/melon.tsv ../results/metaonehot.tsv ../results/melonchange
 yes | cp ../results/melonchange/all_results.tsv ../results/melonchange.tsv
@@ -152,7 +152,8 @@ filter.py taxo --colfilt 's__' -o species
 merge.py lipid_richness alpha_diversity
 corr.py lipid_richnessalpha_diversity bayley
 clustermap.py lipid_richnessalpha_diversitybayleycorr
-datasets="species pathways melon lipid_classes psd wolkes bayley"
+#datasets="species pathways melon lipid_classes psd wolkes bayley"
+datasets="species pathways lipid_classes psd wolkes bayley"
 printf "$datasets" | parallel -d ' ' --jobs 1 'stratify.py {} Condition.MAM --df2 metaonehot'
 printf "$datasets" | parallel -d ' ' --jobs 1 'predict.py classifier {}Condition.MAM'
 paste $(printf "../results/%sCondition.MAMaucrocs.tsv " ${datasets}) > ../results/allaucrocs.tsv
@@ -162,13 +163,13 @@ filter.py alldata --prevail 0.1
 stratify.py alldatafilter Condition.MAM --df2 metaonehot 
 ./find_hyperparameters.py ../results/alldatafilterCondition.MAM
 predict.py classifier alldatafilterCondition.MAM --shap_val --shap_interact -n 100
-# Create SHAP values
 group.py alldatafilterCondition.MAMmeanabsshaps --func 'mean' --axis 'columns'
 ./shap_maaslin_compare.py
 ./plot_rel_shaps.py
 group.py shap_interacts --func 'mean' --axis 'columns' --index_levels 2
 ./shap_interacts_reformat.py
-filter.py shap_interactsmeanformat -q "abs(shap_interactsmean) > 0.001" 
+./plot_shaps_thresh.py
+filter.py shap_interactsmeanformat -q "abs(shap_interactsmean) > 0.00012" 
 plot_circos.py shap_interactsmeanformatfilter shaps shap_interactsmean
 
 ###### FIGURE 5 - NETWORK ######

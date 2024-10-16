@@ -38,6 +38,7 @@ def predict(df):
     f.savefig('beeswarm')
     shap.plots.waterfall(shap_values[71,:,1], show=False)
     f.savefig('waterfall')
+    '''
     shap_interaction_values = explainer.shap_interaction_values(X_scaled)[:,:,:,1]
     out = []
     for i, I in enumerate(shap_interaction_values):
@@ -50,18 +51,17 @@ def predict(df):
     vals = ('s__Faecalibacterium_prausnitzii','s__Bacteroides_fragilis')
     vals = ('s__Prevotella_copri','Oxidized glycerophospholipids [GP20]')
     vals = ('s__Bacteroides_fragilis','Oxidized glycerophospholipids [GP20]')
-    vals = ('s__Bacteroides_fragilis','BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis')
-
+    vals = ('s__Blautia_obeum','Monoradylglycerols [GL01]')
     ffoutdf = outdf.loc[vals]
     fX = X
     odf = ffoutdf.to_frame('interaction').join(fX)
     #sns.scatterplot(odf, x=vals[0], y=vals[1], hue='interaction', palette='coolwarm', hue_norm=(-3e-4,3e-4), style=y)
     sns.scatterplot(odf, x=vals[0], y=vals[1], hue='interaction', palette='coolwarm', style=y)
     sns.scatterplot(odf, x='interaction', y=y_prob, palette='coolwarm', hue_norm=(-3e-4,3e-4), style=y)
-
     # Dig into fragilis
     fffoutdf = outdf.xs('s__Bacteroides_fragilis')
     fffoutdf.agg(['mean','std'], axis=1).sort_values('mean').tail(n=25)['mean'].plot.barh()
+    '''
 
 def parse_args(args):
     parser = argparse.ArgumentParser(
