@@ -13,9 +13,11 @@ alldata = f.load('alldata')
 alldata.columns = alldata.columns.str.replace(r'[\[\]\;\/\|\(\)\:\-\ ]','.', regex=True)
 
 # significant changes
-thresh=0.85
+#thresh=0.85
+thresh=0.90
 shaps = f.load('shaps')
 sigvals = shaps.loc[shaps.SHAPmean.gt(shaps.SHAPmean.quantile(thresh))].index
+#sigvals = shaps.loc[shaps.SHAPmean.gt(0.0027)].index
 fshaps = shaps.loc[sigvals]
 
 # filter sig
