@@ -3,7 +3,7 @@
 '''
 Author: Theo Portlock
 '''
-import functions as f
+import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 from docx import Document
@@ -64,13 +64,15 @@ f.save(quality, 'quality')
 
 # for taxonomy
 taxo = pd.read_csv('../data/m4efad_metaphlan3_profiles_oct2023.tsv', sep='\t', index_col=0, header=1)
+taxo = taxo.loc[~taxo.index.str.contains('k__Viruses')]
+taxo = taxo.loc[~taxo.index.str.contains('UNKNOWN')]
 taxo.columns = taxo.columns.str.replace('\.metaphlan','', regex=True)
 taxo = taxo.T.join(samplesheet.reset_index().set_index('Seq_ID')['TimeID'], how='inner').set_index('TimeID')
 taxo = taxo.loc[taxo.index.str[3] !='3']
 taxo = taxo.loc[taxo.index.str[-1] !='2']
 taxo.index = taxo.index.str[:-3]
 taxo.index = taxo.index.rename('ID')
-taxo.columns = taxo.columns.str.replace('.*\|','',regex=True) # Remove other part of name
+taxo.columns = taxo.columns.str.replace('.*\|','',regex=True)
 f.save(taxo, 'taxo')
 
 # for functions - in cpm
@@ -85,6 +87,30 @@ pathways.index = pathways.index.rename('ID')
 f.save(pathways, 'pathwaysstrat')
 pathwaysall = f.norm(pathways.loc[:, ~pathways.columns.str.contains('\|')])
 f.save(pathwaysall, 'pathways')
+
+# for function taxonomy
+pathwaystaxo = pd.read_csv('../data/map_metacyc-pwy_lineage.tsv', sep='\t', index_col=0, header=None).set_axis(['full'],axis=1)
+pathwaystaxo = pathwaystaxo.full.str.split('\|', regex=True, expand=True)
+pathwaystaxo.columns = 'level_' + pathwaystaxo.columns.astype(str)
+pathways.columns = pathways.columns.str.replace('\:.*','', regex=True)
+output = []
+level = pathwaystaxo.columns[0]
+for level in pathwaystaxo.columns:
+    output.append(f.stratify(pathways.T, pathwaystaxo, level).groupby(level=0).sum().T)
+allpathwaystaxo = f.norm(pd.concat(output, axis=1))
+f.save(allpathwaystaxo, 'pathwaystaxo')
+
+# for pathway completeness
+pathways = pd.read_csv("../data/m4efad_humann3_pathway_coverage_oct2023.tsv", index_col=0, sep='\t').T
+pathways.index = pathways.index.str.replace('_Coverage','')
+pathways = pathways.join(samplesheet.reset_index().set_index('Seq_ID')['TimeID'], how='inner').set_index('TimeID')
+pathways = pathways.loc[pathways.index.str[3] !='3']
+pathways = pathways.loc[pathways.index.str[-1] !='2']
+pathways.index = pathways.index.str[:-3]
+pathways = f.filter(pathways, nonzero=True)
+pathways.index = pathways.index.rename('ID')
+pathwaysall = pathways.loc[:, ~pathways.columns.str.contains('\|')]
+f.save(pathwaysall, 'pathwayscomplete')
 
 # for melonnpan
 melon = pd.read_csv("../data/melonnpan_results2MelonnPan_Predicted_Metabolites.txt", index_col=0, sep='\t')

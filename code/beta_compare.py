@@ -45,6 +45,10 @@ for name in names:
     print(name)
     outdf.loc[name] = mantel(dm[name[0]], dm[name[1]], permutations=999)[:2]
 
+# Add FDR correction
+outdf['qval'] = f.fdrcorrection(outdf.pval)[1]
+outdf = outdf.drop(['pval'], axis=1)
+
 # Save results
 print(outdf)
 f.setupplot()

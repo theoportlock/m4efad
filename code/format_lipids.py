@@ -7,14 +7,14 @@ For lipid data setup
 import pandas as pd
 import numpy as np
 from itertools import permutations
-import functions as f
+import metatoolkit.functions as f
 
 def prevail(df):
     basemean = df.mean().to_frame('basemean')
     means = df.groupby(level=0).mean().T
     means.columns = means.columns + 'mean'
     baseprevail = df.agg(np.count_nonzero, axis=0).div(df.shape[0]).to_frame('baseprev')
-    prevail = df.groupby(level=0, axis=0).apply(lambda x: x.agg(np.count_nonzero, axis=0).div(x.shape[0])).T
+    prevail = df.groupby(level=0).apply(lambda x: x.agg(np.count_nonzero, axis=0).div(x.shape[0])).T
     prevail.columns = prevail.columns + 'prev'
     basestd = df.std().to_frame('basestd')
     stds = df.groupby(level=0).std().T
@@ -42,7 +42,8 @@ dfn = dfn.reset_index().rename(columns={'Unnamed: 1':'treatment', 'index':'Liggi
 dfn.columns = dfn.columns.str.replace('\|.*','', regex=True)
 dfp.columns = dfp.columns.str.replace('\|.*','', regex=True)
 df = pd.concat([dfp,dfn], join='inner', axis=1)
-df = df.groupby(level=0, axis=1).max()
+#df = df.groupby(level=0, axis=1).max()
+df = df.T.groupby(level=0).max().T
 metabid['sample'] = metabid['sample'].str[:-4] + '1001'
 metabid['Liggins sample'] = metabid['Liggins sample'].str.extract('(\d+)').astype(int)
 metabid.treatment = metabid.treatment.str.upper()
@@ -73,7 +74,8 @@ for m in df.columns:
 prev = 0.1 # filter for those that are present in over 10% of samples
 meta = f.load('meta')
 st = f.stratify(df, meta, 'Condition')
-ch = f.prevail(st)
+#ch = f.prevail(st)
+ch = prevail(st)
 prevs = ch.loc[:, ch.columns.str.contains('prev')]
 df = df.drop(prevs.loc[prevs.lt(prev).any(axis=1)].index, axis=1) # lose 100
 richness = (~(df == 0)).sum(axis=1).to_frame('lipid_richness')
@@ -93,6 +95,8 @@ lipids = pd.read_csv('../data/lipids.tsv', sep='\t', index_col=0, dtype=object)
 abbrev = lipids.dropna(subset='ABBREVIATION').set_index('ABBREVIATION')
 abbrev = abbrev.groupby(level=0).first()
 df = df.T.join(abbrev.dropna(subset='MAIN_CLASS')['MAIN_CLASS'].groupby(level=0).first(), how='inner').set_index('MAIN_CLASS').T
-df = df.groupby(level=0, axis=1).sum()
+#df = df.groupby(level=0, axis=1).sum()
+df = df.T.groupby(level=0).max().T
 df.index = df.index.rename('ID')
 f.save(df, 'lipid_classes')
+print('done')

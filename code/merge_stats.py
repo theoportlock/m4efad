@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import pandas as pd
 import numpy as np
-import functions as f
+import metatoolkit.functions as f
 from statsmodels.stats.multitest import fdrcorrection
 
 # load data

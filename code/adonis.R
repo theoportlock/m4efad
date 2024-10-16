@@ -25,9 +25,9 @@ option_list <- list(
 # Parse command line arguments
 opt_parser <- OptionParser(option_list = option_list)
 opt <- parse_args(opt_parser)
-opt$distance_matrix <- '../results/melonDist.tsv'
-opt$metadata <- '../results/meta.tsv'
-opt$fixed_effects <- 'Condition,Delivery_Mode,Sex_of_the_Child,Place_of_birth'
+#opt$distance_matrix <- '../results/melonDist.tsv'
+#opt$metadata <- '../results/meta.tsv'
+#opt$fixed_effects <- 'Condition,Delivery_Mode,Sex_of_the_Child,Place_of_birth'
 
 # Check if required arguments are provided
 if (is.null(opt$distance_matrix) || is.null(opt$metadata) || is.null(opt$fixed_effects)) {

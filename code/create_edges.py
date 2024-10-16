@@ -13,9 +13,10 @@ alldata = f.load('alldata')
 alldata.columns = alldata.columns.str.replace(r'[\[\]\;\/\|\(\)\:\-\ ]','.', regex=True)
 
 # significant changes
+thresh=0.95
 shaps = f.load('shaps')
-print(shaps.SHAPmean.quantile(0.85))
-sigvals = shaps.loc[shaps.SHAPmean.gt(shaps.SHAPmean.quantile(0.85))].index
+print(shaps.SHAPmean.quantile(thresh))
+sigvals = shaps.loc[shaps.SHAPmean.gt(shaps.SHAPmean.quantile(thresh))].index
 fshaps = shaps.loc[sigvals]
 
 # filter sig
@@ -40,7 +41,8 @@ foutdf = outdf.loc[outdf.qval.lt(0.05)].sort_values('cor')
 # Add shap interacts
 si = f.load('shap_interactsmeanformatfilter').reset_index().set_index(['source', 'target'])
 foutdf = foutdf.reset_index().set_index(['source', 'target'])
-joined = foutdf.join(si, how='inner')
+#joined = foutdf.join(si, how='inner')
+joined = foutdf.join(si, how='left').fillna(0)
 
 #f.save(foutdf, 'correlations')
 #joined['relationship'] = np.sign(joined.cor)

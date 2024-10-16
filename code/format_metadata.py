@@ -3,7 +3,7 @@
 '''
 Author: Theo Portlock
 '''
-import functions as f
+import metatoolkit.functions as f
 import pandas as pd
 from ast import literal_eval
 

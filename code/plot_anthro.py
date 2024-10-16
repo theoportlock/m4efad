@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import pandas as pd
 import matplotlib.pyplot as plt
-import functions as f
+import metatoolkit.functions as f
 
 # Load data
 df = f.load('anthro')
@@ -12,6 +12,18 @@ meta = f.load('meta')
 strat = f.stratify(df, meta, 'Condition')
 
 # Plot
-f.setupplot()
-f.multiviolin(strat.sort_index(ascending=False), sharey=False)
-f.savefig('anthrovioin')
+f.setupplot(figsize=(1.8, 1.8), fontsize=5)
+
+# Assuming f.box takes both ax and the column dataframe as inputs
+fig, ax = plt.subplots(2, 2, figsize=(1.8, 1.8))  # Creating a 2x2 grid for subplots
+fig.tight_layout(pad=0.01)  # Adjust spacing
+
+# Flatten the 2x2 grid of axes to simplify iteration
+axes = ax.flatten()
+
+# Iterate over the columns and axes
+for i, anthrocol in enumerate(strat.columns):
+    f.box(strat[anthrocol].to_frame(), ax=axes[i])
+
+# Save
+f.savefig('anthrobox')

@@ -4,7 +4,7 @@
 Author: Theo Portlock
 For project setup
 '''
-import functions as f
+import metatoolkit.functions as f
 import numpy as np
 import pandas as pd
 

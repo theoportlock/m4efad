@@ -1,16 +1,26 @@
 #!/usr/bin/env python
 import metatoolkit.functions as f
+from skbio.stats.composition import multi_replace
+import numpy as np
 
+# Load data
 meta = f.load('categories')
 df = f.load('taxo')
 
+# Filter just P and B
 df.columns = df.columns.str[3:]
-df = f.filter(df, prevail=0.1)
-df = f.mult(df)
-pb = f.calculate("pbratio", df)
+df = df.T.apply(multi_replace, axis=0).T
+df = df.apply(np.log)
+
+#pb = df.Prevotella / (df.Prevotella + df.Bacteroides)
+pb = df.Prevotella / df.Bacteroides
+pb = pb.to_frame('PBratio')
+
+#pb = f.calculate("pbratio", df)
 f.save(pb, 'PBratio')
 
 ch = f.change(pb, meta)
 fch = f.filter(ch.reset_index().set_index('source'), query='MWW_qval < 0.05')
-print(fch)
+print(fch.loc['Condition.MAM'])
+
 

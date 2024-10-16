@@ -21,7 +21,7 @@ calculate_diversity.R \
 done
 
 # Combine alpha diversity metrics and cleanup
-merge.py ../results/mbiome_alpha/* -o alpha_diversity &&
+merge.py ../results/mbiome_alpha/* -o alpha_diversity
 rm -r ../results/mbiome_alpha
 
 # For beta diversity measures

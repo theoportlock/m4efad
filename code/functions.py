@@ -1033,7 +1033,7 @@ def CLR(df):
     return df.T.apply(clr).T
 
 def mult(df):
-    return pd.DataFrame(mul(df.T).T, index=df.index, columns=df.columns)
+    return pd.DataFrame(mul(df), index=df.index, columns=df.columns)
 
 def scale(analysis, df):
     available={
