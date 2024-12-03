@@ -26,8 +26,8 @@ filter.py -dt 'bool' metaonehotanthro -o categories
 fisher.py categories
 change.py numeric --df2 categories
 corr.py numeric
-./merge_stats.py
-./filt_malnutrition_stats.py
+python merge_stats.py
+python filt_malnutrition_stats.py
 filter.py covariateedges -q 'qval < 0.05 and effect != inf and effect != -inf'
 filter.py covariateedgesfilter -q 'effect > 0'
 leiden_clustering.py covariateedgesfilterfilter -c effect
@@ -35,9 +35,9 @@ leiden_clustering.py covariateedgesfilterfilter -c effect
 ###################################
 ###### FIGURE 1 - MICROBIOME ######
 ###################################
-./plot_anthro.py
+python plot_anthro.py
 taxo_summary.py taxo
-./calculate_pb.py
+python calculate_pb.py
 covariates='Condition.MAM,Delivery_Mode.Caesarean,Sex_of_the_Child.Male,Duration_of_Exclusive_Breast_Feeding_Months'
 
 # Species
@@ -46,7 +46,7 @@ yes | cp ../results/taxochange/all_results.tsv ../results/taxochange.tsv
 filter.py taxochange -q 'metadata == "Condition.MAM"'
 volcano.py taxochangefilter --change coef --sig pval --fc 0.01 --pval 0.25
 sig_summary.py taxochangefilter
-./plot_species.py
+python plot_species.py
 
 # Pathways
 Maaslin2.R -f $covariates ../results/pathwaysstrat.tsv ../results/metaonehot.tsv ../results/pathwaysstratchange
@@ -87,17 +87,17 @@ box.py melonCondition -y 'nicotinic.acid'
 
 # Diversity stats
 filter.py taxo --colfilt 's__'
-./calculate_diversity.sh taxofilter
-./adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
-./adonis.R -d ../results/beta_weighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_weighted-unifracAdonis.tsv
-./adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
+python calculate_diversity.sh taxofilter
+Rscript adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
+Rscript adonis.R -d ../results/beta_weighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_weighted-unifracAdonis.tsv
+Rscript adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
 scale.py standard metaonehot
-./rda.R -t ../results/taxo.tsv -m ../results/metaonehotstandard.tsv -f $covariates 
+Rscript rda.R -t ../results/taxo.tsv -m ../results/metaonehotstandard.tsv -f $covariates 
 calculate.py diversity taxo
 change.py taxodiversity --df2 categories
 stratify.py alpha_diversity Condition
 box.py alpha_diversityCondition -y diversity_shannon
-./beta_compare.py
+python beta_compare.py
 ls ../results/beta* | parallel pcoa.py {}
 ls ../results/*Pcoa.tsv | parallel stratify.py {} Condition
 ls ../results/*PcoaCondition.tsv | parallel spindle.py {}
@@ -120,7 +120,7 @@ yes | cp ../results/psdchange/all_results.tsv ../results/psdchange.tsv
 filter.py psdchange -q 'metadata == "Condition.MAM"'
 sig_summary.py psdchangefilter
 
-./brain_plots.py
+python brain_plots.py
 
 ###############################
 ###### FIGURE 3 - LIPIDS ######
@@ -143,39 +143,38 @@ filter.py extralipidchange -q 'metadata == "Condition.MAM"'
 sig_summary.py extralipidchangefilter
 volcano.py extralipidchange --change coef --sig qval --fc 2 --pval 0.0000005
 
-./lipid_plots.py
+python lipid_plots.py
 
 ####################################
 ###### FIGURE 4 - INTEGRATIVE ######
 ####################################
-./cluster_EV.py
+python cluster_EV.py
 filter.py taxo --colfilt 's__' -o species
 merge.py lipid_richness alpha_diversity
 corr.py lipid_richnessalpha_diversity bayley
 clustermap.py lipid_richnessalpha_diversitybayleycorr
-#datasets="species pathways melon lipid_classes psd wolkes bayley"
 datasets="species pathways lipid_classes psd wolkes bayley"
 printf "$datasets" | parallel -d ' ' --jobs 1 'stratify.py {} Condition.MAM --df2 metaonehot'
 printf "$datasets" | parallel -d ' ' --jobs 1 'predict.py classifier {}Condition.MAM'
 paste $(printf "../results/%sCondition.MAMaucrocs.tsv " ${datasets}) > ../results/allaucrocs.tsv
 merge.py $datasets -o alldata
-./plot_aucrocs.py
+python plot_aucrocs.py
 filter.py alldata --prevail 0.1
 stratify.py alldatafilter Condition.MAM --df2 metaonehot 
-./find_hyperparameters.py ../results/alldatafilterCondition.MAM
+python find_hyperparameters.py ../results/alldatafilterCondition.MAM
 predict.py classifier alldatafilterCondition.MAM --shap_val --shap_interact -n 100
 group.py alldatafilterCondition.MAMmeanabsshaps --func 'mean' --axis 'columns'
-./shap_maaslin_compare.py
-./plot_rel_shaps.py
+python shap_maaslin_compare.py
+python plot_rel_shaps.py
 group.py shap_interacts --func 'mean' --axis 'columns' --index_levels 2
-./shap_interacts_reformat.py
-./plot_shaps_thresh.py
+python shap_interacts_reformat.py
+python plot_shaps_thresh.py
 filter.py shap_interactsmeanformat -q "abs(shap_interactsmean) > 0.00012" 
 plot_circos.py shap_interactsmeanformatfilter shaps shap_interactsmean
 
 ###### FIGURE 5 - NETWORK ######
-./create_edges.py
-./individual_plots.py
+python create_edges.py
+python individual_plots.py
 
 ###### ASSEMBLE SUPP TABLES ######
 makesupptable.py
