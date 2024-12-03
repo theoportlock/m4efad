@@ -1,39 +1,67 @@
-# M4EFaD - Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants 
-This repository is a store of code used for the production of the figures that were part of the study entitled: 'Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants'.
+# M4EFaD: Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants  
 
-Shotgun metagenomics sequencing data filtered for human reads can be found on the NCBI-SRA: PRJNA1087376
+This repository contains the code used to produce the figures for the study entitled: *"Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants."*  
 
-These reads data were converted into species and functional profiles according to the Terra Worflow files in 'biobakery\_analysis/'
+### Data Availability  
+- **Shotgun Metagenomics Data:**  
+  Filtered human reads are available on the NCBI-SRA under project ID: **PRJNA1087376**.  
+- **Species and Functional Profiles:**  
+  Generated from the raw reads using workflows provided in the `biobakery_analysis/` directory.  
+- **Lipidomics Data:**  
+  Lipidomics data are available on the Metabolights database under project ID: **MTBLS10066**.  
+- **Supplementary Datasets:**  
+  The following additional datasets are available:  
+  - Lipid profiles  
+  - EEG data  
+  - Environmental factors  
+  - Bayley and Wolkes scores  
+  These datasets are stored in the `Data/` directory, available upon request or via the manuscript's Figshare page: **[DOI: 10.17608/k6.auckland.25560768](https://doi.org/10.17608/k6.auckland.25560768)**.  
 
-These profiles in addition to the additional lipid, EEG, Environmental factor, Bayley, and Wolkes datasets are found in the 'Data' directory which is available upon requrest and on the manuscript's figshare page.
+---
 
-## Installation
+## Installation  
 
-Python scripts are to be executed using python 3.8.17.
+The scripts require **Python 3.8.17**.  
 
-Requirements for python package installation are detailed in 'requirements.txt' and should take around 5 minutes to install with the command below. It is recommended that you do this in a python virual environment. This can be done (on mac or linux) with the commands:
+### Setting Up the Environment  
+To install the required packages, it is recommended to use a virtual environment. Follow these steps (Mac/Linux):  
+1. Create and activate a virtual environment:  
+   ```bash  
+   python -m venv venv  
+   source venv/bin/activate  
+   ```  
+2. Install the required Python packages:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
+3. Install the `metatoolkit` package:  
+   ```bash  
+   cd metatoolkit/  
+   pip install .  
+   cd ../  
+   ```  
 
-```
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cd metatoolkit/
-pip install .
-cd ../
-```
+---
 
-## Running
+## Running the Code  
 
-Downstream analysis was done using scripts found in the 'code/' directory.
+### Directory Structure  
+- **Code:**  
+  The scripts for analysis are located in the `code/` directory and are organized according to the figures in the manuscript.  
+- **Metatoolkit Package:**  
+  Additional reusable scripts and functions are provided in the `metatoolkit` package.  
+- **Data Directory:**  
+  Download the `Data/` directory from the manuscript's Figshare page (**DOI: 10.17608/k6.auckland.25560768**) and place it in the project root directory.  
 
-Additional scripts are located in the 'metatoolkit' package
+### Execution Instructions  
+1. Ensure the `data/` directory is in the project root.  
+2. Navigate to the `code/` directory
+3. Run all commands following the execution order defined in `analysis.sh`
 
-The codebase is organised as per the figures in the manuscript.
+---
 
-Important: The 'data/' directory on this manuscripts figshare page (access token given to reviewers) should be downloaded and placed in this project's top directory.
+## Contact  
 
-All scripts for analysis should be ran from within the 'code/' directory under 'analysis.sh'
+For questions or clarifications, feel free to reach out.  
 
-Please don't hesitate to reach out if you have any queries.
-
-Theo.
+**Theo**  

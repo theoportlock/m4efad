@@ -1,0 +1,21 @@
+Abbreviation	Description
+WLZ_WHZ (z-score)	weight-for-height/length z-score
+MUAC (cm)	mid-upper arm circumference
+HC	head circumferance
+MWW_pval	Mann Whitney U p-value
+MWW_qval	Mann Whitney U q-value
+FC	Fold change
+Log2FC	log2 fold change
+Log10FC	log10 fold change
+diffmean	difference in mean values between source and target
+source_true_summary	target value summary for when the source is true
+source_false_summary	target value summary for when the source is false
+coef	MaAsLin2 coefficient
+stderr	Standard Error
+N	Total number of samples for analysis
+N.not.0	Total number of non-zero samples for analysis
+pval	MaAsLin2 p-value
+qval	MaAsLin2 q-value
+SHAP	mean SHAP value
+cor	Spearman correlation
+SHAP_interactsmean	(mean Σ(|SHAP interaction|)

@@ -1,5 +1,5 @@
 patientinfo
-alpha_diversitychange
+taxodiversitychange
 taxochange
 pathwayschange
 psdchange

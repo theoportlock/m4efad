@@ -23,9 +23,9 @@ table = (f.filter(df,
 
 # Format data
 #table['qval'] = table.qval.round(3)
-table['pval'] = table.pval.round(3)
+#table['pval'] = table.pval.round(3)
 #table['qval'] = table.qval.apply('{:0<5}'.format)
-table['pval'] = table.pval.apply('{:0<5}'.format)
+#table['pval'] = table.pval.apply('{:0<5}'.format)
 table['effect'] = table.effect.round(3)
 
 # Sort order of columns and rename
@@ -36,7 +36,7 @@ table = table.rename(columns={'source_true_summary':'Malnourished','source_false
 # Save full
 fulltable = table.copy()
 #fulltable.loc[fulltable['qval'] == '0.000', 'qval'] = '<0.001'
-fulltable.loc[fulltable['pval'] == '0.000', 'pval'] = '<0.001'
+#fulltable.loc[fulltable['pval'] == '0.000', 'pval'] = '<0.001'
 f.save(fulltable, 'patientinfo')
 
 # Save short
@@ -52,9 +52,8 @@ shorttable = pd.concat([
                    'Delivery_Mode.Caesarean']]
     ])
 #shorttable['qval'] = shorttable.qval.apply('{:0<5}'.format)
-shorttable['pval'] = shorttable.pval.apply('{:0<5}'.format)
-#shorttable.loc[shorttable['qval'] == '0.000', 'qval'] = '<0.001'
-shorttable.loc[shorttable['pval'] == '0.000', 'pval'] = '<0.001'
+#shorttable['pval'] = shorttable.pval.apply('{:0<5}'.format)
+#shorttable.loc[shorttable['pval'] == '0.000', 'pval'] = '<0.001'
 shorttable.index = shorttable.index.str.replace('_', ' ')
 shorttable.index = shorttable.index.str.replace('.', ':')
 shorttable.index = shorttable.index.str.replace('\(.*\)', '', regex=True)

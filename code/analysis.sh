@@ -85,7 +85,7 @@ volcano.py melonchangefilter --change coef --sig pval --fc 0.01 --pval 0.2
 stratify.py melon Condition
 box.py melonCondition -y 'nicotinic.acid'
 
-# Beta diversity stats
+# Diversity stats
 filter.py taxo --colfilt 's__'
 ./calculate_diversity.sh taxofilter
 ./adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
@@ -93,7 +93,8 @@ filter.py taxo --colfilt 's__'
 ./adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
 scale.py standard metaonehot
 ./rda.R -t ../results/taxo.tsv -m ../results/metaonehotstandard.tsv -f $covariates 
-change.py alpha_diversity --df2 categories
+calculate.py diversity taxo
+change.py taxodiversity --df2 categories
 stratify.py alpha_diversity Condition
 box.py alpha_diversityCondition -y diversity_shannon
 ./beta_compare.py
