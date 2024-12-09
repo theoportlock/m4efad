@@ -25,7 +25,7 @@ for i, doc in enumerate(docs):
         coltext.append(rowtext)
     df = pd.DataFrame(coltext)
     df = df.T.drop_duplicates().T
-    df = df.iloc[:,:-1] # remove remark column
+    df = df.iloc[:,:-1] # remove remark columnformat_microbiome.py
     df.columns = df.iloc[0]
     df = df.iloc[1:,:]
     df = df.set_index('*Name on tube')
@@ -64,15 +64,15 @@ f.save(quality, 'quality')
 
 # for taxonomy
 taxo = pd.read_csv('../data/m4efad_metaphlan3_profiles_oct2023.tsv', sep='\t', index_col=0, header=1)
-taxo = taxo.loc[~taxo.index.str.contains('k__Viruses')]
-taxo = taxo.loc[~taxo.index.str.contains('UNKNOWN')]
+#taxo = taxo.loc[~taxo.index.str.contains('k__Viruses')]
+#taxo = taxo.loc[~taxo.index.str.contains('UNKNOWN')]
 taxo.columns = taxo.columns.str.replace('\.metaphlan','', regex=True)
 taxo = taxo.T.join(samplesheet.reset_index().set_index('Seq_ID')['TimeID'], how='inner').set_index('TimeID')
 taxo = taxo.loc[taxo.index.str[3] !='3']
 taxo = taxo.loc[taxo.index.str[-1] !='2']
 taxo.index = taxo.index.str[:-3]
 taxo.index = taxo.index.rename('ID')
-taxo.columns = taxo.columns.str.replace('.*\|','',regex=True)
+#taxo.columns = taxo.columns.str.replace('.*\|','',regex=True)
 f.save(taxo, 'taxo')
 
 # for functions - in cpm

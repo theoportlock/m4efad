@@ -5,7 +5,7 @@ import metatoolkit.functions as f
 from statsmodels.stats.multitest import fdrcorrection
 
 # load data
-fisher = f.load('categoriesfisher')
+fisher = f.load('categoriesFisher')
 mww = f.load('numericchange')
 cor = f.load('numericcorr')
 

@@ -9,7 +9,7 @@ from ast import literal_eval
 
 # load data
 meta = pd.read_excel("../data/05.LEAP_SES_CRF.xlsx", sheet_name='LEAP-SES')
-labels = pd.read_csv("../data/05.LEAP_SES_CRF_MAPPING_TP.tsv", sep='\t', index_col=0)
+labels = pd.read_csv("../conf/05.LEAP_SES_CRF_MAPPING_TP.tsv", sep='\t', index_col=0)
 
 # drop dates
 meta = meta.drop(['DOB','DOI'], axis=1)

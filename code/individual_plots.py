@@ -11,6 +11,7 @@ import seaborn as sns
 # Load data
 alldf = f.load('alldata')
 meta = f.load('meta')
+alldf.columns = alldf.columns.str.replace('.*\|s__','s__', regex=True)
 
 # Connections
 salldf = alldf.join(meta)

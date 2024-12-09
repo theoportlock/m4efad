@@ -30,35 +30,40 @@ def fc(df, comb=None):
 
 # Load species
 meta = f.load('metaonehot')
-df =  f.load('taxo')
-df = df.loc[:, df.columns.str.startswith('s')]
+df =  f.load('species')
+#df = df.loc[:, df.columns.str.startswith('s')]
+#df = df.loc[:, df.columns.str.contains('s__')]
+df.columns = df.columns.str.replace('.*s__','').str.replace('_',' ')
 
 ## Filter top 50
 filttop50 = df.mean().sort_values().tail(50)
+#filttop50 = df.median().sort_values().tail(50)
 df = df.loc[:, filttop50.index]
 
 # taxa changes
 df = f.stratify(df, meta, 'Condition.MAM')
-df.columns = df.columns.str.replace('s__','').str.replace('_',' ')
 prevs = prev(df)
 prevdf = prevs[['Falseprev','Trueprev']].stack().reset_index()
 
 # supp figure for species
-plotdf = df.stack().reset_index()
+plotdf = (df + 0.00001).stack().reset_index()
+#plotdf = df.stack().reset_index()
 f.setupplot(figsize=(7,7))
 fig, ax = plt.subplots(1,2, sharey=True)
+ax[0].set_xscale('log')
 sns.barplot(data=plotdf, y='level_1', x=0, hue='Condition.MAM', orient='h', ax=ax[0])
+sns.stripplot(data=plotdf, y='level_1', x=0, hue='Condition.MAM', orient='h', ax=ax[0], dodge=True, size=1, jitter=True, alpha=0.5, color='black')
 sns.barplot(data=prevdf, y='level_0', x=0, hue='level_1',ax=ax[1])
 f.savefig('top50boxdiff')
 
 # Maaslin volcano
 maaslin = f.load('taxochange')
 fmas = f.filter(maaslin, query='metadata == "Condition.MAM"', rowfilt='s__')
-fmas.index = fmas.index.str.replace('s__','').str.replace('_',' ')
-df = f.load('taxo') # reload species
-df = df.loc[:, df.columns.str.startswith('s')]
-df.columns = df.columns.str.replace('s__','').str.replace('_',' ')
-df = f.stratify(df, meta, 'Condition.MAM')
+fmas.index = fmas.index.str.replace('.*s__','').str.replace('_',' ')
+#df = f.load('taxo') # reload species
+#df = df.loc[:, df.columns.str.startswith('s')]
+#df.columns = df.columns.str.replace('s__','').str.replace('_',' ')
+#sdf = f.stratify(df, meta, 'Condition.MAM')
 prevs = prev(df)
 jmas = fmas.join(prevs)
 jmas['basemean'] = jmas['basemean'].apply(np.sqrt).mul(30)
@@ -68,20 +73,3 @@ legend_sizes = [np.sqrt(10)*30, np.sqrt(1)*30, np.sqrt(0.1)*30]
 scatter_for_legend = [plt.scatter([], [], c='black',s=size, alpha=0.5) for size in legend_sizes]
 plt.legend(scatter_for_legend, [f'{size}' for size in legend_sizes], title="Mean Relative Abundance")
 f.savefig('sizevolcano')
-
-'''
-clr_data = f.CLR(condition)
-change = pd.concat([change, f.mww(clr_data, comb=['Malnourished', 'Well-nourished'])], axis=1)
-pval = 0.05
-sig = f.filter(change, column='MWW_pval', lt=pval)
-changesig = change.loc[sig.index]
-sig['deltaprevail'] = sig.Malnourishedprev - sig['Well-nourishedprev']
-
-fig, ax = plt.subplots(1,2, figsize=(3,5), sharey=True)
-sig['deltaprevail'].sort_values().mul(100).plot.barh(ax=ax[0])
-ax[0].grid()
-sig['Log2FC'].sort_values().plot.barh(ax=ax[1])
-ax[1].grid()
-f.savefig('specieschange')
-f.save(change, 'specieschange')
-'''

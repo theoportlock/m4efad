@@ -1,0 +1,82 @@
+Variable	Description	Mapping
+SID_LCC	Subject identification number	
+Sex	Sex of the Child	"1: ""Male"", 2: ""Female"""
+DOB	Date of birth of the child	
+DOI	Date of interview	
+Member	Members in household	
+Child	Number of living children (less than 19 years old) 	
+B_Order	Birth order of enrolled child among live births	
+Sibl_5Y	Number of siblings under 5 years, excluding enrolled child	
+Mem_Mob	Number of mobile phne users in household	
+Ethnicit	Ethnicity	"1: ""Bengali"", 2: ""Bihari"", 3: ""Others"""
+Other_Et	Specify Other Ethnicity	"99: """""
+Live_Cur	Number of years lived in current household	
+Cur_Room	Number of rooms in current household	
+Sleep_Hh	Number of people usually sleeping in household	
+Fam_Type	Family type	"1: ""Nuclear"", 2: ""Joint"""
+Lan	Language	"1: ""Bangali"", 2: ""Urdu"", 3: ""Others"""
+OtherLan	Other Language	"99: """""
+Maid	Maid working in household	"1: ""Yes"", 2: ""No"""
+Fath_Edu	Father’s Educational attainment	
+Years_of_Father_Education	Years of father's education	
+Moth_Edu	Mother’s Educational attainment	
+Years_of_Mother_Education	Years of mother's education	
+Fath_Occ	Father’s occupation	"1: ""Dependent (< 5 years)"", 2: ""Student"", 3: ""Housewife"", 4: ""Government Service"", 5: ""Private Service / NGO Service"", 6: ""Small Businessman (Up to 10,000 Tk./ Month)"", 7: ""Medium Businessman (10,001 – 30,000 Tk./ Month)"", 8: ""Businessman (> 30,000 Tk./ Month)"", 9: ""Landlord / House owner"", 10: ""Contractor (Construction work)"", 11: ""Home skill worker (Shari made, Embroidery, Karchupi etc.)"", 12: ""Skilled labourer (Radio, TV, Fan, Plumber, Mason, Painter, Electrician/Lineman, Gas, Phone, WASA, Industry worker etc.)"", 13: ""Daily labourer (unskilled labourer)"", 14: ""Rickshaw /Push cart puller/van"", 15: ""Garments worker"", 16: ""Farmer"", 17: ""Hawker"", 18: ""Driver"", 19: ""Helper"", 20: ""Sweeper"", 21: ""Barber"", 22: ""Cobbler"", 23: ""Beggar"", 24: ""Tailor"", 25: ""Cook"", 26: ""Teacher (School, College, University)"", 27: ""Clergy (Imam, Muarzin, Moulana, Huzur, Padri etc)"", 28: ""Doctor (MBBS, MD, FCPS, FRCP etc.)"", 29: ""Engineer (B. Sc., M.Sc., PhD etc.)"", 30: ""Lawyer"", 31: ""Servant"", 32: ""Retired person"", 33: ""Unemployed"", 77: ""Other (Specify)"", 99: """""
+OFO	Other father’s occupation	"1: ""Dependent (< 5 years)"", 2: ""Student"", 3: ""Housewife"", 4: ""Government Service"", 5: ""Private Service / NGO Service"", 6: ""Small Businessman (Up to 10,000 Tk./ Month)"", 7: ""Medium Businessman (10,001 – 30,000 Tk./ Month)"", 8: ""Businessman (> 30,000 Tk./ Month)"", 9: ""Landlord / House owner"", 10: ""Contractor (Construction work)"", 11: ""Home skill worker (Shari made, Embroidery, Karchupi etc.)"", 12: ""Skilled labourer (Radio, TV, Fan, Plumber, Mason, Painter, Electrician/Lineman, Gas, Phone, WASA, Industry worker etc.)"", 13: ""Daily labourer (unskilled labourer)"", 14: ""Rickshaw /Push cart puller/van"", 15: ""Garments worker"", 16: ""Farmer"", 17: ""Hawker"", 18: ""Driver"", 19: ""Helper"", 20: ""Sweeper"", 21: ""Barber"", 22: ""Cobbler"", 23: ""Beggar"", 24: ""Tailor"", 25: ""Cook"", 26: ""Teacher (School, College, University)"", 27: ""Clergy (Imam, Muarzin, Moulana, Huzur, Padri etc)"", 28: ""Doctor (MBBS, MD, FCPS, FRCP etc.)"", 29: ""Engineer (B. Sc., M.Sc., PhD etc.)"", 30: ""Lawyer"", 31: ""Servant"", 32: ""Retired person"", 33: ""Unemployed"", 77: ""Other (Specify)"", 99: """""
+Moth_Occ	Mother’s occupation	"1: ""Dependent (< 5 years)"", 2: ""Student"", 3: ""Housewife"", 4: ""Government Service"", 5: ""Private Service / NGO Service"", 6: ""Small Businessman (Up to 10,000 Tk./ Month)"", 7: ""Medium Businessman (10,001 – 30,000 Tk./ Month)"", 8: ""Businessman (> 30,000 Tk./ Month)"", 9: ""Landlord / House owner"", 10: ""Contractor (Construction work)"", 11: ""Home skill worker (Shari made, Embroidery, Karchupi etc.)"", 12: ""Skilled labourer (Radio, TV, Fan, Plumber, Mason, Painter, Electrician/Lineman, Gas, Phone, WASA, Industry worker etc.)"", 13: ""Daily labourer (unskilled labourer)"", 14: ""Rickshaw /Push cart puller/van"", 15: ""Garments worker"", 16: ""Farmer"", 17: ""Hawker"", 18: ""Driver"", 19: ""Helper"", 20: ""Sweeper"", 21: ""Barber"", 22: ""Cobbler"", 23: ""Beggar"", 24: ""Tailor"", 25: ""Cook"", 26: ""Teacher (School, College, University)"", 27: ""Clergy (Imam, Muarzin, Moulana, Huzur, Padri etc)"", 28: ""Doctor (MBBS, MD, FCPS, FRCP etc.)"", 29: ""Engineer (B. Sc., M.Sc., PhD etc.)"", 30: ""Lawyer"", 31: ""Servant"", 32: ""Retired person"", 33: ""Unemployed"", 77: ""Other (Specify)"", 99: """""
+OMO	Other mother’s occupation	"1: ""Dependent (< 5 years)"", 2: ""Student"", 3: ""Housewife"", 4: ""Government Service"", 5: ""Private Service / NGO Service"", 6: ""Small Businessman (Up to 10,000 Tk./ Month)"", 7: ""Medium Businessman (10,001 – 30,000 Tk./ Month)"", 8: ""Businessman (> 30,000 Tk./ Month)"", 9: ""Landlord / House owner"", 10: ""Contractor (Construction work)"", 11: ""Home skill worker (Shari made, Embroidery, Karchupi etc.)"", 12: ""Skilled labourer (Radio, TV, Fan, Plumber, Mason, Painter, Electrician/Lineman, Gas, Phone, WASA, Industry worker etc.)"", 13: ""Daily labourer (unskilled labourer)"", 14: ""Rickshaw /Push cart puller/van"", 15: ""Garments worker"", 16: ""Farmer"", 17: ""Hawker"", 18: ""Driver"", 19: ""Helper"", 20: ""Sweeper"", 21: ""Barber"", 22: ""Cobbler"", 23: ""Beggar"", 24: ""Tailor"", 25: ""Cook"", 26: ""Teacher (School, College, University)"", 27: ""Clergy (Imam, Muarzin, Moulana, Huzur, Padri etc)"", 28: ""Doctor (MBBS, MD, FCPS, FRCP etc.)"", 29: ""Engineer (B. Sc., M.Sc., PhD etc.)"", 30: ""Lawyer"", 31: ""Servant"", 32: ""Retired person"", 33: ""Unemployed"", 77: ""Other (Specify)"", 99: """""
+Own_Hous	Family own’s the home they live in	"1: ""Yes"", 2: ""No"""
+Inc_HH	Household head’s income (taka)	
+Inc_Moth	Mother’s income (taka)	
+Inc_OM	Other member’s income (taka)	
+Inc_OS	Other sources income (taka)  	
+T_Income	Total monthly Income (taka)	
+H_Rent	House rent (taka)	
+Fam_Exp	Family expenditure (food, clothes, utility bills i.e. electricity, gas, water) (taka) 	
+Oth_Exp	Other expenditure (festivals, medical, education, gifts) (taka)	
+Expend	Monthly total expenditure (taka)	
+Floor	Household - Principal type of flooring	"1: ""Earth/Sand/Clay/Mud/Dung"", 2: ""Wood"", 3: ""Ceramic Tiles"", 4: ""Cement/Concrete"""
+Wall	Household - Principal wall material	"1: ""Bamboo/cane/straw"", 2: ""Rudimentary walls (mud) or mixed with mud"", 3: ""Tin wall"", 4: ""Bricks, cement blocks, concrete Walls"", 5: ""Wood"""
+Roof	Household - Principal roofing material	"1: ""Natural material (straw)"", 2: ""Rudimentary roofing (polythene or mixed with mud)"", 3: ""Finished roof (concrete)"", 4: ""Tin roof"" "
+Electrct	Household - Electricity	"1: ""Yes"", 2: ""No"""
+Gas	Household - Cooking gas	"1: ""Yes"", 2: ""No"""
+Mobile	Household - Telephone/mobile	"1: ""Yes"", 2: ""No"""
+Almeria	Household - Almeria	"1: ""Yes"", 2: ""No"""
+Table	Household - Table	"1: ""Yes"", 2: ""No"""
+Chair	Household - Chair	"1: ""Yes"", 2: ""No"""
+Bench	Household - Bench	"1: ""Yes"", 2: ""No"""
+Clock	Household - Watch or clock	"1: ""Yes"", 2: ""No"""
+Bed	Household - Cot or bed	"1: ""Yes"", 2: ""No"""
+Radio	Household - Working Radio	"1: ""Yes"", 2: ""No"""
+TV	Household - Working TV	"1: ""Yes"", 2: ""No"""
+Bicycle	Household - Bicycle	"1: ""Yes"", 2: ""No"""
+Bike	Household - Motorcycle	"1: ""Yes"", 2: ""No"""
+SMachine	Household - Sewing machine	"1: ""Yes"", 2: ""No"""
+Fan	Household - Fan	"1: ""Yes"", 2: ""No"""
+ReadNews	Reads the newspaper	"1: ""Regular"", 2: ""Irregularly"", 3: ""No"""
+Radio_TV	Listens to/watches Radio/TV	"1: ""Regular"", 2: ""Irregularly"", 3: ""No"""
+Social_M	Uses social media	"1: ""Regular"", 2: ""Irregularly"", 3: ""No"""
+Dr_Water	Principal source of household drinking water	"1: ""Municipality supply/piped water"", 2: ""Own arrangement by pump"", 3: ""Tube well"", 4: ""Well/Pond/Canal"""
+Toilet	Principal type of toilet facility used by household members	"1: ""Septic tank or toilet"", 2: ""Water-sealed or slab latrine"", 3: ""Pit latrine"", 4: ""Open latrine"", 5: ""Hanging latrine"", 6: ""Bush, field as latrine"""
+Food	Household food availability	"1: ""Deficit in whole year"", 2: ""Sometimes deficit"", 3: ""Neither deficit nor surplus"", 4: ""Surplus"""
+BFIAGENT	Washing - agent used before feeding child	"1: ""Water"", 2: ""Mud"", 3: ""Ash"", 4: ""Soap"", 5: ""Other"", 9: ""None"""
+BFIHOW	Washing - method used before feeding child	"1: ""Left hand"", 2: ""Right hand"", 3: ""Both hands"", 9: ""None"""
+BFISoW	Washing - source of water used before feeding child	"1: ""Municipality supply/piped water"", 2: ""Own arrangement by pump"", 3: ""Tube well"", 4: ""Well/Pond/Canal"", 9: ""None"""
+BEAGENT	Washing - agent used before eating	"1: ""Water"", 2: ""Mud"", 3: ""Ash"", 4: ""Soap"", 5: ""Other"", 9: ""None"""
+BEHOW	Washing - method used before eating	"1: ""Left hand"", 2: ""Right hand"", 3: ""Both hands"", 9: ""None"""
+BE_SoW	Washing - source of water used before eating	"1: ""Municipality supply/piped water"", 2: ""Own arrangement by pump"", 3: ""Tube well"", 4: ""Well/Pond/Canal"", 9: ""None"""
+ADAGENT	Washing - agent used after defecating	"1: ""Water"", 2: ""Mud"", 3: ""Ash"", 4: ""Soap"", 5: ""Other"", 9: ""None"""
+ADHOW	Washing - method used after defecating	"1: ""Left hand"", 2: ""Right hand"", 3: ""Both hands"", 9: ""None"""
+ADSoW	Washing - source of water used after defecating	"1: ""Municipality supply/piped water"", 2: ""Own arrangement by pump"", 3: ""Tube well"", 4: ""Well/Pond/Canal"", 9: ""None"""
+BCDAGENT	Washing - agent used before cleaning child’s dishes	"1: ""Water"", 2: ""Mud"", 3: ""Ash"", 4: ""Soap"", 5: ""Other"", 9: ""None"""
+BCDHOW	Washing - method used before cleaning child’s dishes	"1: ""Left hand"", 2: ""Right hand"", 3: ""Both hands"", 9: ""None"""
+BCDSoW	Washing - source of water used before cleaning child’s dishes	"1: ""Municipality supply/piped water"", 2: ""Own arrangement by pump"", 3: ""Tube well"", 4: ""Well/Pond/Canal"", 9: ""None"""
+ACAAGENT	Washing - agent used after cleaning child’s anus	"1: ""Water"", 2: ""Mud"", 3: ""Ash"", 4: ""Soap"", 5: ""Other"", 9: ""None"""
+ACAHOW	Washing - method used after cleaning child’s anus	"1: ""Left hand"", 2: ""Right hand"", 3: ""Both hands"", 9: ""None"""
+ACASoW	Washing - source of water used after cleaning child’s anus	"1: ""Municipality supply/piped water"", 2: ""Own arrangement by pump"", 3: ""Tube well"", 4: ""Well/Pond/Canal"", 9: ""None"""
+Water_TM	Water treatment method	"1: ""None"", 2: ""Let it stand & settle"", 3: ""Water filter"", 4: ""Solar disinfection"", 5: ""Boil"", 6: ""Strain through cloth"", 7: ""Add bleach/Chlorine"""
+Toilet_F	Toilet facility shared with other households	"1: ""Yes"", 2: ""No"""
+Fre_Nail	Frequency of nail cutting of mother	"1: ""Once in a week"", 2: ""Twice a month"", 3: ""Once a month"", 4: ""Once in quarter"""
+Cook_Plc	Place for cooking for household	"1: ""Inside house"", 2: ""Separate building"", 3: ""Outdoors"", 4: ""Other"""
+C_Fuel	Type of cooking fuel	"1: ""Gas"", 2: ""Electric stove"", 3: ""Wood"", 4: ""Kerosene oil stove"", 5: ""Animal dung"", 6: ""Garments products"""
+Drain	Open drain beside house	"1: ""Yes"", 2: ""No"""

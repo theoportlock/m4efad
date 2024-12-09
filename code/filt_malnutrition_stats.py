@@ -16,9 +16,7 @@ table = (f.filter(df,
                 .loc[~df.target.str.contains('Well-nourished')]
                 .loc[~df.target.str.contains('attainment')]
                 .set_index('target')
-                #.drop('pval', axis=1)
                 .drop('qval', axis=1)
-                #.sort_values('qval'))
                 .sort_values('pval'))
 
 # Format data

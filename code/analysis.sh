@@ -7,7 +7,8 @@
 #############################
 ###### FORMAT RAW DATA ######
 #############################
-yes | rm -r ../results/*
+yes | rm -fr ../results
+mkdir -p ../results
 python format_metadata.py
 python format_microbiome.py
 python format_anthro.py
@@ -46,6 +47,7 @@ yes | cp ../results/taxochange/all_results.tsv ../results/taxochange.tsv
 filter.py taxochange -q 'metadata == "Condition.MAM"'
 volcano.py taxochangefilter --change coef --sig pval --fc 0.01 --pval 0.25
 sig_summary.py taxochangefilter
+filter.py taxo --colfilt 's__' -o species
 python plot_species.py
 
 # Pathways
@@ -86,8 +88,7 @@ stratify.py melon Condition
 box.py melonCondition -y 'nicotinic.acid'
 
 # Diversity stats
-filter.py taxo --colfilt 's__'
-python calculate_diversity.sh taxofilter
+bash calculate_diversity.sh taxo
 Rscript adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
 Rscript adonis.R -d ../results/beta_weighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_weighted-unifracAdonis.tsv
 Rscript adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
@@ -98,9 +99,9 @@ change.py taxodiversity --df2 categories
 stratify.py alpha_diversity Condition
 box.py alpha_diversityCondition -y diversity_shannon
 python beta_compare.py
-ls ../results/beta* | parallel pcoa.py {}
-ls ../results/*Pcoa.tsv | parallel stratify.py {} Condition
-ls ../results/*PcoaCondition.tsv | parallel spindle.py {}
+ls ../results/beta* | parallel pcoa.py -i {}
+ls ../results/*_pcoa.tsv | parallel stratify.py {} Condition
+ls ../results/*_pcoaCondition.tsv | parallel spindle.py {}
 
 ##############################
 ###### FIGURE 2 - BRAIN ######
@@ -137,19 +138,15 @@ filter.py lipid_classeschange -q 'metadata == "Condition.MAM"'
 sig_summary.py lipid_classeschangefilter
 volcano.py lipid_classeschange --change coef --sig qval --fc 0.01 --pval 0.25
 
+python lipid_plots.py
+
 Maaslin2.R -f $covariates -n None -t None ../results/extralipids.tsv ../results/metaonehot.tsv ../results/extralipidchange
 yes | cp ../results/extralipidchange/all_results.tsv ../results/extralipidchange.tsv
-filter.py extralipidchange -q 'metadata == "Condition.MAM"'
-sig_summary.py extralipidchangefilter
-volcano.py extralipidchange --change coef --sig qval --fc 2 --pval 0.0000005
-
-python lipid_plots.py
 
 ####################################
 ###### FIGURE 4 - INTEGRATIVE ######
 ####################################
 python cluster_EV.py
-filter.py taxo --colfilt 's__' -o species
 merge.py lipid_richness alpha_diversity
 corr.py lipid_richnessalpha_diversity bayley
 clustermap.py lipid_richnessalpha_diversitybayleycorr

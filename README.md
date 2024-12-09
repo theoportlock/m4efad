@@ -1,6 +1,6 @@
 # M4EFaD: Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants  
 
-This repository contains the code used to produce the figures for the study entitled: *"Linking the Gut Microbiome to Neurocognitive Development in Bangladesh Malnourished Infants."*  
+This repository contains the code used to produce the figures for the study entitled: *"From Gut to Brain: Inter-connecting the Impacts of Moderate Acute Malnutrition on Child Cognitive Development"*  
 
 ### Data Availability  
 - **Shotgun Metagenomics Data:**  
@@ -15,7 +15,7 @@ This repository contains the code used to produce the figures for the study enti
   - EEG data  
   - Environmental factors  
   - Bayley and Wolkes scores  
-  These datasets are stored in the `Data/` directory, available upon request or via the manuscript's Figshare page: **[DOI: 10.17608/k6.auckland.25560768](https://doi.org/10.17608/k6.auckland.25560768)**.  
+  These datasets are stored in the `data/` directory, available upon request or via the manuscript's Figshare page: **[DOI: 10.17608/k6.auckland.25560768](https://doi.org/10.17608/k6.auckland.25560768)**.  
 
 ---
 
@@ -36,10 +36,9 @@ To install the required packages, it is recommended to use a virtual environment
    ```  
 3. Install the `metatoolkit` package:  
    ```bash  
-   cd metatoolkit/  
-   pip install .  
-   cd ../  
+   pip install metatoolkit/
    ```  
+4. Install Maaslin2 v1.73 as per the github instructions
 
 ---
 
@@ -51,7 +50,7 @@ To install the required packages, it is recommended to use a virtual environment
 - **Metatoolkit Package:**  
   Additional reusable scripts and functions are provided in the `metatoolkit` package.  
 - **Data Directory:**  
-  Download the `Data/` directory from the manuscript's Figshare page (**DOI: 10.17608/k6.auckland.25560768**) and place it in the project root directory.  
+  Download the `data/` directory from the manuscript's Figshare page (**DOI: 10.17608/k6.auckland.25560768**) and place it in the project root directory.  
 
 ### Execution Instructions  
 1. Ensure the `data/` directory is in the project root.  
@@ -62,6 +61,6 @@ To install the required packages, it is recommended to use a virtual environment
 
 ## Contact  
 
-For questions or clarifications, feel free to reach out.  
+For questions or clarifications, feel free to reach out to theo.portlock@auckland.ac.nz
 
 **Theo**  
