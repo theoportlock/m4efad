@@ -27,15 +27,6 @@ python plot_anthro.py
 taxo_summary.py taxo
 python calculate_pb.py
 
-# Species
-sed -E -i 's/[^[:space:]]*\|//g' ../results/taxo.tsv
-Maaslin2.R -f "$(<../conf/fixed_effects.txt)" ../results/taxo.tsv ../results/metaonehot.tsv ../results/taxochange
-yes | cp ../results/taxochange/all_results.tsv ../results/taxochange.tsv
-filter.py taxochange -q 'metadata == "Condition.MAM"'
-sig_summary.py taxochangefilter
-filter.py taxo --colfilt 's__' -o species
-python plot_species.py
-
 # Diversity stats
 bash calculate_diversity.sh taxo
 Rscript adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f "$(<../conf/fixed_effects.txt)" -o ../results/beta_unweighted-unifracAdonis.tsv
@@ -51,6 +42,16 @@ python beta_compare.py
 ls ../results/beta* | parallel pcoa.py -i {}
 ls ../results/*_pcoa.tsv | parallel stratify.py {} Condition
 ls ../results/*_pcoaCondition.tsv | parallel spindle.py {}
+
+# Species
+sed -E -i 's/[^[:space:]]*\|//g' ../results/taxo.tsv
+Maaslin2.R -f "$(<../conf/fixed_effects.txt)" ../results/taxo.tsv ../results/metaonehot.tsv ../results/taxochange
+yes | cp ../results/taxochange/all_results.tsv ../results/taxochange.tsv
+filter.py taxochange -q 'metadata == "Condition.MAM"'
+sig_summary.py taxochangefilter
+filter.py taxo --colfilt 's__' -o species
+python plot_species.py
+
 
 # Pathways
 Maaslin2.R -f "$(<../conf/fixed_effects.txt)" -a 0 ../results/pathways.tsv ../results/metaonehot.tsv ../results/pathwayschange

@@ -15,7 +15,7 @@ This repository contains the code used to produce the figures for the study enti
   - EEG data  
   - Environmental factors  
   - Bayley and Wolkes scores  
-  These datasets are stored in the `data/` directory, available upon request or via the manuscript's Figshare page: **[DOI: 10.17608/k6.auckland.25560768](https://doi.org/10.17608/k6.auckland.25560768)**.  
+  These datasets are stored in the on the manuscript's Figshare page: **[DOI: 10.17608/k6.auckland.25560768](https://doi.org/10.17608/k6.auckland.25560768)**.  
 
 ---
 
@@ -34,7 +34,7 @@ To install the required packages, it is recommended to use a virtual environment
    ```bash  
    pip install -r requirements.txt  
    ```  
-3. Install the `metatoolkit` package:  
+3. Install the `metatoolkit` package in this repository:  
    ```bash  
    pip install metatoolkit/
    ```  
@@ -49,11 +49,11 @@ To install the required packages, it is recommended to use a virtual environment
   The scripts for analysis are located in the `code/` directory and are organized according to the figures in the manuscript.  
 - **Metatoolkit Package:**  
   Additional reusable scripts and functions are provided in the `metatoolkit` package.  
-- **Data Directory:**  
-  Download the `data/` directory from the manuscript's Figshare page (**DOI: 10.17608/k6.auckland.25560768**) and place it in the project root directory.  
+- **Results Directory:**  
+  Download the data from the manuscript's Figshare page (**DOI: 10.17608/k6.auckland.25560768**) and place it in the project root directory in the results directory.  
 
 ### Execution Instructions  
-1. Ensure the `data/` directory is in the project root.  
+1. Ensure the `results/` directory is in the project root with the data from the figshare page.  
 2. Navigate to the `code/` directory
 3. Run all commands following the execution order defined in `analysis.sh`
 
