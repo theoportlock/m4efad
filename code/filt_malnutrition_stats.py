@@ -52,8 +52,8 @@ shorttable = pd.concat([
 #shorttable['qval'] = shorttable.qval.apply('{:0<5}'.format)
 #shorttable['pval'] = shorttable.pval.apply('{:0<5}'.format)
 #shorttable.loc[shorttable['pval'] == '0.000', 'pval'] = '<0.001'
-shorttable.index = shorttable.index.str.replace('_', ' ')
-shorttable.index = shorttable.index.str.replace('.', ':')
+shorttable.index = shorttable.index.str.replace('_', ' ', regex=False)
+shorttable.index = shorttable.index.str.replace('.', ':', regex=False)
 shorttable.index = shorttable.index.str.replace('\(.*\)', '', regex=True)
 shorttable = shorttable.rename(index={'WLZ WHZ': 'WLZ/WHZ',
                                       'MUAC':'MUAC (cm)',
