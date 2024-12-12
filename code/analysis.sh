@@ -4,19 +4,6 @@
 #####   Code author: Theo Portlock
 #####################################
 
-#############################
-###### FORMAT RAW DATA ######
-#############################
-yes | rm -fr ../results
-mkdir -p ../results
-python format_metadata.py
-python format_microbiome.py
-python format_anthro.py
-python format_bayleys.py
-python format_psd.py
-python format_wolkes.py
-python format_lipids.py
-
 ##################################
 ###### TABLE 1 - COVARIATES ######
 ##################################
@@ -39,9 +26,27 @@ leiden_clustering.py covariateedgesfilterfilter -c effect
 python plot_anthro.py
 taxo_summary.py taxo
 python calculate_pb.py
+
+# Diversity stats
+bash calculate_diversity.sh taxo
+Rscript adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
+Rscript adonis.R -d ../results/beta_weighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_weighted-unifracAdonis.tsv
+Rscript adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
+scale.py standard metaonehot
+Rscript rda.R -t ../results/taxo.tsv -m ../results/metaonehotstandard.tsv -f $covariates 
+calculate.py diversity taxo
+change.py taxodiversity --df2 categories
+stratify.py alpha_diversity Condition
+box.py alpha_diversityCondition -y diversity_shannon
+python beta_compare.py
+ls ../results/beta* | parallel pcoa.py -i {}
+ls ../results/*_pcoa.tsv | parallel stratify.py {} Condition
+ls ../results/*_pcoaCondition.tsv | parallel spindle.py {}
+
 covariates='Condition.MAM,Delivery_Mode.Caesarean,Sex_of_the_Child.Male,Duration_of_Exclusive_Breast_Feeding_Months'
 
 # Species
+sed -i 's/.*|//' ../results/taxo.tsv # FIX THIS NEXT
 Maaslin2.R -f $covariates ../results/taxo.tsv ../results/metaonehot.tsv ../results/taxochange
 yes | cp ../results/taxochange/all_results.tsv ../results/taxochange.tsv
 filter.py taxochange -q 'metadata == "Condition.MAM"'
@@ -86,22 +91,6 @@ volcano.py melonchangefilter --change coef --sig pval --fc 0.01 --pval 0.2
 
 stratify.py melon Condition
 box.py melonCondition -y 'nicotinic.acid'
-
-# Diversity stats
-bash calculate_diversity.sh taxo
-Rscript adonis.R -d ../results/beta_unweighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_unweighted-unifracAdonis.tsv
-Rscript adonis.R -d ../results/beta_weighted-unifrac.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_weighted-unifracAdonis.tsv
-Rscript adonis.R -d ../results/beta_bray-curtis.tsv -m ../results/metaonehot.tsv -f $covariates -o ../results/beta_bray-curtisAdonis.tsv
-scale.py standard metaonehot
-Rscript rda.R -t ../results/taxo.tsv -m ../results/metaonehotstandard.tsv -f $covariates 
-calculate.py diversity taxo
-change.py taxodiversity --df2 categories
-stratify.py alpha_diversity Condition
-box.py alpha_diversityCondition -y diversity_shannon
-python beta_compare.py
-ls ../results/beta* | parallel pcoa.py -i {}
-ls ../results/*_pcoa.tsv | parallel stratify.py {} Condition
-ls ../results/*_pcoaCondition.tsv | parallel spindle.py {}
 
 ##############################
 ###### FIGURE 2 - BRAIN ######

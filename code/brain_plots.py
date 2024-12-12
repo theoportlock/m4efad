@@ -37,17 +37,9 @@ f.savefig('psdhm')
 # wolkes changes
 wolkes = f.load('wolkes')
 wolkescondition = f.stratify(wolkes, meta, 'Condition')
-chan = f.change(wolkescondition, analysis=['prevail', 'diff','mww'])['MalnourishedvsWell-nourished']
-chan = chan.loc[:, ~chan.columns.str.contains('prev')]
-f.save(chan, 'wolkeschange')
 fig, ax= plt.subplots(len(wolkescondition.columns), 1, figsize=(4,4), sharex=True)
 for i, col in enumerate(reversed(wolkescondition.columns.to_list())):
     sns.histplot(data=wolkescondition, ax=ax[i], x=wolkescondition[col], hue=wolkescondition.index, bins=7, element='step', stat='density', common_norm=False, legend=False)
     ax[i].set_ylabel(col)
     ax[i].set_xlabel(None)
 f.savefig('wolkesbox')
-
-# correlations
-cor, pval = f.corrpair(psd, pd.concat([wolkes, bayleys], axis=1, join='inner'), min_unique=3)
-f.clustermap(cor, pval.lt(0.3))
-f.savefig('eegwolkebayleyscorr')
