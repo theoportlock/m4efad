@@ -1,0 +1,15 @@
+matplotlib
+matplotlib_venn
+networkx
+numpy
+pandas
+pycircos
+scipy
+seaborn
+shap
+scikit-bio
+scikit-learn
+sklearn_som
+statsmodels
+umap
+upsetplot

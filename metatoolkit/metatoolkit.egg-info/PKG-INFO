@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: metatoolkit
+Version: 0.2
+Summary: A toolkit for meta-analysis and data processing
+Home-page: https://github.com/theoportlock/metatoolkit
+Author: Theo Portlock
+Author-email: theo.portlock@auckland.ac.nz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
